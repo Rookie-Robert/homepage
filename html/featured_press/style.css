@@ -1,0 +1,267 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2a2a2a;
+  --secondary-color: #743e0d;
+  --white-color: white;
+  --green-color: #439c47;
+  --transition-animation: all .5s;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  margin: 10px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition-animation);
+}
+a:hover, a:visited, a:focus {
+  color: var(--primary-color);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/***************************************************
+    Create A Dark/Light Mode Switch with CSS Variables
+    Source: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+***************************************************/
+[data-theme=dark] {
+  --primary-color: white;
+  --secondary-color: var(--green-color);
+  --white-color: #2a2a2a;
+}
+[data-theme=dark] .button a:hover,
+[data-theme=dark] .button a:focus,
+[data-theme=dark] .button a:active {
+  color: white;
+}
+
+/* Toggle switch styling */
+.dark_mode_container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.dark_mode_container .dark_mode_switch {
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+  max-width: 60px;
+}
+.dark_mode_container .dark_mode_switch input {
+  display: none;
+}
+.dark_mode_container .dark_mode_switch input:checked + .slider {
+  background-color: var(--green-color);
+}
+.dark_mode_container .dark_mode_switch input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: var(--transition-animation);
+  width: 60px;
+}
+.slider:before {
+  background-color: var(--white-color);
+  bottom: 5px;
+  content: "";
+  height: 25px;
+  left: 5px;
+  position: absolute;
+  transition: var(--transition-animation);
+  width: 25px;
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/**************************************
+    Header of Paper
+**************************************/
+header {
+  text-align: center;
+  position: relative;
+}
+header h1.news_paper_title {
+  margin: 0;
+}
+header h1.news_paper_title a {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 60px;
+  margin: 15px 0;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: var(--transition-animation);
+}
+header h1.news_paper_title a:hover {
+  color: var(--secondary-color);
+}
+header .news_paper_location {
+  font-weight: 600;
+  border-bottom: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+  padding: 10px 0 10px 0;
+  margin: 20px 0;
+}
+
+@media only all and (max-width: 600px) {
+  header h1.news_paper_title a {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 5px 0;
+  }
+}
+/**************************************
+    Content Area of Newspaper
+**************************************/
+.headline {
+  text-align: center;
+  line-height: normal;
+  font-family: "Playfair Display", serif;
+  display: block;
+  margin: 0 auto;
+}
+.headline h2.title {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+}
+.headline h2.title:hover {
+  color: var(--secondary-color);
+}
+.headline h3.writer {
+  font-weight: 700;
+  font-size: 12px;
+}
+.headline h3.writer:hover {
+  color: var(--secondary-color);
+}
+.headline h3.writer:before {
+  border-top: 1px solid var(--primary-color);
+  content: "";
+  width: 100px;
+  height: 7px;
+  display: block;
+  margin: 0 auto;
+}
+.headline h3.writer:after {
+  border-bottom: 1px solid var(--primary-color);
+  content: "";
+  width: 100px;
+  height: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button a {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 16px;
+  padding: 10px 15px;
+}
+.button a:hover, .button a:focus, .button a:active {
+  background: var(--green-color);
+  border: 1px solid var(--green-color);
+  color: var(--white-color);
+}
+
+/**************************************
+    Images & iframes
+**************************************/
+figure {
+  cursor: pointer;
+  margin: 0 0 20px;
+  filter: grayscale(100%);
+  transition: var(--transition-animation);
+}
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+figure figcaption {
+  font-style: italic;
+  font-size: 12px;
+  text-align: left;
+  transition: var(--transition-animation);
+}
+figure figcaption:hover {
+  padding-left: 10px;
+}
+figure:hover {
+  filter: grayscale(0);
+}
+
+/***************************************************
+    Responsive Framework
+    https://codepen.io/HikwaMehluli/full/qeNOVv
+***************************************************/
+.the-grid-section {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+}
+.the-grid-section .the-grid {
+  margin-bottom: 40px;
+  transition: all 0.5s;
+}
+.the-grid-section .the-grid .the-grid-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* the flexbox magic */
+@media screen and (min-width: 768px) {
+  .the-grid-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .the-grid {
+    display: flex;
+    flex: 0 1 calc(50% - .5em);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .the-grid {
+    flex: 0 1 calc(33% - 1em);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .the-grid {
+    flex: 0 1 calc(25% - 1em);
+  }
+}
