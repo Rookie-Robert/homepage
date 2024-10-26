@@ -1,0 +1,26 @@
+body {
+  background: #F7F9FA;
+}
+
+div {
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center center;
+}
+
+canvas {
+  height: 160px;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+  width: 264px;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-family: "Helvetica Neue", "Helvetica", system-ui, sans-serif;
+  font-weight: 700;
+  margin: 0 0 1em;
+  text-align: center;
+}
