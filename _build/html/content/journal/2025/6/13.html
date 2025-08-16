@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Trading Journal &#8212; 记忆的传承</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/journal/2025/6/13';</script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/favicon.ico" class="logo__image only-light" alt="记忆的传承 - Home"/>
+    <script>document.write(`<img src="../../../../_static/favicon.ico" class="logo__image only-dark" alt="记忆的传承 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    记忆的传承
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../philosophy/0_philosophy.html">我的哲学</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../philosophy/1_safety.html">安全</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../philosophy/2_health.html">健康与长寿</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../philosophy/3_market.html">市场</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../philosophy/4_math.html">数学原理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../philosophy/5_trading.html">交易原则</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../philosophy/6_SOP.html">标准操作步骤</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../0_macro/_macro.html">Macro 宏观</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/1_global.html">Global 全球</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/2_us.html">US 美国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/3_eu%26uk.html">Euro Zone &amp; UK 欧元区与英国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/4_jp%26kr%26tw.html">Japan &amp; South Korea &amp; Taiwan 日本、韩国、台湾</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/5_hk%26cn.html">Hong Kong &amp; Chinese Mainland 香港与中国大陆</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/6_em.html">Emerging Market 新兴市场</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../1_rates/_rates.html">Rates 利率类资产</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/1_benchmark_rate.html">Benchmark Interest Rate 基准利率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/2_bonds%26bills.html">Government Bonds &amp; Treasury Bills 长期债券与短期国库券</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/3_liquidity_indicators.html">Liquidity Indicators 流动性指标</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/4_Inflation-linked_bonds.html">Inflation Linked Bonds 通胀挂钩债券</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/5_interest_rate_swaps.html">Interest Rate Swaps 利率互换</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../2_fx/_fx.html">Foreign Exchange 外汇</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3_equities/_equities.html">Equities 权益资产</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/1_us.html">US 美国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/2_eu%26uk.html">Euro Zone &amp; UK 欧元区与英国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/3_jp%26kr%26tw%26sg.html">Japan &amp; South Korea &amp; Taiwan &amp; Singapore 日本、韩国、台湾、新加坡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/4_hk%26cn.html">Hong Kong &amp; Chinese Mainland 香港与中国大陆</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/5_em.html">Emerging Market 新兴市场</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../4_credit/_credit.html">Credit 信用类资产</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../5_commodities/_commodities.html">Commodities 大宗商品</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../6_real_estate/_real_estate.html">Real Estate 不动产</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../7_crypto/_crypto.html">Crypto</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../8_alternatives/_alternatives.html">Alternatives 另类资产</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../journal.html">Trading Journal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2025.html">2025</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quarterly/dir.html">季度随笔</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../books/_dir.html">读书笔记</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/journal/2025/6/13.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../_sources/content/journal/2025/6/13.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Trading Journal</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="trading-journal">
+<h1>Trading Journal<a class="headerlink" href="#trading-journal" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
+<p><strong>日期</strong>：June 13, 2025</p>
+<p><strong>事件</strong>：</p>
+<p>以色列发动对伊朗的袭击，造成伊朗众多高级政治人员伤亡，全球风险资产大幅下跌，黄金和原油大幅上涨。</p>
+<p><strong>分析与交易</strong>：</p>
+<p>由于 February 24, 2022 俄乌战争爆发当日，在美股盘前，全球风险资产暴跌程度远比今日大，但是当日收盘时，美股股指价格非但没有因为当日的战争事件收跌，甚至差一点收复前一日的跌幅，说明当日的战争事件是给已经有数周大幅盈利的空头以平仓回补的良好时机。今日的战争事件目前看来只维持了 3 小时的全球金融市场恐慌，然后 VIX 指数期货价格就开始持续下跌，在美股开盘时甚至即将回到起涨位置，说明目前市场对今日的战争事件的共识是无关紧要。<mark>今日的 CBOE:VX1!-CBOE:VX2! 最高差值已经接近 0.0，不过由于即将有 2 个非交易日的周末到来，因此无法判断下周一是会持续这种风险资产空头回补的价格走势还是会有更大的黑天鹅事件发生</mark>。且今日美股股指价格并没有像开头描述一样收涨，因此判断后续继续调整的概率更高，<span style="color: red;">因此继续持有 UVIX SMST NAIL 的做多仓位</span>。下周需要重点观察的是：</p>
+<ul class="simple">
+<li><p>美国本轮经济周期“软着陆”的概率相对较高，皆因各主要经济成分的周期错位，经济韧性相对非常强。现在由于战争事件导致原油价格飙升，本就忌惮降息会导致通胀二次走高的 Fed 更难降息。因此后续如果权益市场对 Fed 不降息做出估值调整，需要重点观察原油期货价格和能源股价格，<mark>如果能源股价格难以出现较大涨幅，说明原油价格的突然飙升很可能是短期事件的扰动，而非周期性上涨</mark>。</p></li>
+<li><p>对于持有的 NAIL，地产行业由两个主要因素影响：一个是 Fed 的基准利率，因其会影响购房者的贷款利率，目前判断中短期都难以出现大幅降息的可能，但已经处于限制区间，升息的概率相对更低；二是美国实体经济的复苏情况，即使由于 r* 利率的升高导致 Fed 基准利率处于绝对值的高位，只要经济成长更加强劲，实体经济提供的就业更加充足，劳工的工资与消费同步上涨，那么对于地产消费将会是极大的利好。<mark>但是因为 NAIL 这种带有 3 倍杠杆的 ETF 磨损极大，因此只适合单边上涨时持有。今日收盘价格依然没能站稳日 K 线 MA50，因此下周可以考虑先切换到没有杠杆倍数的 ITB，等待更加确定性的周期上涨信号的触发。<mark></p></li>
+<li><p>对于美股、日股、欧股和港股等权益资产的判断，由于当前几乎所有主要经济体的股指都抹除了 April 以来的关税事件带来的价格扰动甚至创出了年内新高，即使是正常的牛市期间也会出现或多或少的价格回调。今日的战争事件在各种新闻中早已有预兆，且以色列和伊朗之间的战争冲突本就是频发性的，<mark>因此目前判断更可能是一个触发全球风险资产多头获利平仓的 trigger，且全球主要的中央银行除 BOJ 以外全都处于降息周期，权益资产天然拥有免费的央行 put 作为对冲保护，因此不能预期本次风险资产回调的幅度能够与 April 的关税事件相比，后续在合理的时机将 UVIX 的大多数仓位获利平仓，只保留部分仓位作为其他权益资产的对冲即可</mark>。</p></li>
+</ul>
+<p><strong>情绪波动</strong>：</p>
+<p>轻松且冷静。</p>
+<p><strong>复盘</strong>：</p>
+<p><mark>交易合理</mark>。上述的三个分析从后市来看基本正确，战争事件最终迎来大反转，油价跌破起涨位置，全球市场的流动性充裕，美股股指后市也迎来新高。</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\journal\2025\6"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 深 Robert
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
