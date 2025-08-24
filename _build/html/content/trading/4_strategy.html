@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>交易原则 &#8212; 记忆的传承</title>
+    <title>交易策略 Trading Strategy &#8212; 记忆的传承</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/philosophy/5_trading';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/trading/4_strategy';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="标准操作步骤" href="6_SOP.html" />
-    <link rel="prev" title="数学原理" href="4_math.html" />
+    <link rel="next" title="标准操作流程 SOP" href="5_SOP.html" />
+    <link rel="prev" title="数学原理 Math Principles" href="3_math.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,19 +180,23 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="0_philosophy.html">我的哲学</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1_safety.html">安全</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_health.html">健康与长寿</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_market.html">市场</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_math.html">数学原理</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">交易原则</a></li>
-<li class="toctree-l2"><a class="reference internal" href="6_SOP.html">标准操作步骤</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../philosophy/0_philosophy.html">我的哲学</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../philosophy/1_safety.html">安全</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../philosophy/2_health.html">健康与长寿</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../information/0_info.html">有关信息</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../information/1_info_source.html">信息源</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../information/2_high_signal_info.html">如何获取有效信息</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../information/3_llm_prompt_engineering.html">LLM Prompt Engineering</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="0_trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_market.html">市场 The Market</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_principles.html">交易原则 Trading Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学原理 Math Principles</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">交易策略 Trading Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_SOP.html">标准操作流程 SOP</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../0_macro/_macro.html">Macro 宏观</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -305,7 +309,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/philosophy/5_trading.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/trading/4_strategy.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -335,7 +339,7 @@
       
       
       
-      <li><a href="../../_sources/content/philosophy/5_trading.md" target="_blank"
+      <li><a href="../../_sources/content/trading/4_strategy.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -406,9 +410,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -419,24 +421,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>交易原则</h1>
+    <h1>交易策略 Trading Strategy</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4 个要素</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3 个核心</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">思维理念</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">交易选择</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">风险控制</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">仓位控制</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -446,83 +435,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>交易原则<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>4 个要素<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>市场交易的 4 个要素分别是：</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p>概念</p></th>
-<th class="head text-center"><p>定义</p></th>
-<th class="head text-center"><p>作用</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>交易双方（Agents）</p></td>
-<td class="text-center"><p>具有资产配置意愿与能力的市场参与者</p></td>
-<td class="text-center"><p>决定市场行为和博弈结构</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>交易中介（Intermediaries）</p></td>
-<td class="text-center"><p>连接、撮合或促进交易的结构和机制</p></td>
-<td class="text-center"><p>降低摩擦、提升效率、维持秩序</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>资产类别（Assets）</p></td>
-<td class="text-center"><p>市场中被交易、定价的对象</p></td>
-<td class="text-center"><p>市场价值流动的载体</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>流动性（Liquidity）</p></td>
-<td class="text-center"><p>资产变现速度与成本的衡量标准</p></td>
-<td class="text-center"><p>衡量市场健康和运行效率</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="id3">
-<h2>3 个核心<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>市场参与者的仓位。</p></li>
-<li><p>市场参与者的交易方向和交易规模。</p></li>
-<li><p>市场参与者的交易动机。</p></li>
-</ul>
-<p>一切和交易相关的数据都围绕以上 3 点展开，由于市场交易是“非完全信息博弈”，因此任何衍生数据和指标都是用来逼近真实的仓位、交易动机、交易方向和交易规模。</p>
-<p>分析任何市场交易的数据和指标都必须最终落实在以上 3 点。</p>
-</section>
-<section id="id4">
-<h2>思维理念<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>随着市场的演进完善交易系统，不偏离系统进行决策。</p></li>
-<li><p>维持中性原则，使用客观中立的角度观察所有市场交易。</p></li>
-<li><p>只考虑概率和风险敞口的结构，不考虑浮盈浮亏的具体金额与生活消费的关系。</p></li>
-<li><p>因果推理模型和概率推理模型，需要交叉验证，不能偏信一端。因果模型辅助概率模型避免过拟合，概率模型辅助因果模型降低噪声。</p></li>
-</ul>
-</section>
-<section id="id5">
-<h2>交易选择<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>控制可选择的对象数量，过滤平庸的交易机会。</p></li>
-<li><p>选择的交易对象，其风险溢价补偿应该足够高。</p></li>
-</ul>
-</section>
-<section id="id6">
-<h2>风险控制<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>管理 6 种风险：交易风险、市场风险、保证金风险、流动性风险、隔夜风险和波动性风险。</p></li>
-<li><p>风险控制就是计算概率并确保概率对自己有利。</p></li>
-<li><p>交易是一面镜子，折射出的是自己内心的欲望，控制风险就是控制自己。</p></li>
-</ul>
-</section>
-<section id="id7">
-<h2>仓位控制<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<p>寻找交易优势，在优势方向进行交易，如信息优势、概率优势、成本优势等。</p>
-<ul class="simple">
-<li><p>建仓时，确保建仓位置相比止损位置有概率优势。</p></li>
-<li><p>加仓时，确保最终的平均成本相比止损位置有成本优势。</p></li>
-<li><p>减仓与清仓时，确保有心理优势，不贪恋后续不属于自己交易能力范围内的收益。</p></li>
-</ul>
-<p>时刻保持仓位中有至少 10% 的低波动且高流动性资产，用以随时应对市场中的极端风险。</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="trading-strategy">
+<h1>交易策略 Trading Strategy<a class="headerlink" href="#trading-strategy" title="Link to this heading">#</a></h1>
+<p>选择收益率分布属于 left skew 且收益率期望是尽可能高正值的市场，此时市场总体 beta 风险可以接受，超额收益来源于周期策略。</p>
+<p>使用市场 beta 风险对冲工具，对冲比例上限仅需要将总仓位的风险控制在 beta 风险即可，无需过度对冲导致错失收益。</p>
+<p>具体对冲比例，分 2 层考虑，一是市场 beta 风险的周期波动，在 beta 风险降低时减少对冲比例，升高时增加对冲比例；二是持有不同行业仓位时，由于使用 beta 对冲工具，需要计算不同行业的 beta 风险占比。</p>
+<p>行业风险难以使用 beta 工具对冲，因此采用多元化策略。</p>
+<p>具体标的特有风险非常难以规避，除非有可靠的 insider 信息，因此全行业 ETF 是最佳选择。</p>
+<p>周期策略的主要目的就是期望 alpha 收益，承担 beta 风险；而非期望 alpha or beta 收益，不承担风险的固收策略</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -538,7 +458,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./content\philosophy"
+            path: "./content\trading"
         },
         predefinedOutput: true
     }
@@ -556,20 +476,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="4_math.html"
+       href="3_math.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">数学原理</p>
+        <p class="prev-next-title">数学原理 Math Principles</p>
       </div>
     </a>
     <a class="right-next"
-       href="6_SOP.html"
+       href="5_SOP.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">标准操作步骤</p>
+        <p class="prev-next-title">标准操作流程 SOP</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -579,26 +499,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4 个要素</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3 个核心</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">思维理念</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">交易选择</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">风险控制</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">仓位控制</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

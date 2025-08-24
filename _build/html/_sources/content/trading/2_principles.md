@@ -1,4 +1,4 @@
-# 交易原则
+# 交易原则 Trading Principles
 
 ## 4 个要素
 
