@@ -1,4 +1,4 @@
-# Rates 利率类资产
+# Rates 利率
 
 ![global_market_size](./img/global_market_size.png)
 

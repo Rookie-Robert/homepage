@@ -15,6 +15,12 @@
 
 ---
 
+- <a href="http://sc.macromicro.me/collections/1626/hk-finance-relative/3752/hkd-interest-settlement-rates" target="_blank"><h4>Hong Kong Three Month Interbank Rate</h4></a>
+
+由于香港金管局实行港币与美元的联系汇率制度，因此为了维持 USDHKD 不突破兑换保护区间，香港银行间拆借利率（可以理解为“港币名义利率”）理论上应该和美国 SOFR 保持一致。但是由于各种原因，实际上会有波动变化，该波动变化可以反映港币的流动性状况。
+
+---
+
 - <a href="https://tradingeconomics.com/new-zealand/interest-rate" target="_blank"><h4>New Zealand Interest Rate</h4></a>
 - <a href="https://tradingeconomics.com/south-korea/interest-rate" target="_blank"><h4>South Korea Interest Rate</h4></a>
 
