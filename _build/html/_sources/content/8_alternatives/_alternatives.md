@@ -12,12 +12,25 @@ Daily
 
 > Correlation: <span style="color: red;">Very Strong</span>
 
+`信贷（Credit）`
+`杠杆（Leverage）`
+
+---
+
 Quarterly
 
 - [PitchBook VC Dealmaking Indicator](https://pitchbook.com/news/articles/the-pitchbook-vc-dealmaking-indicator)
+
+`信贷（Credit）`
+`杠杆（Leverage）`
+
+---
 
 ## IPO
 
 Daily
 
 - [Renaissance Capital IPO Center](https://www.renaissancecapital.com/IPO-Center)
+
+`信贷（Credit）`
+`杠杆（Leverage）`

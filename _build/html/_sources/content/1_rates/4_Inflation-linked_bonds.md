@@ -2,5 +2,7 @@
 
 <a href="https://tradingeconomics.com/united-states/10-year-tips-yield" target="_blank"><h4>10 Year TIPS Yield</h4></a>
 
+`信贷（Credit）`
+
 ---
 

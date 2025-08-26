@@ -450,23 +450,37 @@ document.write(`
 <div><p>Correlation: <span style="color: red;">Very Strong</span></p>
 </div></blockquote>
 <p><mark>在 Fed 的资产负债表各部分中，资产部分与负债部分是相等的。资产部分主要以 Securities Held Outright 为主，其数额与 Fed 的 QE/QT 密切相关；负债部分中变化最大的是 Deposites of Depository Institutions 部分和 Treasury Balance 部分，Deposites of Depository Institutions 与银行间资金流动性的宽松程度呈正相关，Treasury Balance 通常与美国国债价格呈正相关，与美国国债收益率呈负相关。</mark></p>
+<p><code class="docutils literal notranslate"><span class="pre">杠杆（Leverage）</span></code></p>
 <hr class="docutils" />
-<ul>
-<li><h4><a href="https://sc.macromicro.me/charts/77820/us-fed-fci-g" target="_blank">FCI-G</a> <a href="https://www.federalreserve.gov/econres/notes/feds-notes/a-new-index-to-measure-us-financial-conditions-20230630.html" target="_blank">(raw)</a></h4>
-</li>
+<ul class="simple">
+<li><p><a href="https://fred.stlouisfed.org/series/RRPONTSYD/" target="_blank"><h4>ON RRP</h4></a></p></li>
 </ul>
 <blockquote>
-<div><p>Frequency: <mark>Monthly</mark></p>
+<div><p>Frequency: <mark>Daily</mark></p>
 </div></blockquote>
 <blockquote>
-<div><p>Delay: <mark>1 M</mark></p>
+<div><p>Delay: <mark>1 D</mark></p>
 </div></blockquote>
 <blockquote>
 <div><p>Correlation: <span style="color: red;">Very Strong</span></p>
 </div></blockquote>
-<p>金融脉冲增速指数是衡量关键指标变化对金融环境的累积效果，并将此效果量化为对未来一年 GDP 增速的影响，目前根据回顾窗口（金融指标变化在指数计算中包含的期间长度，例如 1 年期代表衡量过去一年的变化）的不同分为 1 年期与 3 年期版本。正值代表 GDP 增速将面临阻力（headwinds），负值代表将受到提振（tailwinds），举例来说，指数为 1 代表金融条件将对未来一年 GDP 增速产生 1% 的拖累。</p>
-<p>衡量的指标总共有 7 种：联邦基金利率、 10 年期国债收益率、 30 年期固定按揭贷款利率、 BBB 级公司债收益率、道琼股市总报酬指数、 Zillow 房价指数与名义广义美元指数，使用 FRB / US 模型和美联储使用的其他模型所隐含的权重进行加权处理。</p>
+<p>Overnight Reverse Repurchase Agreements，隔夜逆回购是 New York Fed 在授权条件下向市场金融机构（货币基金、、做市商、商业银行等）出借国债等证券，同时从它们手中吸收短期资金（即收回流动性），并在隔日以预设利率买回证券。此操作有助于为短期利率提供下限，<mark>当 ON RRP 规模增加时，市场流动性增加，等价于给银行准备金规模增加了资金缓冲。</mark></p>
+<p><code class="docutils literal notranslate"><span class="pre">杠杆（Leverage）</span></code></p>
 <hr class="docutils" />
+<ul class="simple">
+<li><p><a href="https://sc.macromicro.me/charts/3766/hk-monetary-base" target="_blank"><h4>HK Aggregate Balance</h4></a></p></li>
+</ul>
+<blockquote>
+<div><p>Frequency: <mark>Daily</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Delay: <mark>1 D</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
+<p>银行为结算银行同业的收支及银行与金管局之间的收支，而在金管局开设的结算户口结余总额，根据货币发行局制度的运作机制，唯一会令总结余出现变动的情况，就是金管局因资金流入或流出港元作出相应行动。<mark>该指标与港币和港股的流动性呈正相关。</mark></p>
+<p><code class="docutils literal notranslate"><span class="pre">杠杆（Leverage）</span></code></p>
 </section>
 
     <script type="text/x-thebe-config">

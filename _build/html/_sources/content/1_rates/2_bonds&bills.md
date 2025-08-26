@@ -22,6 +22,8 @@ Fed 和美国财政部可以通过政策调控美国国债收益率曲线的结�
 | → `V` | 中端下降 | `债务重组末期` | 短期流动性紧缩 + 中期经济衰退预期 + 长期经济增长稳定，市场定价短期流动性紧缩不可持续 |  |
 | → `Λ` | 中端上升 | `债务重组` | 短期流动性宽松 + 中期通胀上升预期 + 长期增长疲软，容易陷入流动性陷阱 |  |
 
+`信贷（Credit）`
+
 ---
 
 - <a href="https://sc.macromicro.me/charts/35584/us-treasury-move-index" target="_blank"><h4>Merrill Lynch Option Volatility Estimate (MOVE)</h4></a>
@@ -29,6 +31,8 @@ Fed 和美国财政部可以通过政策调控美国国债收益率曲线的结�
 > Frequency: <mark>Daily</mark>
 
 > Delay: <mark>1 D</mark>
+
+`信贷（Credit）`
 
 ---
 
@@ -42,6 +46,24 @@ Fed 和美国财政部可以通过政策调控美国国债收益率曲线的结�
 
 在 10 年期美债期货的持仓者分类中，<mark>Asset Mgr 的持仓与 US10 的价格通常呈负相关</mark>。
 
+`信贷（Credit）`
+
+---
+
+- <h4><a href="https://sc.macromicro.me/charts/77820/us-fed-fci-g" target="_blank">FCI-G</a> <a href="https://www.federalreserve.gov/econres/notes/feds-notes/a-new-index-to-measure-us-financial-conditions-20230630.html" target="_blank">(raw)</a></h4>
+
+> Frequency: <mark>Monthly</mark>
+
+> Delay: <mark>1 M</mark>
+
+> Correlation: <span style="color: red;">Very Strong</span>
+
+金融脉冲增速指数是衡量关键指标变化对金融环境的累积效果，并将此效果量化为对未来一年 GDP 增速的影响，目前根据回顾窗口（金融指标变化在指数计算中包含的期间长度，例如 1 年期代表衡量过去一年的变化）的不同分为 1 年期与 3 年期版本。正值代表 GDP 增速将面临阻力（headwinds），负值代表将受到提振（tailwinds），举例来说，指数为 1 代表金融条件将对未来一年 GDP 增速产生 1% 的拖累。
+
+衡量的指标总共有 7 种：联邦基金利率、 10 年期国债收益率、 30 年期固定按揭贷款利率、 BBB 级公司债收益率、道琼股市总报酬指数、 Zillow 房价指数与名义广义美元指数，使用 FRB / US 模型和美联储使用的其他模型所隐含的权重进行加权处理。
+
+`信贷（Credit）`
+
 ---
 
 - <h4>CN10Y - CN02Y</h4>
@@ -50,10 +72,14 @@ Fed 和美国财政部可以通过政策调控美国国债收益率曲线的结�
 
 由于美国是世界上最大的消费需求国，中国是世界上最大的生产供给国，因此两国的经济是高度互补。<mark>在此前提下，CN10Y - CN02Y 与 VIX 指数在中长期呈正相关。</mark>
 
+`信贷（Credit）`
+
 ---
 
 - <h4>Yield Spread 国债利差</h4>
 
 <mark>当两国长期国债收益率都能反映本国的长期资本回报率时，二者的差值与汇率呈正相关。</mark>
+
+`信贷（Credit）`
 
 ---
