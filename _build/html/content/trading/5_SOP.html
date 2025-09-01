@@ -200,6 +200,7 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../0_macro/_macro.html">Macro 宏观</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../0_macro/reallocation.html">退出与资源重分配机制 Exit and Reallocation Mechanisms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../0_macro/1_global.html">Global 全球</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../0_macro/2_us.html">US 美国</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../0_macro/3_eu%26uk.html">Euro Zone &amp; UK 欧元区与英国</a></li>
@@ -410,7 +411,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -426,6 +429,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">收集数据并分类</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">分析数据并推理</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -437,7 +449,35 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sop">
 <h1>标准操作流程 SOP<a class="headerlink" href="#sop" title="Link to this heading">#</a></h1>
-<p>从盈利（Profit）、风险（Risk）、信贷（Credit）、杠杆（Leverage）4 个方面分析：</p>
+<section id="id1">
+<h2>收集数据并分类<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>对于所有数据指标的研究，都只分为资产端和负债端 2 类，并将负债端展开成 3 个子类。</p>
+<p>由于资产端（Asset）和负债端（Liability）的恒等关系，变化速度相对快或幅度相对大的一端将会牵引另一端发生变动。</p>
+<p>资产端主要指盈利（Profit）；负债端的 3 个子类分别是风险（Risk）、信贷（Credit）和杠杆（Leverage）。</p>
+<ul class="simple">
+<li><p>风险（Risk）：主要包含风险溢价和情绪等。</p></li>
+<li><p>信贷（Credit）：主要包含基准利率和信用利差等。</p></li>
+<li><p>杠杆（Leverage）：主要包含准备金规模和估值等。</p></li>
+</ul>
+<p>资产端驱动模型：</p>
+<blockquote>
+<div><p>盈利增加 → 信贷宽松 → 风险下降 → 杠杆扩张 → 盈利增加 → …</p>
+</div></blockquote>
+<blockquote>
+<div><p>盈利降低 → 信贷紧缩 → 风险上升 → 杠杆收缩 → 盈利降低 → …</p>
+</div></blockquote>
+<p>负债端驱动模型：</p>
+<blockquote>
+<div><p>信贷宽松 → 风险降低 → 杠杆扩张 → 盈利增加 → 信贷宽松 → …</p>
+</div></blockquote>
+<blockquote>
+<div><p>信贷紧缩 → 风险上升 → 杠杆收缩 → 盈利降低 → 盈利降低 → …</p>
+</div></blockquote>
+<p>典型的正反馈机制，导致市场出现周期波动。</p>
+</section>
+<section id="id2">
+<h2>分析数据并推理<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>从盈利、风险、信贷、杠杆 4 个方面分析：</p>
 <ol class="arabic simple">
 <li><p>确定当前宏观周期位置</p>
 <ul class="simple">
@@ -463,6 +503,7 @@ document.write(`
 <li><p>相关标的联动分析和不同标的走势分化分析</p></li>
 <li><p>短期和中期主要风险事件预警</p></li>
 </ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -519,6 +560,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">收集数据并分类</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">分析数据并推理</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

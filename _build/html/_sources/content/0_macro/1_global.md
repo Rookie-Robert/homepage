@@ -46,8 +46,6 @@ SIA 发布的半导体销售报告，提供全球各区域的半导体销售金�
 
 ---
 
-## 风险（Risk）
-
 - <a href="https://www.newyorkfed.org/research/policy/gscpi#/interactive" target="_blank"><h4>Global Supply Chain Pressure Index (GSCPI)</h4></a>
 
 > Frequency: <mark>Monthly</mark> 

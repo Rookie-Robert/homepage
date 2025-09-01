@@ -16,6 +16,29 @@ National Financial Conditions Index 尽可能全方位地反映美国金融市�
 
 ---
 
+- <a href="https://www.bls.gov/cpi/" target="_blank"><h4>Consumer Price Index</h4></a>
+- <a href="https://www.bls.gov/ppi/" target="_blank"><h4>Producer Price Indexes</h4></a>
+
+> Frequency: <mark>Monthly</mark>
+
+> Delay: <mark>1 M</mark>
+
+`盈利（Profit）`
+
+---
+
+- <a href="https://www.bls.gov/cps/" target="_blank"><h4>Current Population Survey</h4></a>
+- <a href="https://www.bls.gov/lau/" target="_blank"><h4>Local Area Unemployment</h4></a>
+- <a href="https://www.bls.gov/ces/" target="_blank"><h4>Current Employment Statistics</h4></a>
+
+> Frequency: <mark>Monthly</mark>
+
+> Delay: <mark>1 M</mark>
+
+`风险（Risk）`
+
+---
+
 - <h4>USA: Citigroup Economic Surprise Index <a href="https://cbonds.com/indexes/99130/" target="_blank">(interactive)</a> <a href="https://yardeni.com/charts/citigroup-economic-surprise/" target="_blank">(value)</a></h4>
 
 > Frequency: <mark>Daily</mark>

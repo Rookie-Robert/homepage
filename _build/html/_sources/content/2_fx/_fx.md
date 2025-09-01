@@ -10,6 +10,16 @@
 
 ---
 
+- <a href="https://www.chinamoney.org.cn/chinese/bkcurvfsw/" target="_blank"><h4>BKCURVFSW</h4></a>
+
+> Frequency: <mark>Dailly</mark>
+
+> Delay: <mark>-</mark>
+
+外汇掉期曲线是由外汇掉期各期限代表性价格（掉期点）构成的行情曲线，曲线数据包括掉期点和掉期全价汇率。交易中心外汇掉期曲线选用了外汇交易系统行情（成交价、询价报价、C-Swap订单报价）和货币经纪报价（可成交报价、意向报价）为数据样本，利用报价数据过滤了异常交易价格，数据质量较高，可作为机构中后台外汇掉期等产品定价参考基准。
+
+---
+
 - <a href="https://www.tradingster.com/cot/futures/fin/098662" target="_blank"><h4>USD INDEX Positions - ICE</h4></a>
 
 > Frequency: <mark>Weekly</mark>

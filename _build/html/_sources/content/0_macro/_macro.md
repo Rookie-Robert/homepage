@@ -1,30 +1,109 @@
 # Macro 宏观
 
-对于市场宏观和后续所有数据指标的研究，这里都只分为资产端和负债端 2 类，并将负债端展开成 3 个子类。
+市场所处的宏观周期位置，决定了对不同资产的交易偏好。
 
-由于资产端（Asset）和负债端（Liability）的恒等关系，变化速度相对快或幅度相对大的一端将会牵引另一端发生变动。
+<mark>Federal Funds Effective Rate 和 US Yield Curve 短端收益率的高低与美国通胀率呈正相关，US Yield Curve 长端收益率的高低与美国经济增长率呈正相关。</mark>
 
-资产端主要指盈利（Profit）；负债端的 3 个子类分别是风险（Risk）、信贷（Credit）和杠杆（Leverage）。
+当 Federal Funds Effective Rate 和 US Yield Curve 短端收益率的<mark>中枢值降低时</mark>，市场流动性显著增加，波动率的中枢值降低，风险资产容易出现普涨，加权指数效率高于挑选具体标的，高估值资产的收益率通常强于高盈利资产，市场容易处于 risk-on 状态。
 
-- 风险（Risk）：主要包含风险溢价和情绪等。
-- 信贷（Credit）：主要包含基准利率和信用利差等。
-- 杠杆（Leverage）：主要包含准备金规模和估值等。
+当 Federal Funds Effective Rate 和 US Yield Curve 短端收益率的<mark>中枢值升高时</mark>，市场流动性趋紧，波动率的中枢值上升，风险资产容易出现分化并呈现结构性趋势，加权指数效率弱于挑选具体标的，市场筛选机制加强，高估值资产的收益率通常弱于高盈利资产，市场容易处于 risk-off 状态。
 
-资产端驱动模型：
+US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高，经济趋向繁荣，失业率的中枢值降低；US Yield Curve 长端收益率的中枢值降低时，无风险收益率降低，经济趋向衰退，失业率的中枢值升高。
 
-> 盈利增加 → 信贷宽松 → 风险下降 → 杠杆扩张 → 盈利增加 → ...
+其他非美市场化经济体，中央银行利率与国债收益率曲线的变化对宏观经济的影响同上。
 
-> 盈利降低 → 信贷紧缩 → 风险上升 → 杠杆收缩 → 盈利降低 → ...
+不同年代都有显著的交易偏好差别，现将 1971 年美元脱离金本位后的时间进行断代。
 
-负债端驱动模型：
+## 1971 - 1977
 
-> 信贷宽松 → 风险降低 → 杠杆扩张 → 盈利增加 → 信贷宽松 → ...
+- Federal Funds Effective Rate
 
-> 信贷紧缩 → 风险上升 → 杠杆收缩 → 盈利降低 → 盈利降低 → ...
+![rate_1971-1977](./img/rate_1971-1977.png)
 
-典型的正反馈机制，导致市场出现周期波动。
+- US Yield Curve
 
-`盈利（Profit）`
-`风险（Risk）`
-`信贷（Credit）`
-`杠杆（Leverage）`
+![yc_1971-1977](./img/yc_1971-1977.png)
+
+## 1977 - 1981
+
+- Federal Funds Effective Rate
+
+![rate_1977-1981](./img/rate_1977-1981.png)
+
+- US Yield Curve
+
+![yc_1977-1981](./img/yc_1977-1981.png)
+
+## 1981 - 1988
+
+- Federal Funds Effective Rate
+
+![rate_1981-1988](./img/rate_1981-1988.png)
+
+- US Yield Curve
+
+![yc_1981-1988](./img/yc_1981-1988.png)
+
+## 1988 - 1994
+
+- Federal Funds Effective Rate
+
+![rate_1988-1994](./img/rate_1988-1994.png)
+
+- US Yield Curve
+
+![yc_1988-1994](./img/yc_1988-1994.png)
+
+## 1994 - 2000
+
+- Federal Funds Effective Rate
+
+![rate_1994-2000](./img/rate_1994-2000.png)
+
+- US Yield Curve
+
+![yc_1994-2000](./img/yc_1994-2000.png)
+
+## 2000 - 2008
+
+- Federal Funds Effective Rate
+
+![rate_2000-2008](./img/rate_2000-2008.png)
+
+- US Yield Curve
+
+![yc_2000-2008](./img/yc_2000-2008.png)
+
+## 2008 - 2016
+
+- Federal Funds Effective Rate
+
+![rate_2008-2016](./img/rate_2008-2016.png)
+
+- US Yield Curve
+
+![yc_2008-2016](./img/yc_2008-2016.png)
+
+## 2016 - 2020
+
+- Federal Funds Effective Rate
+
+![rate_2016-2020](./img/rate_2016-2020.png)
+
+- US Yield Curve
+
+![yc_2016-2020](./img/yc_2016-2020.png)
+
+## 2020 - 至今
+
+- Federal Funds Effective Rate
+
+![rate_2020-2025](./img/rate_2020-2025.png)
+
+- US Yield Curve
+
+![yc_2020-2025](./img/yc_2020-2025.png)
+
+---
+
+<a href="https://www.ustreasuryyieldcurve.com/" target="_blank">US Yield Curve source</a>

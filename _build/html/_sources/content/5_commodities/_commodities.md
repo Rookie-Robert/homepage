@@ -1,5 +1,9 @@
 # Commodities 大宗商品
 
+大宗商品的价格变动主要由供给与需求关系驱动，在期货市场，近远月价格的曲线结构中存在大量信号。
+
+当商品供给方削减资本开支并形成垄断联盟时，商品价格主要由供给变化驱动，垄断联盟的利润中枢升高；当商品供给方增加资本开支时，商品价格主要由需求变化驱动，供给方的利润水平主要由库销比决定。
+
 ## Precious Metals 贵金属
 
 - [Inflation Adjusted Gold Price](https://www.gurufocus.com/economic_indicators/4534/inflation-adjusted-gold-price-adjusted-to-todays-dollar)

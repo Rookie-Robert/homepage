@@ -200,6 +200,7 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../0_macro/_macro.html">Macro 宏观</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../0_macro/reallocation.html">退出与资源重分配机制 Exit and Reallocation Mechanisms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../0_macro/1_global.html">Global 全球</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../0_macro/2_us.html">US 美国</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../0_macro/3_eu%26uk.html">Euro Zone &amp; UK 欧元区与英国</a></li>
@@ -410,7 +411,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -426,6 +429,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">周期策略</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">量化市场极端情绪</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -437,12 +449,141 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="trading-strategy">
 <h1>交易策略 Trading Strategy<a class="headerlink" href="#trading-strategy" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>周期策略<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>选择收益率分布属于 left skew 且收益率期望是尽可能高正值的市场，此时市场总体 beta 风险可以接受，超额收益来源于周期策略。</p>
 <p>使用市场 beta 风险对冲工具，对冲比例上限仅需要将总仓位的风险控制在 beta 风险即可，无需过度对冲导致错失收益。</p>
 <p>具体对冲比例，分 2 层考虑，一是市场 beta 风险的周期波动，在 beta 风险降低时减少对冲比例，升高时增加对冲比例；二是持有不同行业仓位时，由于使用 beta 对冲工具，需要计算不同行业的 beta 风险占比。</p>
 <p>行业风险难以使用 beta 工具对冲，因此采用多元化策略。</p>
 <p>具体标的特有风险非常难以规避，除非有可靠的 insider 信息，因此全行业 ETF 是最佳选择。</p>
 <p>周期策略的主要目的就是期望 alpha 收益，承担 beta 风险；而非期望 alpha or beta 收益，不承担风险的固收策略</p>
+</section>
+<section id="id2">
+<h2>量化市场极端情绪<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p><mark>通过有波动性的金融市场让财富增值，极大程度上依靠的不是每日观察标的价格 K 线图和阅读每日新闻等常规“努力”的操作，而是在频率较低的极端尾部事件发生时的应对策略。</mark></p>
+<p>通过大量事例可以说明在极端尾部事件发生时，市场上几乎充满了噪声。此时需要：</p>
+<ul class="simple">
+<li><p>提取并使用数据观察市场结构的短、中、长期流动性结构是否发生变化。</p></li>
+<li><p>思考主导事件的参与者利益结构，包括但不限于身份与底线、获利动机、获利方向、获利规模等。</p></li>
+</ul>
+<details>
+<summary>市场极端情绪事例</summary>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2021 年 4 月中旬，crypto 交易机构 Coinbase 在美股上市。当时的市场氛围是散户群情激昂，以 ETH 为首的 altcoin 价格更是涨幅惊人，新闻媒体更是宣布“元宇宙”时代已经到来。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2021 年 11 月上旬，BTC 价格来到 69,000$，Elon Musk 更是在 Twitter 上发表 post 助推市场 FOMO 情绪。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2022 年 2 月下旬，Russia 发动对 Ukraine 的战争，当日全球风险资产大幅下跌，避险资产大幅上涨，新闻媒体更是宣布“第三次世界大战”已经开始。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2022 年中，由 Luna 崩盘导致的 crypto 市场流动性继续紧缩，以 ETH 为首的 altcoin 价格跌幅巨大，新闻媒体更是宣扬 ETH 等大型项目代币即将归零和“元宇宙”不可实现理论。</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2022 年中，由于 RUS-UKR 战争和中国大陆疫情封锁导致的全球大宗商品和制成品的供应链压力，全球平均通胀率飙升，能源、金属和农产品等大宗商品价格持续上涨，新闻媒体更是宣扬 1970s 的超级滞涨周期已经到来。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2022 年 Q4，美国经济持续面临高通胀压力，Fed 多次大幅加息导致全球风险资产相比年初跌幅巨大，大量年初的明星科技公司股价崩盘和 crypto 机构破产如 FTX，大量市场卖方机构宣传主题是风险资产价格将会继续暴跌的研报。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2023 年 1 月下旬，由于中国大陆在 2022 年底全面解除疫情风控，导致恒生指数价格仅在一个季度内就上涨超过 50%，新闻媒体和大量市场卖方机构宣传中国经济重新回到高增长的正轨。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2023 年 3 月中旬，SVB 和 Swiss Credit 两家中大型银行的破产，导致全球已上市的金融机构股价出现大幅波动，新闻媒体更是宣扬 2008 年次贷危机规模的全球金融危机马上就会发生。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2024 年 8 月上旬，Nikkei 225 指数单日下跌超过 10%，引发全球风险资产大幅波动，VIX 指数大幅飙升，新闻媒体宣扬本轮 AI 科技浪潮的泡沫已经破灭。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2025 年 4 月，D. Trump 和中国官方持续加码全面报复性关税，甚至超过 200%，全球风险资产大跌，VIX 指数大幅飙升，新闻媒体更是宣扬“第三次世界大战”已经开始。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：2025 年 5 月，由于 D. Trump 引发的一系列全球关税事件，美元指数自年初大跌，黄金持续暴涨，新闻媒体更是渲染重回“金本位”时代，黄金价格即将复现 1970s 的涨幅。</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><p>噪声：</p>
+</div></blockquote>
+<blockquote>
+<div><p>后市：</p>
+</div></blockquote>
+<blockquote>
+<div><p>信号：</p>
+</div></blockquote>
+</details>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -499,6 +640,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">周期策略</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">量化市场极端情绪</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
