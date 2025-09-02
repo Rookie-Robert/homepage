@@ -9,6 +9,16 @@
 | 东亚发达地区（日本、韩国、香港、台湾） | 长期较低 | 人口老龄化严重，内需严重不足 |
 | 新兴市场 | 波动率大，周期性估值，平均估值较低 | 经济结构不稳定，政策风险高 |
 
+- <h4><a href="https://fred.stlouisfed.org/series/VIXCLS" target="_blank">CBOE Volatility Index: VIX</a> / <a href="https://fred.stlouisfed.org/series/VXEEMCLS" target="_blank">CBOE Emerging Markets ETF Volatility Index</a></h4>
+
+> Frequency: <mark>Daily</mark>
+
+> Delay: <mark>2 D</mark>
+
+> Correlation: <span style="color: red;">Very Strong</span>
+
+<mark>美国权益市场波动率与新兴权益市场波动率的比值，与市场恐慌情绪呈正相关。</mark>
+
 ## 经济周期 4 阶段中各因素的相对强弱关系
 
 ![Exhibit_1](./img/Exhibit_1.png)

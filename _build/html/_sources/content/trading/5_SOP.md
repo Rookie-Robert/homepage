@@ -44,8 +44,40 @@
    - put/call ratio 和 put - call spread
    - 季节性波动
 
-4. 权益市场 insider 公开操作
+4. 波动率分析
 
-5. 相关标的联动分析和不同标的走势分化分析
+![VIX_cycle](./img/VIX_cycle.png)
 
-6. 短期和中期主要风险事件预警
+<details>
+<summary>Mermaid code</summary>
+
+```
+---
+title: 波动率转换模型
+---
+stateDiagram-v2
+    state "极度贪婪：
+        持续低波动率；
+        VIX 累计移仓收益；
+        持续报道更有利的新闻" 
+        as low
+    state "极度恐慌：
+        超级高波动率；
+        VIX super back 结构；
+        持续报道更不利的新闻"
+        as high
+    
+    low --> high : VIX 曲线转 back 结构
+
+    high --> low : VIX 曲线持续 contango 结构；VIX 中枢值下移
+
+```
+
+</details>
+<br>
+
+5. 权益市场 insider 公开操作
+
+6. 相关标的联动分析和不同标的走势分化分析
+
+7. 短期和中期主要风险事件预警

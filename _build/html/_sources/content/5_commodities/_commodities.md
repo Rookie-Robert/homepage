@@ -7,6 +7,7 @@
 ## Precious Metals 贵金属
 
 - [Inflation Adjusted Gold Price](https://www.gurufocus.com/economic_indicators/4534/inflation-adjusted-gold-price-adjusted-to-todays-dollar)
+- [CBOE Gold ETF Volatility Index](https://fred.stlouisfed.org/series/GVZCLS)
 - [Gold Silver ratio](https://sc.macromicro.me/collections/3351/commodity-silver/26722/gold-silver-copper-ratio)
 - [GOLD Positions - COMEX](https://www.tradingster.com/cot/futures/disagg/088691)
 - [SILVER Positions - COMEX](https://www.tradingster.com/cot/futures/disagg/084691)
@@ -17,6 +18,7 @@
 
 ## Energy 能源
 
+- [CBOE Crude Oil ETF Volatility Index](https://fred.stlouisfed.org/series/OVXCLS)
 - [WTI-PHYSICAL Positions - NYMEX](https://www.tradingster.com/cot/futures/disagg/067651)
 - [Baker Hughes Crude Oil Rigs](https://tradingeconomics.com/united-states/crude-oil-rigs)
 

@@ -453,39 +453,66 @@ document.write(`
 <h1>Credit 信用类资产<a class="headerlink" href="#credit" title="Link to this heading">#</a></h1>
 <section id="ratings">
 <h2>Ratings 评级<a class="headerlink" href="#ratings" title="Link to this heading">#</a></h2>
-<p>Quarterly</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://countryeconomy.com/ratings">Sovereigns Ratings List</a></p></li>
+<li><p><a href="https://countryeconomy.com/ratings" target="_blank"><h4>Sovereigns Ratings List</h4></a></p></li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">风险（Risk）</span></code></p>
 </section>
 <hr class="docutils" />
 <section id="investment-grade-bonds">
 <h2>Investment Grade Bonds 投资级企业债<a class="headerlink" href="#investment-grade-bonds" title="Link to this heading">#</a></h2>
-<p>Daily</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://fred.stlouisfed.org/series/BAMLC0A0CM">ICE BofA US Corporate Index Option-Adjusted Spread</a></p></li>
-<li><p><a class="reference external" href="https://fred.stlouisfed.org/series/BAMLCC0A0CMTRIV">ICE BofA US Corporate Index Total Return Index Value</a></p></li>
+<li><p><a href="https://fred.stlouisfed.org/series/BAMLC0A0CM" target="_blank"><h4>ICE BofA US Corporate Index Option-Adjusted Spread</h4></a></p></li>
+<li><p><a href="https://fred.stlouisfed.org/series/BAMLCC0A0CMTRIV" target="_blank"><h4>ICE BofA US Corporate Index Total Return Index Value</h4></a></p></li>
 </ul>
+<blockquote>
+<div><p>Frequency: <mark>Daily</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Delay: <mark>2 D</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
+<p>美国投资级企业债券收益率与美国国债 10Y 收益率的差值，反映市场对大型权益资产的风险偏好，<mark>与权益市场的估值呈正相关</mark>。</p>
 <p><code class="docutils literal notranslate"><span class="pre">信贷（Credit）</span></code></p>
 </section>
 <hr class="docutils" />
 <section id="high-yield-bonds">
 <h2>High Yield Bonds 高收益垃圾债<a class="headerlink" href="#high-yield-bonds" title="Link to this heading">#</a></h2>
-<p>Daily</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2">ICE BofA US High Yield Index Option-Adjusted Spread</a></p></li>
-<li><p><a class="reference external" href="https://fred.stlouisfed.org/series/BAMLHYH0A0HYM2TRIV">ICE BofA US High Yield Index Total Return Index Value</a></p></li>
+<li><p><a href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2" target="_blank"><h4>ICE BofA US High Yield Index Option-Adjusted Spread</h4></a></p></li>
+<li><p><a href="https://fred.stlouisfed.org/series/BAMLHYH0A0HYM2TRIV" target="_blank"><h4>ICE BofA US High Yield Index Total Return Index Value</h4></a></p></li>
 </ul>
+<blockquote>
+<div><p>Frequency: <mark>Daily</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Delay: <mark>2 D</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
+<p>美国垃圾级企业债券收益率与美国国债 10Y 收益率的差值，反映市场对中小型权益资产的风险偏好，<mark>与权益市场的估值呈正相关</mark>。</p>
 <p><code class="docutils literal notranslate"><span class="pre">信贷（Credit）</span></code></p>
 </section>
 <hr class="docutils" />
 <section id="others">
 <h2>Others 其他<a class="headerlink" href="#others" title="Link to this heading">#</a></h2>
-<p>Quarterly</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://sc.macromicro.me/collections/9/us-market-relative/1241/us-bank-net-percent-tight-loan">SLOOS</a> (<a class="reference external" href="https://www.federalreserve.gov/default.htm">raw</a>)</p></li>
+<ul>
+<li><h4><a href="https://sc.macromicro.me/collections/9/us-market-relative/1241/us-bank-net-percent-tight-loan" target="_blank">SLOOS</a> <a href="https://www.federalreserve.gov/default.htm" target="_blank">(raw)</a></h4>
+</li>
 </ul>
+<blockquote>
+<div><p>Frequency: <mark>Quarterly</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Delay: <mark>-</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
+<p>Fed 为了更准确了解银行对于企业放贷的供需变化，针对约 80 家国内银行与约 20 间位于美国的外国银行分支机构进行调查，发布资深核贷人员意见调查报告（Senior Loan Officer Opinion Survey, SLOOS），内容包括放贷标准与条款变动、放贷供给和需求变动，调查结果整体以 0 为临界点。<mark>该指标与权益市场和信贷市场的资金流动性呈负相关。</mark></p>
 <p><code class="docutils literal notranslate"><span class="pre">信贷（Credit）</span></code></p>
 </section>
 </section>

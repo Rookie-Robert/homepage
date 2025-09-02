@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Trading Journal &#8212; 记忆的传承</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/journal/2025/9/2';</script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/favicon.ico" class="logo__image only-light" alt="记忆的传承 - Home"/>
+    <script>document.write(`<img src="../../../../_static/favicon.ico" class="logo__image only-dark" alt="记忆的传承 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    记忆的传承
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../philosophy/0_philosophy.html">我的哲学</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../philosophy/1_safety.html">安全</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../philosophy/2_health.html">健康与长寿</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../information/0_info.html">有关信息</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../information/1_info_source.html">信息源</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../information/2_high_signal_info.html">如何获取有效信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../information/3_llm_prompt_engineering.html">LLM Prompt Engineering</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../trading/0_trading.html">交易 Trading</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../trading/1_market.html">市场 The Market</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../trading/2_principles.html">交易原则 Trading Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../trading/3_math.html">数学原理 Math Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../trading/4_strategy.html">交易策略 Trading Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../trading/5_SOP.html">标准操作流程 SOP</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../0_macro/_macro.html">Macro 宏观</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/reallocation.html">退出与资源重分配机制 Exit and Reallocation Mechanisms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/1_global.html">Global 全球</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/2_us.html">US 美国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/3_eu%26uk.html">Euro Zone &amp; UK 欧元区与英国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/4_jp%26kr%26tw.html">Japan &amp; South Korea &amp; Taiwan 日本、韩国、台湾</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/5_hk%26cn.html">Hong Kong &amp; Chinese Mainland 香港与中国大陆</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../0_macro/6_em.html">Emerging Market 新兴市场</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../1_rates/_rates.html">Rates 利率</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/1_benchmark_rate.html">Benchmark Interest Rate 基准利率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/2_bonds%26bills.html">Government Bonds &amp; Treasury Bills 长期债券与短期国库券</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/3_liquidity_indicators.html">Liquidity Indicators 流动性指标</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/4_Inflation-linked_bonds.html">Inflation Linked Bonds 通胀挂钩债券</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../1_rates/5_interest_rate_swaps.html">Interest Rate Swaps 利率互换</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../2_fx/_fx.html">Foreign Exchange 外汇</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3_equities/_equities.html">Equities 权益资产</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/1_us.html">US 美国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/2_eu%26uk.html">Euro Zone &amp; UK 欧元区与英国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/3_jp%26kr%26tw%26sg.html">Japan &amp; South Korea &amp; Taiwan &amp; Singapore 日本、韩国、台湾、新加坡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/4_hk%26cn.html">Hong Kong &amp; Chinese Mainland 香港与中国大陆</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3_equities/5_em.html">Emerging Market 新兴市场</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../4_credit/_credit.html">Credit 信用类资产</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../5_commodities/_commodities.html">Commodities 大宗商品</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../6_real_estate/_real_estate.html">Real Estate 不动产</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../7_crypto/_crypto.html">Crypto</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../8_alternatives/_alternatives.html">Alternatives 另类资产</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../journal.html">Trading Journal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2025.html">2025</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quarterly/dir.html">季度随笔</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../books/_dir.html">读书笔记</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/journal/2025/9/2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../_sources/content/journal/2025/9/2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Trading Journal</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="trading-journal">
+<h1>Trading Journal<a class="headerlink" href="#trading-journal" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
+<p><strong>日期</strong>：September 2, 2025</p>
+<hr class="docutils" />
+<p><strong>驱动事件</strong>：</p>
+<blockquote>
+<div><p>无</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>资产价格</strong>：</p>
+<blockquote>
+<div><p>美国国债收益率曲线 contango 结构陡峭化，短端收益率下跌，长端收益率上涨。</p>
+</div></blockquote>
+<blockquote>
+<div><p>黄金现货价格继续大幅上涨，美元指数、美国 10Y 收益率波动较小，美股三大指数期货主连价格继上一个交易日大跌后继续高位横盘，VIX 指数期货主连价格低位横盘，Russell 2000 指数期货主连价格高位横盘。</p>
+</div></blockquote>
+<blockquote>
+<div><p>美国 IG 利差继续低位小幅反弹，HY 利差继续低位下跌。</p>
+</div></blockquote>
+<blockquote>
+<div><p>黄金现货价格与白银现货价格比值继续下跌，创年内新低。</p>
+</div></blockquote>
+<blockquote>
+<div><p>金矿股 ETF 在 August 上涨 20%+，幅度超过黄金现货。</p>
+</div></blockquote>
+<blockquote>
+<div><p>SPXU/UVXY 的周 VIX Fix 指数处于 1.6 的低位。</p>
+</div></blockquote>
+<blockquote>
+<div><p>USD.CNY 外汇掉期曲线继续维持 back 结构。</p>
+</div></blockquote>
+<blockquote>
+<div><p>沪深股指与恒生指数价格高位横盘震荡。</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>数据指标</strong>：</p>
+<blockquote>
+<div><p>FedWatch 显示相比上一周的交易日，市场对 Fed 在 September 的 FOMC 降息 25 bps 的概率维持高位；Fed ON RRP 规模依然处于 0 附近的低位。</p>
+</div></blockquote>
+<blockquote>
+<div><p>NFCI Index 上周继续小幅降低。</p>
+</div></blockquote>
+<blockquote>
+<div><p>NAAIM Exposure Index 在上周周中高位小幅回落到 92.94。</p>
+</div></blockquote>
+<blockquote>
+<div><p>在今日交易时段可查看的上一个交易日的数据中，S&amp;P 500 的 Cboe 5d avg. put/call ratio 处于 0.64 位置，Cboe 10d avg. put/call ratio 处于 0.86 的位置；QQQ 的 put-call spread 上升到 +5.8 的位置。</p>
+</div></blockquote>
+<blockquote>
+<div><p>近期美股市场的大规模 Insider 交易中，Sale 比例远高于 Buy。</p>
+</div></blockquote>
+<blockquote>
+<div><p>随着 September 美国企业缴税季的到来，Volatility Index, Treasury Bond, Gold 的价格将会季节性地上升。</p>
+</div></blockquote>
+<blockquote>
+<div><p>沪深市场的 Insider Buy/Sell Ratio 继续维持 0.08 的极低位置。</p>
+</div></blockquote>
+<blockquote>
+<div><p>Brazil 中央银行自 2024 September 以来连续 7 次加息。</p>
+</div></blockquote>
+<blockquote>
+<div><p>美国 Citigroup Economic Surprise Index 在 0 以上低位快速上升，欧元区 CESI 在 0 以上中低位横盘，中国 CESI 在 0 以下低位横盘。</p>
+</div></blockquote>
+<blockquote>
+<div><p>美国零售与食品销售额经通胀调整后的数值在横盘区间并倾斜向上，与多年均值线重合。</p>
+</div></blockquote>
+<blockquote>
+<div><p>台湾 July 出口额同比上涨 40%+，该增速创 2011 以来新高。</p>
+</div></blockquote>
+<blockquote>
+<div><p>美国 SLOOS 在 Q3 维持 0 以上低位。</p>
+</div></blockquote>
+<blockquote>
+<div><p>美元指数的 ICE 期货 Asset Mgr 净持仓继续维持近 10 年最低位置，EURUSD 的 CME 期货 Asset Mgr 净持仓继续维持近 10 年高位。</p>
+</div></blockquote>
+<blockquote>
+<div><p>美国 MBA Mortgage Market Index 自 August 以来继续从低位小幅上升。</p>
+</div></blockquote>
+<blockquote>
+<div><p>Baker Hughes 原油钻井平台数量自 August 停止下跌开始短期横盘。</p>
+</div></blockquote>
+<blockquote>
+<div><p>PitchBook VC-Backed IPO Index PR 自 June 下旬开始已经持续回调超过 2 个月；PitchBook VC Dealmaking Indicator 的 Early Stage Index 已经下跌到 54.1 的位置。</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>分析推理</strong>：</p>
+<blockquote>
+<div><p>从美国 IG 和 HY 利差仍处在低位、黄金现货价格与白银现货价格比值创年内新低、美股市场的大规模 Insider 交易中 Sale 比例远高于 Buy、美国 CESI 在 0 以上低位快速上升可以看出，<mark>市场的风险偏好过于乐观</mark>，但随着 September 美国企业缴税季的到来，VIX 和 Gold 的价格将会季节性地上升，其中黄金现货和金矿股 ETF 的价格已经开始反映。</p>
+</div></blockquote>
+<blockquote>
+<div><p>如果从 September 开始，全球以美国权益市场为主的风险资产有大幅度的调整，从NFCI Index 上周继续小幅降低、美国 SLOOS 在 Q3 维持 0 以上低位可以看出，<mark>调整主要会以降低过度拥挤的风险资产仓位为主，而非流动性的结构性紧缩，毕竟 Fed 和全球主要央行依然都处于降息周期</mark>。</p>
+</div></blockquote>
+<blockquote>
+<div><p>从中长期看，由于美国 MBA Mortgage Market Index 自 August 以来继续从低位小幅上升、美国零售与食品销售额经通胀调整后的数值与多年均值线重合、Brazil 中央银行自 2024 September 以来连续 7 次加息，<mark>都显示美国的实体经济和消费将会持续复苏和繁荣，并推升通胀率，因此主要依靠流动性或超额预期的风险资产价格恐难以持续高涨</mark>。</p>
+</div></blockquote>
+<blockquote>
+<div><p><mark>PitchBook 一级市场相关指数上次处于相同位置可以追溯到 2017 Q4 和 2021 Q2</mark>，当时正处于非美货币汇率、非美权益市场指数价格和 crypto 价格的高位，而此时从 USD.CNY 外汇掉期曲线继续维持 back 结构、沪深股指与恒生指数价格高位横盘震荡、美元指数和 EURUSD 的期货持仓位置也可以推出，<mark>在 Fed 在 September 降息后，由于美国实体经济的持续复苏和繁荣，处于高位的非美货币汇率、非美权益市场指数价格和 crypto 价格恐难以继续维持，而全球主力资金将从非美市场流向美国市场，并在全球风险资产共振波动后继续推升美国权益资产价格</mark>。</p>
+</div></blockquote>
+<blockquote>
+<div><p>由于 SPXU/UVXY 的周 VIX Fix 指数处于 1.6 的低位，<span style="color: green;">因此清仓 FNGU 做多持仓并减仓 NAIL 的做多持仓</span>，<span style="color: red;">加仓 UVIX 的做多持仓</span>。</p>
+</div></blockquote>
+<blockquote>
+<div><p>由于金矿股的 Insider Buy/Sell Ratio 处于极低位置，因此不考虑建仓；从中长期考虑，由于美股 Energy 和 Healthcare 行业的估值相对较低且盈利能力较强，因此在后续从以流动性驱动为主转向以盈利驱动为主的持仓转换时，重点关注这两个行业。</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>持仓交易</strong>：</p>
+<blockquote>
+<div><p><strong>风险暴露</strong>：NAIL 与 Fed 后续的宽松程度呈正相关，警惕因后续通胀上升导致的 Fed “鹰派”政策；UVIX 的持仓比例已经不仅是对冲 NAIL 的做多仓位，等价于做空 S&amp;P 500 指数，警惕后续市场情绪持续乐观导致做多波动率指数磨损下跌。</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>持仓比例</strong>：NAIL / UVIX / USD cash = 50-!% / 10+?% / 40+!-?%</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>止损位置</strong>：如果 UVIX 的上涨无法对冲 NAIL 的下跌且 NAIL 的收盘价跌破 August 22 的起涨位置，则立即减仓止损；如果 S&amp;P 500 指数收盘价超过 August 28 且 UVIX 持续大幅下跌，则立即减仓止损。</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>止盈位置</strong>：无</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>情绪波动</strong>：</p>
+<p>平静，等待 September 可能的市场波动。</p>
+<hr class="docutils" />
+<p><strong>复盘</strong>：</p>
+<p><mark></mark>。</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\journal\2025\9"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 深 Robert
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

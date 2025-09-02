@@ -499,6 +499,35 @@ document.write(`
 <li><p>季节性波动</p></li>
 </ul>
 </li>
+<li><p>波动率分析</p></li>
+</ol>
+<p><img alt="VIX_cycle" src="../../_images/VIX_cycle.png" /></p>
+<details>
+<summary>Mermaid code</summary>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>---
+title: 波动率转换模型
+---
+stateDiagram-v2
+    state &quot;极度贪婪：
+        持续低波动率；
+        VIX 累计移仓收益；
+        持续报道更有利的新闻&quot; 
+        as low
+    state &quot;极度恐慌：
+        超级高波动率；
+        VIX super back 结构；
+        持续报道更不利的新闻&quot;
+        as high
+    
+    low --&gt; high : VIX 曲线转 back 结构
+
+    high --&gt; low : VIX 曲线持续 contango 结构；VIX 中枢值下移
+
+</pre></div>
+</div>
+</details>
+<br>
+<ol class="arabic simple" start="5">
 <li><p>权益市场 insider 公开操作</p></li>
 <li><p>相关标的联动分析和不同标的走势分化分析</p></li>
 <li><p>短期和中期主要风险事件预警</p></li>

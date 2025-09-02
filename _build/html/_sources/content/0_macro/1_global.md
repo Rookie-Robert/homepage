@@ -71,3 +71,5 @@ the Global Supply Chain Pressure Index (GSCPI) 用于衡量全球供应链压力
 FDI 外国直接投资用于衡量国家或地区对国际资金的吸引力，<mark>与国际资金对该国家或地区的经济发展和产业政策的积极情绪呈正相关</mark>。
 
 `杠杆（Leverage）`
+
+---
