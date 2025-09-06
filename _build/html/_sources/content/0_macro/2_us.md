@@ -8,7 +8,7 @@
 
 > Correlation: <span style="color: red;">Very Strong</span>
 
-National Financial Conditions Index 尽可能全方位地反映美国金融市场状况，涵盖货币市场、债券市场、权益市场、传统银行系统和“影子”银行系统等。<mark>该指标与风险资产的价格呈负相关。</mark>
+National Financial Conditions Index 尽可能全方位地反映美国金融市场状况，涵盖货币市场、债券市场、权益市场、传统银行系统和“影子”银行系统等。<mark>该指标与风险资产的价格呈负相关，且会在后期进行数据修正。</mark>
 
 `风险（Risk）`
 `信贷（Credit）`
