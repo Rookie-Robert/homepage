@@ -1,0 +1,28 @@
+body {
+	background-image: url('https://images.unsplash.com/photo-1491582325207-80d06869fb3d?dpr=1&auto=compress,format&fit=crop&w=755&h=&q=80&cs=tinysrgb&crop=');
+	background-size: cover;
+	background-position: center;
+	padding-top: 70px;
+
+}
+/* Header Area */ 
+.navbar {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.navbar-collapse .navbar-nav>li>a {
+	color: #fff;
+}
+.navbar-default .navbar-brand{
+	color: #fff;
+}
+
+/* Container Area */ 
+.jumbotron {
+	color: #2c3e50;
+	background-color: #ecf0f1;
+	border: 1px solid #D6DBDF;
+	margin-top: 10px;
+}
