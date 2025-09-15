@@ -4,7 +4,7 @@
 
 > Correlation: <span style="color: red;">Very Strong</span>
 
-<mark>TIPS 收益率与 Yield Curve 长端收益率的中枢值呈正相关。</mark>
+<mark>US 10Y TIPS ≈ US10Y（美国 10 年期国债收益率） - T10YIE（美国 10 年期通胀预期），美元指数的变动与 US TIPS 收益率呈正相关。</mark>
 
 `信贷（Credit）`
 
