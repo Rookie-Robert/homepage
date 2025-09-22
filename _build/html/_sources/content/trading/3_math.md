@@ -1,4 +1,4 @@
-# 数学原理 Math Principles
+# 数学 Mathematics
 
 - 知识迁移，跨学科套利。
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>交易策略 Trading Strategy &#8212; 记忆的传承 Memoirs</title>
+    <title>市场结构 Market Structures &#8212; 记忆的传承 Memoirs</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/trading/4_strategy';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/trading/1_structures';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="标准操作流程 SOP" href="5_SOP.html" />
-    <link rel="prev" title="数学原理 Math Principles" href="3_math.html" />
+    <link rel="next" title="交易原则 Trading Principles" href="2_principles.html" />
+    <link rel="prev" title="交易 Trading" href="0_trading.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -207,12 +207,12 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="0_trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1_market.html">市场 The Market</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">市场结构 Market Structures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2_principles.html">交易原则 Trading Principles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学原理 Math Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学 Mathematics</a></li>
 
 
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">交易策略 Trading Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_strategies.html">策略 Strategies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="5_SOP.html">标准操作流程 SOP</a></li>
 </ul>
 </details></li>
@@ -327,7 +327,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/trading/4_strategy.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/trading/1_structures.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +357,7 @@
       
       
       
-      <li><a href="../../_sources/content/trading/4_strategy.md" target="_blank"
+      <li><a href="../../_sources/content/trading/1_structures.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -441,7 +441,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>交易策略 Trading Strategy</h1>
+    <h1>市场结构 Market Structures</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -451,8 +451,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">周期策略</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">量化市场极端情绪</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">不断演化的市场</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">非对称风险</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">“反脆弱”的生存方式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4 个要素</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3 个核心</a></li>
 </ul>
             </nav>
         </div>
@@ -464,142 +467,90 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="trading-strategy">
-<h1>交易策略 Trading Strategy<a class="headerlink" href="#trading-strategy" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="market-structures">
+<h1>市场结构 Market Structures<a class="headerlink" href="#market-structures" title="Link to this heading">#</a></h1>
 <section id="id1">
-<h2>周期策略<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<p>选择收益率分布属于 left skew 且收益率期望是尽可能高正值的市场，此时市场总体 beta 风险可以接受，超额收益来源于周期策略。</p>
-<p>使用市场 beta 风险对冲工具，对冲比例上限仅需要将总仓位的风险控制在 beta 风险即可，无需过度对冲导致错失收益。</p>
-<p>具体对冲比例，分 2 层考虑，一是市场 beta 风险的周期波动，在 beta 风险降低时减少对冲比例，升高时增加对冲比例；二是持有不同行业仓位时，由于使用 beta 对冲工具，需要计算不同行业的 beta 风险占比。</p>
-<p>行业风险难以使用 beta 工具对冲，因此采用多元化策略。</p>
-<p>具体标的特有风险非常难以规避，除非有可靠的 insider 信息，因此全行业 ETF 是最佳选择。</p>
-<p>周期策略的主要目的就是期望 alpha 收益，承担 beta 风险；而非期望 alpha or beta 收益，不承担风险的固收策略</p>
+<h2>不断演化的市场<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>市场不像物理定律那样稳定不变，它更像是一个生态系统。参与者根据环境变化调整行为，策略的有效性会随时间演化。</p>
+<p>所以教科书式的定理不是市场定理，仅仅是人们一厢情愿的期望，真正的市场参与者不能指望通过掌握定理来驾驭市场。</p>
+<p>因此绞尽脑汁设计出一套完美的静态不变的模型是不现实的，应该尽早地置身其中，让身体和心灵随着市场一起演化，在共同演化中适应市场。</p>
+<p>市场拥有反身性（reflexivity），它并不是被外部的“真实价值”所驱动，而是由参与者对未来的预期、行为，以及这些行为对市场本身的反馈机制，共同构成的一个循环系统。</p>
+<blockquote>
+<div><p>市场不是寻找真理的工具，而是制造错觉的机制。</p>
+</div></blockquote>
+<p>市场的周期性来源于反身性，当再也没有一个人能参与到市场中时，周期到达了顶部；当再也没有一个人能从市场中退出时，周期到达了底部。不要执念周期一定会在某时反转，同样因为反身性，周期也会变形。</p>
+<p>如同跟随自然界演化的生物，其演化的目的并不是为了驾驭自然界，而是在不断演化的自然界中持续生存。因此市场参与者的唯一目的就是持续地在市场中生存。</p>
 </section>
 <section id="id2">
-<h2>量化市场极端情绪<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p><mark>通过有波动性的金融市场让财富增值，极大程度上依靠的不是每日观察标的价格 K 线图和阅读每日新闻等常规“努力”的操作，而是在频率较低的极端尾部事件发生时的应对策略。</mark></p>
-<p>通过大量事例可以说明在极端尾部事件发生时，市场上几乎充满了噪声。此时需要：</p>
+<h2>非对称风险<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>由于没有完全相同的市场参与者，因此各自承担的风险也是不对称的。为了尽可能提高自己在市场上生存的概率，参与者应该：</p>
 <ul class="simple">
-<li><p>提取并使用数据观察市场结构的短、中、长期流动性结构是否发生变化。</p></li>
-<li><p>思考主导事件的参与者利益结构，包括但不限于身份与底线、获利动机、获利方向、获利规模等。</p></li>
+<li><p>迁移到生存条件更好的细分市场。</p></li>
+<li><p>不参与自己不熟悉的细分市场，弱水三千只取一瓢。</p></li>
+<li><p>不与市场趋势相抗衡。</p></li>
 </ul>
-<details>
-<summary>市场极端情绪事例</summary>
-<hr class="docutils" />
+</section>
+<section id="id3">
+<h2>“反脆弱”的生存方式<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>脆弱（Fragile）：在压力和不确定性中受损。</p></li>
+<li><p>强韧（Robust）：能抵御冲击但没有获益。</p></li>
+<li><p>反脆弱（Anti-fragile）：在不确定性中受益，变得更强。</p></li>
+</ul>
+<p>能够跟随自然界一起演化的生物都具有反脆弱性，因此能够长期跟随市场一起演化的参与者也都必须具备反脆弱性。</p>
+<p>反脆弱性会堆砌冗余，以备不时之需。市场参与者需要时刻持有在未知风险来临时，能够有非线性“爆发式”对冲风险敞口的保险。这里只需要回答 2 个问题：谁是谁的非线性“爆发式”对冲保险？风险敞口和对冲保险的比例是否合适？</p>
+<p>此时，并不需要也不可能对市场进行精准地预测，仅仅需要准备好应对市场各种可能的变化即可，这样也能避免被大量市场噪声干扰。</p>
+<p>除此之外，反脆弱性还体现在以下几点：</p>
+<ul class="simple">
+<li><p>多次尝试，允许犯小错，抓住一次确定性极高的大机会，让一次机会的获益弥补此前所有的错误后仍然有大幅增益。</p></li>
+<li><p>不迷恋平庸的机会，将休整状态作为常态。</p></li>
+<li><p>兵贵神速，将及时撤退作为本能，三十六计走为上。</p></li>
+<li><p>见好就收，不能过分贪婪。</p></li>
+</ul>
 <blockquote>
-<div><p>噪声：2021 年 4 月中旬，crypto 交易机构 Coinbase 在美股上市。当时的市场氛围是散户群情激昂，以 ETH 为首的 altcoin 价格更是涨幅惊人，新闻媒体更是宣布“元宇宙”时代已经到来。</p>
+<div><p>Be faster, be smarter, or cheat.</p>
 </div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2021 年 11 月上旬，BTC 价格来到 69,000$，Elon Musk 更是在 Twitter 上发表 post 助推市场 FOMO 情绪。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2022 年 2 月下旬，Russia 发动对 Ukraine 的战争，当日全球风险资产大幅下跌，避险资产大幅上涨，新闻媒体更是宣布“第三次世界大战”已经开始。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2022 年中，由 Luna 崩盘导致的 crypto 市场流动性继续紧缩，以 ETH 为首的 altcoin 价格跌幅巨大，新闻媒体更是宣扬 ETH 等大型项目代币即将归零和“元宇宙”不可实现理论。</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2022 年中，由于 RUS-UKR 战争和中国大陆疫情封锁导致的全球大宗商品和制成品的供应链压力，全球平均通胀率飙升，能源、金属和农产品等大宗商品价格持续上涨，新闻媒体更是宣扬 1970s 的超级滞涨周期已经到来。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2022 年 Q4，美国经济持续面临高通胀压力，Fed 多次大幅加息导致全球风险资产相比年初跌幅巨大，大量年初的明星科技公司股价崩盘和 crypto 机构破产如 FTX，大量市场卖方机构宣传主题是风险资产价格将会继续暴跌的研报。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2023 年 1 月下旬，由于中国大陆在 2022 年底全面解除疫情风控，导致恒生指数价格仅在一个季度内就上涨超过 50%，新闻媒体和大量市场卖方机构宣传中国经济重新回到高增长的正轨。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2023 年 3 月中旬，SVB 和 Swiss Credit 两家中大型银行的破产，导致全球已上市的金融机构股价出现大幅波动，新闻媒体更是宣扬 2008 年次贷危机规模的全球金融危机马上就会发生。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2024 年 8 月上旬，Nikkei 225 指数单日下跌超过 10%，引发全球风险资产大幅波动，VIX 指数大幅飙升，新闻媒体宣扬本轮 AI 科技浪潮的泡沫已经破灭。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2025 年 4 月，D. Trump 和中国官方持续加码全面报复性关税，甚至超过 200%，全球风险资产大跌，VIX 指数大幅飙升，新闻媒体更是宣扬“第三次世界大战”已经开始。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：2025 年 5 月，由于 D. Trump 引发的一系列全球关税事件，美元指数自年初大跌，黄金持续暴涨，新闻媒体更是渲染重回“金本位”时代，黄金价格即将复现 1970s 的涨幅。</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-<hr class="docutils" />
-<blockquote>
-<div><p>噪声：</p>
-</div></blockquote>
-<blockquote>
-<div><p>后市：</p>
-</div></blockquote>
-<blockquote>
-<div><p>信号：</p>
-</div></blockquote>
-</details>
+</section>
+<section id="id4">
+<h2>4 个要素<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>市场交易的 4 个要素分别是：</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>概念</p></th>
+<th class="head text-center"><p>定义</p></th>
+<th class="head text-center"><p>作用</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>交易双方（Agents）</p></td>
+<td class="text-center"><p>具有资产配置意愿与能力的市场参与者</p></td>
+<td class="text-center"><p>决定市场行为和博弈结构</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>交易中介（Intermediaries）</p></td>
+<td class="text-center"><p>连接、撮合或促进交易的结构和机制</p></td>
+<td class="text-center"><p>降低摩擦、提升效率、维持秩序</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>资产类别（Assets）</p></td>
+<td class="text-center"><p>市场中被交易、定价的对象</p></td>
+<td class="text-center"><p>市场价值流动的载体</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>流动性（Liquidity）</p></td>
+<td class="text-center"><p>资产变现速度与成本的衡量标准</p></td>
+<td class="text-center"><p>衡量市场健康和运行效率</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id5">
+<h2>3 个核心<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>市场参与者的仓位。</p></li>
+<li><p>市场参与者的交易方向和交易规模。</p></li>
+<li><p>市场参与者的交易动机。</p></li>
+</ul>
+<p>一切和交易相关的数据都围绕以上 3 点展开，由于市场交易是“非完全信息博弈”，因此任何衍生数据和指标都是用来逼近真实的仓位、交易动机、交易方向和交易规模。</p>
+<p>分析任何市场交易的数据和指标都必须最终落实在以上 3 点。</p>
 </section>
 </section>
 
@@ -634,20 +585,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="3_math.html"
+       href="0_trading.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">数学原理 Math Principles</p>
+        <p class="prev-next-title">交易 Trading</p>
       </div>
     </a>
     <a class="right-next"
-       href="5_SOP.html"
+       href="2_principles.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">标准操作流程 SOP</p>
+        <p class="prev-next-title">交易原则 Trading Principles</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -667,8 +618,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">周期策略</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">量化市场极端情绪</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">不断演化的市场</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">非对称风险</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">“反脆弱”的生存方式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4 个要素</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3 个核心</a></li>
 </ul>
   </nav></div>
 

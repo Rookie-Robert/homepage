@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/trading/2_principles';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="数学原理 Math Principles" href="3_math.html" />
-    <link rel="prev" title="市场 The Market" href="1_market.html" />
+    <link rel="next" title="数学 Mathematics" href="3_math.html" />
+    <link rel="prev" title="市场结构 Market Structures" href="1_structures.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -207,12 +207,12 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="0_trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1_market.html">市场 The Market</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_structures.html">市场结构 Market Structures</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">交易原则 Trading Principles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学原理 Math Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学 Mathematics</a></li>
 
 
-<li class="toctree-l2"><a class="reference internal" href="4_strategy.html">交易策略 Trading Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_strategies.html">策略 Strategies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="5_SOP.html">标准操作流程 SOP</a></li>
 </ul>
 </details></li>
@@ -451,12 +451,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4 个要素</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3 个核心</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">思维理念</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">交易选择</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">风险控制</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">仓位控制</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">构建交易系统</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">风险控制</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">交易选择</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">仓位控制</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">频率</a></li>
 </ul>
             </nav>
         </div>
@@ -471,79 +470,73 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="trading-principles">
 <h1>交易原则 Trading Principles<a class="headerlink" href="#trading-principles" title="Link to this heading">#</a></h1>
 <section id="id1">
-<h2>4 个要素<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<p>市场交易的 4 个要素分别是：</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p>概念</p></th>
-<th class="head text-center"><p>定义</p></th>
-<th class="head text-center"><p>作用</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>交易双方（Agents）</p></td>
-<td class="text-center"><p>具有资产配置意愿与能力的市场参与者</p></td>
-<td class="text-center"><p>决定市场行为和博弈结构</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>交易中介（Intermediaries）</p></td>
-<td class="text-center"><p>连接、撮合或促进交易的结构和机制</p></td>
-<td class="text-center"><p>降低摩擦、提升效率、维持秩序</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>资产类别（Assets）</p></td>
-<td class="text-center"><p>市场中被交易、定价的对象</p></td>
-<td class="text-center"><p>市场价值流动的载体</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>流动性（Liquidity）</p></td>
-<td class="text-center"><p>资产变现速度与成本的衡量标准</p></td>
-<td class="text-center"><p>衡量市场健康和运行效率</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<h2>构建交易系统<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>随着市场的演进完善交易系统，不偏离系统进行决策（特别是在交易员出现情绪波动时）。</p></li>
+<li><p>维持中性原则，使用客观中立的角度观察所有市场交易。</p></li>
+<li><p>聚焦概率和风险敞口的结构，忽略净值波动与生活消费的关系（将交易仅作为数字游戏，有助于情绪控制）。</p></li>
+<li><p>因果推理模型和概率统计模型，需要交叉验证，不能偏信一端。因果模型辅助概率模型避免过拟合，概率模型辅助因果模型降低噪声。</p></li>
+</ul>
+<blockquote>
+<div><p>在市场中交易，不确定性是常态，对交易的信心来自因果逻辑、数据与结构的支撑。与其追求“永远正确”的策略，不如构建一个能够在错误中生存的系统。</p>
+</div></blockquote>
 </section>
 <section id="id2">
-<h2>3 个核心<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2>风险控制<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>市场参与者的仓位。</p></li>
-<li><p>市场参与者的交易方向和交易规模。</p></li>
-<li><p>市场参与者的交易动机。</p></li>
-</ul>
-<p>一切和交易相关的数据都围绕以上 3 点展开，由于市场交易是“非完全信息博弈”，因此任何衍生数据和指标都是用来逼近真实的仓位、交易动机、交易方向和交易规模。</p>
-<p>分析任何市场交易的数据和指标都必须最终落实在以上 3 点。</p>
-</section>
-<section id="id3">
-<h2>思维理念<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>随着市场的演进完善交易系统，不偏离系统进行决策。</p></li>
-<li><p>维持中性原则，使用客观中立的角度观察所有市场交易。</p></li>
-<li><p>只考虑概率和风险敞口的结构，不考虑浮盈浮亏的具体金额与生活消费的关系。</p></li>
-<li><p>因果推理模型和概率推理模型，需要交叉验证，不能偏信一端。因果模型辅助概率模型避免过拟合，概率模型辅助因果模型降低噪声。</p></li>
-</ul>
-</section>
-<section id="id4">
-<h2>交易选择<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>控制可选择的对象数量，过滤平庸的交易机会。</p></li>
-<li><p>选择的交易对象，其风险溢价补偿应该足够高。</p></li>
-</ul>
-</section>
-<section id="id5">
-<h2>风险控制<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>管理 6 种风险：交易风险、市场风险、保证金风险、流动性风险、隔夜风险和波动性风险。</p></li>
 <li><p>风险控制就是计算概率并确保概率对自己有利。</p></li>
 <li><p>交易是一面镜子，折射出的是自己内心的欲望，控制风险就是控制自己。</p></li>
 </ul>
+<p>管理 7 种风险：</p>
+<ol class="arabic simple">
+<li><p>市场风险：市场整体 beta 风险，是所有交易风险的根源。</p></li>
+<li><p>信用风险：包括信息造假、交易平台和交易对手违约等信用风险。</p></li>
+<li><p>未知风险：由于信息不对称、内幕交易、不可抗力等因素导致的风险。</p></li>
+<li><p>策略风险：由交易者的策略模型导致的风险。</p></li>
+<li><p>结构风险：由于交易筹码过于集中有潜在控盘行为、缺乏足够交易对手或深度等因素导致的风险。</p></li>
+<li><p>杠杆风险：使用杠杆交易时，因价格波动导致保证金不足，被强制平仓或需要追加资金的风险。</p></li>
+<li><p>执行风险：包括交易风险和流动性风险。在具体交易执行过程中，由于价格滑点、系统故障、延迟等因素造成的风险。</p></li>
+</ol>
+<p>回测行为属于概率统计模型，不属于因果推理模型，存在极大的数据不足和过拟合风险，必须杜绝利用回测进行预测。</p>
 </section>
-<section id="id6">
-<h2>仓位控制<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h2>交易选择<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>控制可选择标的数量，深度大于广度。</p></li>
+<li><p>聚焦价格弹性大的标的，过滤平庸的交易机会。</p></li>
+<li><p>选择标的的风险溢价补偿应该足够高。</p></li>
+<li><p>选择标的应该具有流动性广且多样性高（减少被单一利益群体控盘的概率）和交易工具丰富的特性。</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>仓位控制<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <p>寻找交易优势，在优势方向进行交易，如信息优势、概率优势、成本优势等。</p>
 <ul class="simple">
 <li><p>建仓时，确保建仓位置相比止损位置有概率优势。</p></li>
 <li><p>加仓时，确保最终的平均成本相比止损位置有成本优势。</p></li>
 <li><p>减仓与清仓时，确保有心理优势，不贪恋后续不属于自己交易能力范围内的收益。</p></li>
 </ul>
-<p>时刻保持仓位中有至少 10% 的低波动且高流动性资产，用以随时应对市场中的极端风险。</p>
+<p>不能不止损也不能盲目止损，关键点是判断交易优势是否依然存在和交易优势的程度。</p>
+<p>在交易优势越大的方向，越要分配更高比例的仓位，杜绝给所有交易机会平均分配仓位。仓位净值的长期增加，不在于判断方向正误的概率，而在于判断正确对应仓位与判断错误对应仓位的差值。</p>
+<blockquote>
+<div><p>在确定性的机会上押重注；在优势明显的交易方向上不轻易离场。</p>
+</div></blockquote>
+<p>时刻保持仓位中有部分比例的几乎无风险且高流动性资产，用以随时应对市场中的极端风险。</p>
+</section>
+<section id="id5">
+<h2>频率<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>交易类型主要分为高频、中频和低频。</p>
+<ul class="simple">
+<li><p>高频交易主要依靠交易设备的速度，包括硬件平台和软件模型。通过短期市场的波动进行套利，但是其技术壁垒高、基础设施价格昂贵，大型机构的优势显著高于个人交易者。</p></li>
+<li><p>中频交易主要依靠再平衡和驱动因子构成的策略盈利，适合大部分市场参与者，但需要不断更新策略。</p></li>
+<li><p>低频交易主要以资产配置为主。</p></li>
+</ul>
+<p>从不同频率的交易类型看，绝大多数非机构投资者显然只适合中低频交易。但是高频交易的高收益诱惑和相关宣传，让大量交易员深陷其中，无法自拔。</p>
+<ul class="simple">
+<li><p>对于非全职交易员，高频查看 K 线价格图，消耗了大量精力，极大概率同时在金融市场和其他工作任务中遭受损失，并因此陷入恶性循环。</p></li>
+<li><p>对于全职交易员，长期“盯盘”不仅将自己的身心与真正的商业世界隔绝，极易出现类似于机器模型的概率“过拟合”状态，还可能导致健康受损。近年由于大量资产交易都向 crypto 的 7*24 交易时段靠拢，导致交易员长期会在本地时间的夜盘进行高强度决策，积劳成疾甚至猝死的案例比比皆是。</p></li>
+</ul>
+<p>综合以上，再次重申我的价值观：人生精彩度 = 健康且自由的生命时间长度，通过金融市场交易获得财富只是实现精彩人生的工具，而非目标本身。因此我选择的交易类型是长期中低频交易。</p>
 </section>
 </section>
 
@@ -578,12 +571,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="1_market.html"
+       href="1_structures.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">市场 The Market</p>
+        <p class="prev-next-title">市场结构 Market Structures</p>
       </div>
     </a>
     <a class="right-next"
@@ -591,7 +584,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">数学原理 Math Principles</p>
+        <p class="prev-next-title">数学 Mathematics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -611,12 +604,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4 个要素</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3 个核心</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">思维理念</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">交易选择</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">风险控制</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">仓位控制</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">构建交易系统</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">风险控制</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">交易选择</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">仓位控制</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">频率</a></li>
 </ul>
   </nav></div>
 
