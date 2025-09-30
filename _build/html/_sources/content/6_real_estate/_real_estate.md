@@ -4,7 +4,7 @@
 
 不动产在全球所有国家的经济构成中都占有非常重要的地位，美国对于该产业链数据的信息披露相对全面，以下表格从上到下反映了该产业链从前到后不同阶段的数据。
 
-数据汇总：[Mortgage News Daily Housing Data](https://www.mortgagenewsdaily.com/data)
+数据汇总：<a href="https://www.mortgagenewsdaily.com/data" target="_blank">Mortgage News Daily Housing Data</a>
 
 |指标|描述|
 |:-:|:-:|
