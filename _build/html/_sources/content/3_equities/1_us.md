@@ -15,6 +15,8 @@
 
 <mark>当 put/call 比值较高时，市场情绪表现为恐惧</mark>。激进的正向投资者会选择买入正向 put 期权或卖出正向 call 期权；保守的正向投资者和反向投资者会选择买入正股，但又担忧后市更大的价格下跌因此买入部分正向 put 期权进行对冲。以上这些行为都会导致 put/call 比值升高。
 
+<mark>在多年数据统计的基础上，extreme greed 通常表示动量非常强，短期可能会有猛烈回调，但中长期还会继续上涨；长时间的 neutral 通常表示动量转弱，主力资金可能已经离场，中长期下跌风险增加；extreme fear 通常表示处于极端尾部，止损盘大量出现，短期波动无法估算，但中长期大幅度上涨的概率极大。</mark>
+
 `风险（Risk）`
 
 ---
@@ -38,15 +40,17 @@ price to earnings ratio 是用来描述权益标的的价格和盈利的比值�
 
 ---
 
-- <a href="https://www.cboe.com/us/indices/dashboard/skew/" target="_blank"><h4>Cboe SKEW Index</h4></a>
+- <a href="https://finviz.com/insidertrading.ashx" target="_blank"><h4>Insider Trading</h4></a>
 
-> Frequency: <mark>Daily</mark>
+- <a href="https://www.gurufocus.com/economic_indicators/4359/insider-buysell-ratio-usa-overall-market" target="_blank"><h4>Insider Buy/Sell Ratio</h4></a>
 
-> Delay: <mark>1 D</mark>
+> Frequency: <mark>Monthly</mark>
 
-> Correlation: <span style="color: red;">Very Strong</span>
+> Delay: <mark>-</mark>
 
-Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，与 VIX 指数类似，S&P 500 指数尾部风险的价格是根据其价外期权的价格计算得出的。<mark>该指标通常与 S&P 500 指数呈负相关。</mark>
+> Correlation: <span style="color: blue;">Strong</span>
+
+上市公司内部高管人员买入与卖出的比值，当权益市场估值较高时，公司内部高管人员更倾向于卖出股本，该指标下降；当权益市场估值较低时，公司内部高管人员更倾向于买入股本，该指标上升。<mark>该指标与市场估值呈负相关。</mark>
 
 `风险（Risk）`
 
@@ -61,6 +65,20 @@ Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，�
 > Correlation: <span style="color: red;">Very Strong</span>
 
 该指标表示作为 NAAIM 会员的投资经理在美国权益市场的平均做多敞口。<mark>指标数值与做多敞口呈正相关。根据反身性，当做多方向拥挤时，后市下跌调整的概率变大，反之后市上涨的概率变大。</mark>
+
+`风险（Risk）`
+
+---
+
+- <a href="https://www.cboe.com/us/indices/dashboard/skew/" target="_blank"><h4>Cboe SKEW Index</h4></a>
+
+> Frequency: <mark>Daily</mark>
+
+> Delay: <mark>1 D</mark>
+
+> Correlation: <span style="color: red;">Very Strong</span>
+
+Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，与 VIX 指数类似，S&P 500 指数尾部风险的价格是根据其价外期权的价格计算得出的。<mark>该指标通常与 S&P 500 指数呈负相关。</mark>
 
 `风险（Risk）`
 
@@ -109,20 +127,6 @@ Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，�
 > Delay: <mark>1 W</mark>
 
 > Correlation: <span style="color: green;">Medium</span>
-
-`风险（Risk）`
-
---- 
-
-- <a href="https://www.gurufocus.com/economic_indicators/4359/insider-buysell-ratio-usa-overall-market" target="_blank"><h4>Insider Buy/Sell Ratio</h4></a>
-
-> Frequency: <mark>Monthly</mark>
-
-> Delay: <mark>-</mark>
-
-> Correlation: <span style="color: blue;">Strong</span>
-
-公司内部人员买入与卖出的比值，当权益市场估值较高时，公司内部人员更倾向于卖出股本，该指标下降；当权益市场估值较低时，公司内部人员更倾向于买入股本，该指标上升。<mark>该指标与市场估值呈负相关。</mark>
 
 `风险（Risk）`
 

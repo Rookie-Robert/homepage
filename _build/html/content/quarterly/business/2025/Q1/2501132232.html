@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tokenization &#8212; 记忆的传承 Memoirs</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/quarterly/business/2025/Q1/2501132232';</script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../../_static/favicon.ico" class="logo__image only-light" alt="记忆的传承 Memoirs - Home"/>
+    <script>document.write(`<img src="../../../../../_static/favicon.ico" class="logo__image only-dark" alt="记忆的传承 Memoirs - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../../intro.html">
+                    记忆的传承 Memoirs
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../philosophy/0_philosophy.html">我的哲学 My Philosophy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../philosophy/1_safety.html">安全</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../philosophy/2_health.html">健康与长寿</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../edu_revolution/0_edu_revolution.html">教育改革 Education Revolution</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/1_linguistics.html">语言 Linguistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/2_education.html">教育 Education</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../edu_revolution/3_information/information.html">信息 information</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../edu_revolution/3_information/info_acquisition/0_acquisition.html">有关信息</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../edu_revolution/3_information/info_acquisition/1_info_source.html">信息源</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../edu_revolution/3_information/info_acquisition/2_high_signal_info.html">如何获取有效信息</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../edu_revolution/3_information/info_acquisition/3_llm_prompt_engineering.html">LLM Prompt Engineering</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../edu_revolution/3_information/info_dissemination.html">信息传播 Information Dissemination</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/4_kinesiology.html">运动 Kinesiology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/5_mathematics.html">数学 Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/6_physics.html">物理 Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/7_history.html">历史 History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/8_law.html">法律 Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/9_biomedicine.html">生物医学 Biomedicine</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../trading/0_trading.html">交易 Trading</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../trading/1_structures.html">市场结构 Market Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../trading/2_principles.html">交易原则 Trading Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../trading/3_math.html">数学 Mathematics</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../../../trading/4_strategies.html">策略 Strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../trading/5_SOP.html">标准操作流程 SOP</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../0_macro/_macro.html">Macro 宏观</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../0_macro/ShadowBankingTheMoneyView.html">How the Financial System Works (<em>by Zoltan Pozsar</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../0_macro/reallocation.html">退出与资源重分配机制 Exit and Reallocation Mechanisms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../0_macro/1_global.html">Global 全球</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../0_macro/2_us.html">US 美国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../0_macro/3_eu%26uk.html">Euro Zone &amp; UK 欧元区与英国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../0_macro/4_jp%26kr%26tw.html">Japan &amp; South Korea &amp; Taiwan 日本、韩国、台湾</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../0_macro/5_hk%26cn.html">Hong Kong &amp; Chinese Mainland 香港与中国大陆</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../0_macro/6_em.html">Emerging Market 新兴市场</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../1_rates/_rates.html">Rates 利率</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../1_rates/1_benchmark_rate.html">Benchmark Interest Rate 基准利率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../1_rates/2_bonds%26bills.html">Government Bonds &amp; Treasury Bills 长期债券与短期国库券</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../1_rates/3_liquidity_indicators.html">Liquidity Indicators 流动性指标</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../1_rates/4_Inflation-linked_bonds.html">Inflation Linked Bonds 通胀挂钩债券</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../1_rates/5_interest_rate_swaps.html">Interest Rate Swaps 利率互换</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../2_fx/_fx.html">Foreign Exchange 外汇</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../3_equities/_equities.html">Equities 权益资产</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../3_equities/1_us.html">US 美国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../3_equities/2_eu%26uk.html">Euro Zone &amp; UK 欧元区与英国</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../3_equities/3_jp%26kr%26tw%26sg.html">Japan &amp; South Korea &amp; Taiwan &amp; Singapore 日本、韩国、台湾、新加坡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../3_equities/4_hk%26cn.html">Hong Kong &amp; Chinese Mainland 香港与中国大陆</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../3_equities/5_em.html">Emerging Market 新兴市场</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../4_credit/_credit.html">Credit 信用类资产</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../5_commodities/_commodities.html">Commodities 大宗商品</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../6_real_estate/_real_estate.html">Real Estate 不动产</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../7_crypto/_crypto.html">Crypto</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../8_alternatives/_alternatives.html">Alternatives 另类资产</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../journal/journal.html">Trading Journal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../journal/2025/2025.html">2025</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../dir.html">季度随笔 Quarterly</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../dir.html">商业 Business</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../society/dir.html">社会 Society</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../technology/dir.html">科技 Technology</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../books/_dir.html">读书笔记</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/quarterly/business/2025/Q1/2501132232.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../../_sources/content/quarterly/business/2025/Q1/2501132232.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Tokenization</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="tokenization">
+<h1>Tokenization<a class="headerlink" href="#tokenization" title="Link to this heading">#</a></h1>
+<p>tokenization的汉语解释是“代币化”，在区块链技术被越来越多的经济体纳入到现有金融体系内进行监管就说明未来将大部分现实世界资产进行代币化是大势所趋。现实世界资产（real world asset, RWA）通常分为两大类，一类是同质化资产（fungible token, FT），另一类是非同质化资产（non-fungible token, NFT）。如果将RWA扫描上传到区块链上进行交易就涉及一个问题：如何确保链上交易和真实世界的交易是同步的？我在查阅相关资料并与ChatGPT交流时探讨了两种情况并得出了一个结论。</p>
+<p>第一种情况，A和B两人交易的是一个标准金条。一开始由A拥有所有权，如果发行该金条的token，B购买token理论上就应该获得该金条的所有权，但是可能导致A并没有实际将金条交给B，或B获得金条却谎称没有得到，如果第三方介入仲裁就要进行地毯式搜索直到找到那个约定好用于交易的金条到底在哪里，这种交易方式简直是一种商业行为的倒退。所以像标准金条这种FT类资产不能完全依靠区块链进行去中心化交易，还必须将交易资产托管在一个双方都认可的第三方，但这种模式又和现在的中心化交易所本质上并没有什么不同，因此创新程度有限。</p>
+<p>第二种情况，A和B两人交易的是一处房产。一开始由A拥有所有权，如果发行该房产的token，B完全可以购买该token就声称自己已经拥有了该房产的所有权。因为即使A阻止B使用该房产，第三方仲裁可以很轻易地判决究竟哪方拥有该房产，只需要查看交易token上附带的房产地址和最终链上地址由谁控制就可以，毕竟地球上的土地每一处都不相同，识别房产唯一性的成本远比前一种情况识别标准金条唯一性的成本低，所以去除中间人完全通过链上交易能大幅降低交易成本并提高效率。</p>
+<p>所以可以得出一个结论，未来将现实世界资产进行代币化，最受益的是处理NFT类资产的区块链，这些区块链本质上充当了现在各种交易中介的职责，将这些中间人的利润完全拿走。那么NFT类的RWA主要都有什么呢？以下是ChatGPT给出的回复：</p>
+<blockquote>
+<div><p>Here’s a comprehensive list of NFT-like fields that are particularly well-suited for RWA tokenization, based on their unique characteristics, need for transparency, and potential for disruption:</p>
+<ol class="arabic simple">
+<li><p>Real Estate
+Why? High transaction costs, inefficiency, and opaque processes in ownership transfers.
+Examples:
+Tokenized apartments, office spaces, or vacation homes.
+Fractional ownership of large properties (e.g., commercial real estate).
+Land parcels in developing regions with poor property registries.</p></li>
+<li><p>Fine Art
+Why? Issues with authenticity, provenance, and limited access to the art market.
+Examples:
+Tokenization of iconic paintings or sculptures for fractional ownership.
+Verifiable on-chain proof of provenance to combat forgery.</p></li>
+<li><p>Collectibles and Luxury Goods
+Why? Authentication challenges and the need for proof of origin.
+Examples:
+Rare watches, designer handbags, or vintage cars.
+Limited-edition sneakers or sports memorabilia.</p></li>
+<li><p>Intellectual Property (IP)
+Why? Complex ownership rights and difficulty in licensing.
+Examples:
+Patents or copyrights for music, movies, or literature.
+Licensing agreements tokenized for easy transfer.</p></li>
+<li><p>Vehicles and Transportation
+Why? Expensive and time-consuming title transfer processes.
+Examples:
+High-value cars, yachts, or private jets.
+Leasing or fractional ownership of commercial aircraft.</p></li>
+<li><p>Rare Metals and Minerals
+Why? Provenance and scarcity make them suitable for unique identification.
+Examples:
+Unique diamonds with serial numbers linked to tokens.
+Precious metals with distinctive properties or origin.</p></li>
+<li><p>Domain Names and Digital Real Estate
+Why? Unique identifiers already exist, making tokenization straightforward.
+Examples:
+Tokenization of valuable domain names (e.g., .coms).
+Virtual land in metaverse platforms (e.g., Decentraland, Sandbox).</p></li>
+<li><p>Infrastructure and Utilities
+Why? Often inaccessible to retail investors.
+Examples:
+Ownership or revenue rights for renewable energy projects (solar panels, wind farms).
+Infrastructure projects like toll roads or bridges.</p></li>
+<li><p>Sports and Entertainment Assets
+Why? Passion-driven markets with high demand for unique experiences.
+Examples:
+Shares in professional sports teams or individual athletes.
+Rights to ticket revenues or future royalties from performances.</p></li>
+<li><p>Rare Books and Manuscripts
+Why? Unique and high-value items with clear historical significance.
+Examples:
+First editions of famous books.
+Original handwritten manuscripts of literary or historical importance.</p></li>
+<li><p>Agricultural Land and Produce
+Why? Direct ownership or revenue sharing in productive assets.
+Examples:
+Tokenized farmland linked to crop production.
+Specialty goods like vineyards producing rare wines.</p></li>
+<li><p>Renewable Energy Credits (RECs)
+Why? Transparent tracking and trading of sustainability assets.
+Examples:
+Tokenized renewable energy credits or carbon offsets.
+Direct linkage to projects generating clean energy.</p></li>
+<li><p>Historical Artifacts
+Why? Unique value and cultural importance.
+Examples:
+Ancient coins, jewelry, or artifacts.
+Archaeological discoveries tokenized for shared ownership.</p></li>
+<li><p>Education and Credentials
+Why? Unique certificates and achievements tied to individuals.
+Examples:
+Tokenized academic degrees or diplomas.
+Licenses and certifications verifiable on-chain.</p></li>
+<li><p>Media Rights
+Why? Growing demand for fractionalized ownership and revenue sharing.
+Examples:
+Tokenized royalties from movies, TV shows, or music.
+Revenue shares from syndicated online content.</p></li>
+<li><p>Insurance Policies
+Why? Unique policies tied to individuals or properties.
+Examples:
+Tokenized insurance contracts for high-value items (e.g., art or collectibles).
+Disaster or health insurance claims tokenized for transparency.</p></li>
+<li><p>Wildlife Conservation and Tourism
+Why? Unique assets tied to environmental protection.
+Examples:
+Ownership of wildlife reserves or endangered animal habitats.
+Tokenized safari or eco-tourism experiences.</p></li>
+<li><p>Gaming Items
+Why? Unique, tradable assets with intrinsic or market-driven value.
+Examples:
+High-value in-game items tokenized for real-world trading.
+Collectibles or rare achievements in eSports.</p></li>
+<li><p>Space Assets
+Why? Emerging industry with high-value, unique assets.
+Examples:
+Ownership of satellite bandwidth.
+Revenue rights from asteroid mining ventures.</p></li>
+<li><p>Philanthropy and Charitable Causes
+Why? Transparency in donations and ownership of outcomes.
+Examples:
+Tokenized shares in charitable projects (e.g., schools, hospitals).
+Proof of contribution to major fundraising campaigns.
+This wide array of fields illustrates the immense potential for RWA tokenization in sectors where uniqueness, transparency, and efficiency are key. Would you like to dive deeper into any of these fields or explore how to design a tokenization framework for one?</p></li>
+</ol>
+</div></blockquote>
+<hr class="docutils" />
+<p><em>2025.1.13</em></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\quarterly\business\2025\Q1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 深 Robert
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
