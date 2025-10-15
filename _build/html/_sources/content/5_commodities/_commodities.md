@@ -6,30 +6,31 @@
 
 ## Precious Metals 贵金属
 
-- [Inflation Adjusted Gold Price](https://www.gurufocus.com/economic_indicators/4534/inflation-adjusted-gold-price-adjusted-to-todays-dollar)
-- [CBOE Gold ETF Volatility Index](https://fred.stlouisfed.org/series/GVZCLS)
-- [Gold Silver ratio](https://sc.macromicro.me/collections/3351/commodity-silver/26722/gold-silver-copper-ratio)
-- [GOLD Positions - COMEX](https://www.tradingster.com/cot/futures/disagg/088691)
-- [SILVER Positions - COMEX](https://www.tradingster.com/cot/futures/disagg/084691)
+- <a href="https://www.gurufocus.com/economic_indicators/4534/inflation-adjusted-gold-price-adjusted-to-todays-dollar" target="_blank"><h4>Inflation Adjusted Gold Price</h4></a>
+- <a href="https://fred.stlouisfed.org/series/GVZCLS" target="_blank"><h4>CBOE Gold ETF Volatility Index</h4></a>
+- <a href="https://sc.macromicro.me/collections/3351/commodity-silver/26722/gold-silver-copper-ratio" target="_blank"><h4>Gold Silver ratio</h4></a>
+- <a href="https://www.tradingster.com/cot/futures/disagg/088691" target="_blank"><h4>GOLD Positions - COMEX</h4></a>
+- <a href="https://www.tradingster.com/cot/futures/disagg/084691" target="_blank"><h4>SILVER Positions - COMEX</h4></a>
 
 ## Industrial Metals 工业金属
 
-- [COPPER Positions - COMEX](https://www.tradingster.com/cot/futures/disagg/085692)
+- <a href="https://www.tradingster.com/cot/futures/disagg/085692" target="_blank"><h4>COPPER Positions - COMEX</h4></a>
 
 ## Energy 能源
 
-- [CBOE Crude Oil ETF Volatility Index](https://fred.stlouisfed.org/series/OVXCLS)
-- [WTI-PHYSICAL Positions - NYMEX](https://www.tradingster.com/cot/futures/disagg/067651)
-- [Baker Hughes Crude Oil Rigs](https://tradingeconomics.com/united-states/crude-oil-rigs)
+- <a href="https://fred.stlouisfed.org/series/OVXCLS" target="_blank"><h4>CBOE Crude Oil ETF Volatility Index</h4></a>
+- <a href="https://www.tradingster.com/cot/futures/disagg/067651" target="_blank"><h4>WTI-PHYSICAL Positions - NYMEX</h4></a>
+- <a href="https://tradingeconomics.com/united-states/crude-oil-rigs" target="_blank"><h4>Baker Hughes Crude Oil Rigs</h4></a>
 
 ## Agricultural Products 农产品
 
 ## Others 其他
 
-- [Baltic Exchange Dry Index](https://tradingeconomics.com/commodity/baltic)
-- [CRB Commodity Index](https://tradingeconomics.com/commodity/crb)
-- [LME Index](https://tradingeconomics.com/commodity/lme)
-- [GSCI Commodity Index](https://tradingeconomics.com/commodity/gsci)
-- [EU Carbon Permits](https://tradingeconomics.com/commodity/carbon)
-- [Gold Oil ratio](https://sc.macromicro.me/charts/11236/jin-you-bi)
-- [Copper Gold ratio](https://sc.macromicro.me/charts/15943/copper-gold-ratio)
+- <a href="https://tradingeconomics.com/commodity/baltic" target="_blank"><h4>Baltic Exchange Dry Index</h4></a>
+- <a href="https://tradingeconomics.com/commodity/crb" target="_blank"><h4>CRB Commodity Index</h4></a>
+- <a href="https://tradingeconomics.com/commodity/lme" target="_blank"><h4>LME Index</h4></a>
+- <a href="https://tradingeconomics.com/commodity/gsci" target="_blank"><h4>GSCI Commodity Index</h4></a>
+- <a href="https://tradingeconomics.com/commodity/carbon" target="_blank"><h4>EU Carbon Permits</h4></a>
+- <a href="https://sc.macromicro.me/charts/11236/jin-you-bi" target="_blank"><h4>Gold Oil ratio</h4></a>
+- <a href="https://sc.macromicro.me/charts/15943/copper-gold-ratio" target="_blank"><h4>Copper Gold ratio</h4></a>
+

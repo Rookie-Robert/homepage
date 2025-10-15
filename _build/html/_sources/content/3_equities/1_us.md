@@ -60,6 +60,7 @@ VIX6M 反映的是市场对于 S&P 500 股指在未来 6 个月的波动性预�
 
 - <a href="https://edition.cnn.com/markets/fear-and-greed" target="_blank"><h4>CNN Fear & Greed Index</h4></a>
 - <a href="https://sc.macromicro.me/charts/449/us-cboe-options-put-call-ratio" target="_blank"><h4>Cboe put/call ratio</h4></a>
+- <a href="https://marketchameleon.com/Overview/SPY/VolatilitySkew" target="_blank"><h4>Volatility Skew</h4></a>
 
 > Frequency: <mark>Daily</mark>
 
@@ -67,13 +68,15 @@ VIX6M 反映的是市场对于 S&P 500 股指在未来 6 个月的波动性预�
 
 > Correlation: <span style="color: red;">Very Strong</span>
 
-美股 put 期权和 call 期权的未平仓金额比值能够直接反映市场的情绪。
+美国权益市场的 put 期权和 call 期权的未平仓金额比值能够直接反映市场的情绪。
 
 <mark>当 put/call 比值较低时，市场情绪表现为贪婪</mark>。激进的正向投资者会选择放弃正股转而买入正向 call 期权或卖出正向 put 期权；保守的正向投资者会选择卖出正股，但又担忧错过后市更大的收益因此买入部分正向 call 期权；反向投资者会选择净卖出正股并做多正向 call 期权进行对冲。以上这些行为都会导致 put/call 比值降低。
 
 <mark>当 put/call 比值较高时，市场情绪表现为恐惧</mark>。激进的正向投资者会选择买入正向 put 期权或卖出正向 call 期权；保守的正向投资者和反向投资者会选择买入正股，但又担忧后市更大的价格下跌因此买入部分正向 put 期权进行对冲。以上这些行为都会导致 put/call 比值升高。
 
 <mark>在多年数据统计的基础上，extreme greed 通常表示动量非常强，短期可能会有猛烈回调，但中长期还会继续上涨；长时间的 neutral 通常表示动量转弱，主力资金可能已经离场，中长期下跌风险增加；extreme fear 通常表示处于极端尾部，止损盘大量出现，短期波动无法估算，但中长期大幅度上涨的概率极大。</mark>
+
+<mark>Volatility Skew 的 put-call spread 同样也反映了美国权益市场的情绪。当 put-call spread 数值较低时，市场情绪表现为贪婪；当 put-call spread 数值较高时，市场情绪表现为恐惧。</mark>
 
 `风险（Risk）`
 
@@ -190,7 +193,7 @@ Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，�
 
 ---
 
-- [Global Stock Indices Breath](https://sc.macromicro.me/collections/20868/global-sentiment-indicator/99010/global-stock-indices-breath)
+- <a href="https://sc.macromicro.me/collections/20868/global-sentiment-indicator/99010/global-stock-indices-breath" target="_blank"><h4>Global Stock Indices Breath</h4></a>
 
 > Frequency: <mark>Monthly</mark>
 
@@ -202,7 +205,7 @@ Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，�
 
 ---
 
-- [FINRA Investor Margin Debt Relative to Total Market Cap](https://www.gurufocus.com/economic_indicators/4265/finra-investor-margin-debt-relative-to-total-market-cap)
+- <a href="https://www.gurufocus.com/economic_indicators/4265/finra-investor-margin-debt-relative-to-total-market-cap" target="_blank"><h4>FINRA Investor Margin Debt Relative to Total Market Cap</h4></a>
 
 > Frequency: <mark>Monthly</mark>
 
