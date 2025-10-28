@@ -1,5 +1,9 @@
 # US 美国
 
+- <h4>Presidential Cycles</h4>
+
+![](./img/PresidentialCycles.png)
+
 - <a href="https://www.chicagofed.org/research/data/nfci/current-data" target="_blank"><h4>NFCI</h4></a>
 
 > Frequency: <mark>Weekly</mark>

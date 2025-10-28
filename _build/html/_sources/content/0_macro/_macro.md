@@ -12,7 +12,69 @@ US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高�
 
 其他非美市场化经济体，中央银行利率与国债收益率曲线的变化对宏观经济的影响同上。
 
-不同年代都有显著的交易偏好差别，现将 1971 年美元脱离金本位后的时间进行断代。
+- **信用**：黄金、债券（公共债券+私人信贷）、信用货币
+
+- **生产**：科技类权益、白银、铜...
+
+- **消费**：不动产、汽车、能源...
+
+只要全市场的流动性没有紧缩，即资金数量一直在增长，就需要考虑资金在以上三类资产中的流动方向。
+
+## 季节性变化
+
+<details>
+<summary>GLD</summary>
+
+![GLD](./img/GLD.png)
+
+![GLD_sheet](./img/GLD_sheet.png)
+
+</details>
+
+<details>
+<summary>UUP</summary>
+
+![UUP](./img/UUP.png)
+
+![UUP_sheet](./img/UUP_sheet.png)
+
+</details>
+
+<details>
+<summary>TLT</summary>
+
+![TLT](./img/TLT.png)
+
+![TLT_sheet](./img/TLT_sheet.png)
+
+</details>
+
+<details>
+<summary>TQQQ</summary>
+
+![TQQQ](./img/TQQQ.png)
+
+![TQQQ_sheet](./img/TQQQ_sheet.png)
+
+</details>
+
+<details>
+<summary>UVXY</summary>
+
+![UVXY](./img/UVXY.png)
+
+![UVXY_sheet](./img/UVXY_sheet.png)
+
+</details>
+
+<details>
+<summary>XLE</summary>
+
+![XLE](./img/XLE.png)
+
+![XLE_sheet](./img/XLE_sheet.png)
+
+</details>
 
 ## 宏观观察
 
@@ -23,9 +85,8 @@ US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高�
 - Euro/JPY 权益资产收益率远不及 USD 权益市场
 - 恒生指数/创业板指数/科创板指数，在全球主要经济体的降息阶段收益率超过 USD 权益市场平均收益率
 
----
-
-### 2025
+<details>
+<summary>2025</summary>
 
 > <mark>主要经济体都处于 AI 投资繁荣且其他行业衰退的环境，对 AI 投资的依赖性非常强。</mark>
 
@@ -39,7 +100,10 @@ US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高�
 - 主要经济体不动产价格下跌。
 - Crypto 资产价格在流动性宽松的环境创新高。
 
-### 2024
+</details>
+
+<details>
+<summary>2024</summary>
 
 > <mark>主要经济体除中国外，结束紧缩环境；中国经济开始弱复苏；主要经济体对 AI 投资的依赖性增强。</mark>
 
@@ -53,7 +117,10 @@ US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高�
 - 主要经济体除中国外，不动产价格涨幅放缓；中国不动产价格继续下跌。
 - Crypto 资产价格在流动性宽松的环境创新高。
 
-### 2023
+</details>
+
+<details>
+<summary>2023</summary>
 
 > <mark>主要经济体受限于紧缩环境，处于滞涨或衰退的环境；主要经济体加大对 AI 投资。</mark>
 
@@ -67,7 +134,10 @@ US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高�
 - 主要经济体除中国外，不动产价格涨幅放缓；中国不动产价格继续下跌。
 - Crypto 资产价格在流动性宽松的环境下开始上涨。
 
-### 2022
+</details>
+
+<details>
+<summary>2022</summary>
 
 > <mark>全球宏观风险急剧上升，通胀率有失控的风险，违约率大幅增加。</mark>
 
@@ -81,7 +151,10 @@ US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高�
 - 主要经济体除中国外，不动产价格涨幅放缓；中国不动产价格开始下跌。
 - Crypto 资产价格在流动性紧缩的环境下大幅度下跌。
 
-### 2021
+</details>
+
+<details>
+<summary>2021</summary>
 
 > <mark>主要经济体持续复苏。</mark>
 
@@ -95,7 +168,10 @@ US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高�
 - 主要经济体除中国外，不动产价格大幅度上涨。
 - Crypto 资产价格在流动性可能出现紧缩的情况下，在 Q2 和 Q4 形成“双峰”形态。
 
-### 2020
+</details>
+
+<details>
+<summary>2020</summary>
 
 > <mark>主要经济体通过创造极端宽松环境使经济从衰退中复苏。</mark>
 
@@ -108,6 +184,12 @@ US Yield Curve 长端收益率的中枢值升高时，无风险收益率升高�
 - 大宗商品价格从年初暴跌至多年新低到年底逐渐恢复多年平均位置。
 - 主要经济体除中国和日本外，不动产价格大幅度上涨。
 - Crypto 资产价格在流动性泛滥的环境下创出新高。
+
+</details>
+
+---
+
+不同年代都有显著的交易偏好差别，现将 1971 年美元脱离金本位后的时间进行断代。
 
 ## 2020 - 至今
 
