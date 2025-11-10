@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>资产价格周期展示（多阶段）</title>
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    font-family: "Segoe UI", "PingFang SC", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  #waveCanvas {
+    border: none;
+    background: white;
+    margin-top: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .infoBox {
+    width: 800px;
+    margin-top: 30px;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    line-height: 1.7em;
+    font-size: 15px;
+    color: #333;
+    text-align: justify;
+    display: none;
+  }
+
+  .infoBox.active {
+    display: block;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #007bff;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="waveCanvas" width="800" height="400"></canvas>
+
+<!-- ====== 阶段文本区域 ====== -->
+<div id="infoBox0" class="infoBox active">
+  <h2>【上涨 → 下跌】反转后期</h2>
+  <p>估值模型重构</p>
+  <p>波动率中枢继续上升，资产价格高位窄幅震荡</p>
+  <p>重点关注资产逻辑模型与技术细节</p>
+  <p>空仓观察</p>
+</div>
+<div id="infoBox1" class="infoBox active">
+  <h2>【下跌】动量初期</h2>
+  <p>高估值阶段</p>
+  <p>波动率中枢继续上升，资产价格确认下跌趋势</p>
+  <p>重点关注资产的主力资金共识</p>
+  <p>开始建立基础做空持仓</p>
+</div>
+<div id="infoBox2" class="infoBox active">
+  <h2>【下跌】动量中期</h2>
+  <p>中估值阶段</p>
+  <p>波动率中枢高位运行，资产价格价格稳定下跌</p>
+  <p>重点关注资产的主力资金共识</p>
+  <p>增加基础做空持仓，尽量避免使用杠杆做空工具，转换成“资金跷跷板”资产的做多持仓</p>
+</div>
+<div id="infoBox3" class="infoBox active">
+  <h2>【下跌】动量后期</h2>
+  <p>低估值阶段</p>
+  <p>波动率中枢高位运行，资产价格加速下跌</p>
+  <p>重点对比市场的历史估值</p>
+  <p>减持并清仓基础做空持仓</p>
+</div>
+<div id="infoBox4" class="infoBox active">
+  <h2>【下跌 → 上涨】反转前期</h2>
+  <p>情绪阶段</p>
+  <p>波动率中枢从高位下降，资产价格低位宽幅震荡</p>
+  <p>重点关注市场的极端情绪波动</p>
+  <p>空仓观察</p>
+</div>
+<div id="infoBox5" class="infoBox active">
+  <h2>【下跌 → 上涨】反转后期</h2>
+  <p>估值模型重构</p>
+  <p>波动率中枢继续下降，资产价格低位窄幅震荡</p>
+  <p>重点关注资产逻辑模型与技术细节</p>
+  <p>开始建立基础做多持仓</p>
+</div>
+<div id="infoBox6" class="infoBox active">
+  <h2>【上涨】动量初期</h2>
+  <p>低估值阶段</p>
+  <p>波动率中枢继续下降，资产价格确认上涨趋势</p>
+  <p>重点关注资产的主力资金共识</p>
+  <p>增加基础做多持仓</p>
+</div>
+<div id="infoBox7" class="infoBox active">
+  <h2>【上涨】动量中期</h2>
+  <p>中估值阶段</p>
+  <p>波动率中枢低位运行，资产价格稳定上涨</p>
+  <p>重点关注资产的主力资金共识</p>
+  <p>在短期波动率迅速放大和收敛时可以将基础做多持仓切换成杠杆做多持仓</p>
+</div>
+<div id="infoBox8" class="infoBox active">
+  <h2>【上涨】动量后期</h2>
+  <p>高估值阶段</p>
+  <p>波动率中枢低位运行，资产价格加速上涨</p>
+  <p>重点对比市场的历史估值</p>
+  <p>将所有杠杆做多持仓切换成基础做多持仓</p>
+</div>
+<div id="infoBox9" class="infoBox active">
+  <h2>【上涨 → 下跌】反转前期</h2>
+  <p>情绪阶段</p>
+  <p>波动率中枢从低位上升，资产价格高位宽幅震荡</p>
+  <p>重点关注资产价格泡沫破灭带来的市场影响</p>
+  <p>减持并清仓基础做多持仓</p>
+</div>
+
+
+<script>
+const canvas = document.getElementById('waveCanvas');
+const ctx = canvas.getContext('2d');
+const wave = {
+  amplitude: 80,
+  frequency: 0.02,
+  offsetY: canvas.height / 2
+};
+
+let offset = 0;
+let dragging = false;
+let lastX = 0;
+
+const centerX = canvas.width / 2;
+const totalStages = 10;
+
+// ✅ 新的颜色函数：上升红、下降绿，并且平滑过渡
+function getColorBySlope(slope) {
+  const normalized = Math.max(-1, Math.min(1, slope / 0.5));
+  // hue 范围：红 (0°) 到 120°(绿)，取反即可反转颜色关系
+  const hue = 120 - 120 * (normalized + 1) / 2;
+  return `hsl(${hue}, 85%, 55%)`;
+}
+
+function getY(x) {
+  return wave.offsetY - Math.sin((x + offset) * wave.frequency) * wave.amplitude;
+}
+
+function getSlope(x) {
+  return -Math.cos((x + offset) * wave.frequency) * wave.amplitude * wave.frequency;
+}
+
+function drawWave() {
+  ctx.beginPath();
+  ctx.moveTo(0, getY(0));
+  for (let x = 0; x <= canvas.width; x++) {
+    ctx.lineTo(x, getY(x));
+  }
+  ctx.strokeStyle = "#333";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+}
+
+let prevColor = "hsl(120,85%,55%)";
+function drawKnob() {
+  const y = getY(centerX);
+  const slope = getSlope(centerX);
+  const color = getColorBySlope(slope);
+
+  // 平滑颜色过渡（线性插值）
+  ctx.beginPath();
+  ctx.arc(centerX, y, 10, 0, 2 * Math.PI);
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = "#444";
+  ctx.stroke();
+
+  prevColor = color;
+}
+
+function updateStage() {
+  const phase = ((offset * wave.frequency) / (2 * Math.PI)) % 1;
+  const index = Math.floor(((phase + 1) % 1) * totalStages);
+  for (let i = 0; i < totalStages; i++) {
+    const box = document.getElementById(`infoBox${i}`);
+    box.classList.toggle("active", i === index);
+  }
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawWave();
+  drawKnob();
+  updateStage();
+}
+
+canvas.addEventListener('mousedown', e => {
+  dragging = true;
+  lastX = e.clientX;
+});
+
+canvas.addEventListener('mouseup', () => dragging = false);
+canvas.addEventListener('mouseleave', () => dragging = false);
+
+canvas.addEventListener('mousemove', e => {
+  if (!dragging) return;
+  const dx = e.clientX - lastX;
+  offset += dx * 3;
+  lastX = e.clientX;
+  draw();
+});
+
+draw();
+</script>
+</body>
+</html>
