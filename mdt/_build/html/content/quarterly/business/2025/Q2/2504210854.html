@@ -1,0 +1,831 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AI阶段性泡沫的顶点 &#8212; 省思录 Meditations</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/quarterly/business/2025/Q2/2504210854';</script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../../_static/favicon.ico" class="logo__image only-light" alt="省思录 Meditations - Home"/>
+    <script>document.write(`<img src="../../../../../_static/favicon.ico" class="logo__image only-dark" alt="省思录 Meditations - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../../intro.html">
+                    省思录 Meditations
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../thinking/thinking.html">思考 Thinking</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../thinking/0_philosophy.html">我的哲学 My Philosophy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../thinking/1_safety.html">安全</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../thinking/2_health.html">健康与长寿</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../thinking/3_advice.html">忠告 Advice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../thinking/4_history.html">穿越历史的省思 History Advice</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../dir.html">季度随笔 Quarterly</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../dir.html">商业 Business</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../society/dir.html">社会 Society</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../technology/dir.html">科技 Technology</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../books/_dir.html">读书笔记</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../evolution/_dir.html">演化与迁移</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../evolution/money.html">货币</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../evolution/commercialization.html">商业化技术</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../evolution/nobels.html">中华贵族阶级</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../edu_revolution/0_edu_revolution.html">教育改革 Education Revolution</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/1_linguistics.html">语言 Linguistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/2_education.html">教育 Education</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../edu_revolution/3_information/information.html">信息 information</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../edu_revolution/3_information/info_acquisition/0_acquisition.html">有关信息</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../edu_revolution/3_information/info_acquisition/1_info_source.html">信息源</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../edu_revolution/3_information/info_acquisition/2_high_signal_info.html">如何获取有效信息</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../edu_revolution/3_information/info_acquisition/3_llm_prompt_engineering.html">LLM Prompt Engineering</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../edu_revolution/3_information/info_dissemination.html">信息传播 Information Dissemination</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/4_kinesiology.html">运动 Kinesiology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/5_mathematics.html">数学 Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/6_physics.html">物理 Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/7_history.html">历史 History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/8_law.html">法律 Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../edu_revolution/9_biomedicine.html">生物医学 Biomedicine</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/quarterly/business/2025/Q2/2504210854.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../../_sources/content/quarterly/business/2025/Q2/2504210854.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>AI阶段性泡沫的顶点</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ai">
+<h1>AI阶段性泡沫的顶点<a class="headerlink" href="#ai" title="Link to this heading">#</a></h1>
+<p>以下新闻引用自 Reteurs：</p>
+<details>
+<summary><strong>China pits humanoid robots against humans in half-marathon</strong></summary>
+By <strong>Eduardo Baptista</strong> and <strong>Alessandro Diviggiano</strong><br>
+<i>April 19, 202511:40 PM GMT+8</i><br>
+<h3>Summary</h3>
+<ul>
+    <li>Robot winner is Tiangong Ultra from Beijing robotics centre</li>
+    <li>Time at 2 hours 40 minutes more than twice men&#39;s race winner</li>
+</ul>
+BEIJING, April 19 (Reuters) - Twenty-one humanoid robots joined thousands of runners at the Yizhuang half-marathon in Beijing on Saturday, the first time these machines have raced alongside humans over a 21-km (13-mile) course.
+<br><br>
+The robots from Chinese manufacturers such as DroidUP and Noetix Robotics came in all shapes and sizes, some shorter than 120 cm (3.9 ft), others as tall as 1.8 m (5.9 ft). One company boasted that its robot looked almost human, with feminine features and the ability to wink and smile.
+<br><br>
+Some firms tested their robots for weeks before the race. Beijing officials have described the event as more akin to a race car competition, given the need for engineering and navigation teams.
+<br><br>
+"The robots are running very well, very stable ... I feel I'm witnessing the evolution of robots and AI,” said spectator He Sishu, who works in artificial intelligence.
+<br><br>
+The robots were accompanied by human trainers, some of whom had to physically support the machines during the race.
+<br><br>
+A few of the robots wore running shoes, with one donning boxing gloves and another wearing a red headband with the words "Bound to Win" in Chinese.
+<br><br>
+The winning robot was Tiangong Ultra, from the Beijing Innovation Center of Human Robotics, with a time of 2 hours and 40 minutes. The men's winner of the race had a time of 1 hour and 2 minutes.
+<br><br>
+The centre is 43% owned by two state-owned enterprises, while tech giant Xiaomi’s (1810.HK), opens new tab robotics arm and leading Chinese humanoid robot firm UBTech have equal share in the rest.
+<br><br>
+Tang Jian, chief technology officer for the robotics centre, said Tiangong Ultra’s performance was aided by long legs and an algorithm allowing it to imitate how humans run a marathon.
+<br><br>
+![img1of3](https://www.reuters.com/resizer/v2/Y6PY3JAGBZPU3CBRIE4A4PTQRY.jpg?auth=7aa0016c135daac55cd933e435439277d4200792969f8eab48f6fda3a53834e4&width=1080&quality=80)
+<i>Humanoid robot "Tiangong" participates along with human runners in the E-Town Half Marathon & Humanoid Robot Half Marathon in Beijing, China April, 19 2025. REUTERS/Tingshu Wang</i>
+<br><br>
+![img2of3](https://www.reuters.com/resizer/v2/Y6PY3JAGBZPU3CBRIE4A4PTQRY.jpg?auth=7aa0016c135daac55cd933e435439277d4200792969f8eab48f6fda3a53834e4&width=1080&quality=80)
+<i>Engineers run with the humanoid robot "Tiangong" as it participates along with human runners in the E-Town Half Marathon & Humanoid Robot Half Marathon in Beijing, China April, 19 2025. REUTERS/Tingshu Wang</i>
+<br><br>
+![img3of3](https://www.reuters.com/resizer/v2/KIY5APIB25MT7MNO2UNBVNC4DE.jpg?auth=e7dc2e78dc41c5f9b3a04ea491cf8c0d2e7fb248e5d9d0fd3df4c5a9d9f36347&width=1080&quality=80)
+<i>Engineers run with the humanoid robot "Noetix N2" as it participates along with human runners in the E-Town Half Marathon & Humanoid Robot Half Marathon in Beijing, China April, 19 2025. REUTERS/Tingshu Wang</i>
+<br><br>
+"I don't want to boast but I think no other robotics firms in the West have matched Tiangong's sporting achievements," Tang said, adding that the robot switched batteries just three times during the race.
+<h3>SOME ROBOTS STRUGGLE</h3>
+<p>Some robots, like Tiangong Ultra, completed the race, while others struggled from the beginning. One robot fell at the starting line and lay flat for a few minutes before getting up and taking off. One crashed into a railing after running a few metres, causing its human operator to fall over.
+<br><br>
+Although humanoid robots have made appearances at marathons in China over the past year, this is the first time they have raced alongside humans.
+<br><br>
+China is hoping that investment in frontier industries like robotics can help create new engines of economic growth. Some analysts, though, question whether having robots enter marathons is a reliable indicator of their industrial potential.
+<br><br>
+Alan Fern, professor of computer science, artificial intelligence and robotics at Oregon State University, said contrary to claims from Beijing officials that such a race requires “AI breakthroughs”, the software enabling humanoid robots to run was developed and demonstrated more than five years ago.
+<br><br>
+“Chinese companies have really focused on showing off walking, running, dancing, and other feats of agility.
+<br><br>
+“Generally, these are interesting demonstrations, but they don’t demonstrate much regarding the utility of useful work or any type of basic intelligence,” Fern said.
+<br><br>
+Tang, the robotic centre’s CTO, said: “A focus going forward for us will be industrial applications for humanoid robots so they can truly enter factories, business scenarios, and finally households.”
+<br><br>
+(This story has been refiled to fix a typo in paragraph 2)
+<br><br>
+<i>Reporting by Eduardo Baptista and Alessandro Diviggiano; Editing by Tom Hogue</i></p>
+</details>
+<p>根据 <a class="reference external" href="https://en.wikipedia.org/wiki/Gartner_hype_cycle#/media/File:Hype-Cycle-General.png">Gartner Hype Cycle</a> 理论，从由 Reinforcement Learning 和 LLM 驱动的人形机器人技术所展现出的成果来看，极有可能已经到达本轮 AI 商业周期的阶段性泡沫顶点。人形机器人参与 marathon 比赛这种极富噱头和炒作成分的新闻，点燃了市场参与者 FOMO 的情绪。但是从商业落地的角度分析，本轮周期所展现出的人形机器人技术，无法去给其估值，因为并没有展现出相对于已经成熟的非人形机器人技术更高的性价比。</p>
+<p>“技术革命”这种故事对炒作和吸纳融资与技术人才有益，但是对投资者尤其是个人投资者的中短期回报无益，“提前三十年的疯子，提前三年是天才”。</p>
+<p>最后，引用中投网对金沙江创业投资（GSR Ventures）朱啸虎的采访：</p>
+<details>
+<summary><strong>金沙江朱啸虎：我们正批量退出人形机器人公司</strong></summary>
+<i>投中网 | 刘燕秋 2025-03-28 14:10:31</i>
+<br>
+<blockquote>
+我们最怕的就是市场共识高度集中，商业化又不清晰。我们从来没有在这样的案例上赚过钱。
+</blockquote>
+朱啸虎的新办公室依旧藏得很深。穿过长长的走廊，尽头是一扇紧闭的木质门。偏偏这扇门上连个把手都没有，只镶着银色门牌，“金沙江创业投资（GSR Ventures）”，便是全部的提示词。单从这一点来揣测，老板大概率是个恨不得掘地三尺把自己藏起来的隐士，但偏偏，那个人是朱啸虎。移动互联网的硝烟里，他热衷于为项目摇旗呐喊。AI新浪潮汹涌而来，他仍然不吝分享观点——来来回回，高频主题和词汇离不开“商业化”。
+<br><br>
+谈投AI应用的思路，他说：“有些人还是喜欢那种高大上的概念，比如说AI Agent特别火，AI Coding看上去也很高大上。我们看的是更接地气的项目，关注的是你能不能商业化，谁来付钱？销售周期多长？是不是见面就能签单？商业化是不是可持续？是不是有高留存？还是比较俗一点。”
+<br><br>
+谈火热的具身智能，他毫不留情地泼了盆冷水：“我们天使基金在过去几年投过一些早期的具身智能项目，最近几个月都在退出……我问这几个CEO，你们商业化可能的客户在哪里？我感觉他们说的都是自己想象出来的客户，谁会花十几万买一个机器人去干这些活？”
+<br><br>
+谈风口浪尖上的宇树，他的口也没松：“考虑到现在这个环境，宇树还是有可能会上科创板，而且表现非常好，但是我们把这种叫投动能的投资，我们还是喜欢投基本面。”
+<br><br>
+此处稍作停顿，该怎么评价朱啸虎的评价？首先，这是标准的朱啸虎式“反共识”，所谓“买在分歧，卖在一致”。过往最典型的例子是ofo小黄车，早早入局，当估值飞涨，其他投资人追加筹码时，朱啸虎却开始转让股份搞退出了。另外，不看好具身智能，特别是人形机器人这类概念，也不意味着是在全盘否定机器人赛道。王兴兴谈过对人形机器人终局的看法，大意是说，机器人是什么形态，他其实无所谓，之所以做人形，是为了迎合社会共识。反过来讲，当投资人纷纷去杭州蹲守宇树老股，人形机器人是不是有点太热了？在热潮中保持清醒，恰恰是早期投资人最重要的品质。
+<br><br>
+当然，最令他兴奋的，还是谈他在一线看到的项目，讲那些数据的起落。“你知道这个产品去年多少收入吗？7000万美金。一个创业两年多的企业，一个很简单的产品，去年收入7000多万美金。”“收入月环比增长20%，这个数字真得让我很激动，所以今年我们比去年要忙很多。这完全是以数字驱动的投资逻辑，而且一般来说都不用烧钱。”
+<br><br>
+我想起比利.怀尔德的《控方证人》里那个刑事辩护律师。那个胖乎乎的中年男人刚做完心脏手术，却在休养期间接了一起凶杀案。一次庭审结束后，朋友叮嘱他保重身体，窝在座椅上，他语速飞快地弹出了下面这段话：“我委托人的性命危在旦夕，他的性命才至关重要……若我觉得气短，那我就含一片药片，或者两片。”所谓职业精神，无非食其禄，忠其事。
+<br><br>
+下沉的周期里，一部分人开始怀疑理性的失效，但朱啸虎一定是理性的信徒，相信逻辑，精密计算，永远分得清主次轻重，也知道自己应该恪守的原则。
+<br><br>
+在由投中信息、投中网主办的“第19届中国投资年会·年度峰会”前夕，投中网与金沙江创投主管合伙人朱啸虎进行了一场对话。
+<br><br>
+<mark>“今天确实有很多赛道看不清楚，但是共识又非常集中”</mark>
+<br><br>
+<strong>投中网：</strong>去年你做出的最能代表你价值观的一个投资决策是什么？
+<br><br>
+<strong>朱啸虎：</strong>最典型的还是我们没投所有的基础模型，基本上聚焦在应用和消费端。我们的投资理念一直强调要聚焦在能够看到清晰的商业化的可能性的赛道上，这是我们在过去20年坚持的投资策略。去年这个时候，说实话，不投大模型还是有很多争议的，今天可能就基本上没啥争议了。所以从第一天开始就这么明确不投，还是比较能代表我们的特色。
+<br><br>
+<strong>投中网：</strong>所以可以说你的这个决策非常理性，没有被外界声音干扰。
+<br><br>
+<strong>朱啸虎：</strong>对，我们一直是比较理性的，至少能算得出账的。大概是在未来几年可能会怎么商业化，商业化潜力在哪里，即使短期内没有商业化，这不是关键，关键是长期你怎么商业化，你的壁垒在哪里。
+<br><br>
+<strong>投中网：</strong>短期和长期你是怎么定义？
+<br><br>
+<strong>朱啸虎：</strong>我们看游戏的终局，竞争的终局会是怎么样的，要想得出这个。说实话，我们投的很多企业都是比较后期才能商业化的。比如说小红书，我们投的时候是香港购物指南PDF，也就两三年之前才有规模化的商业化。但因为它一直是做购物分享的，所以商业化肯定不会成为问题，有些东西还是能看得出来的。
+<br><br>
+<strong>投中网：</strong>那过去三年你做过的最不依据理性的一个决策是什么？
+<br><br>
+<strong>朱啸虎：</strong>这种比较少，我们的风格就是算账。没有收入也行，那我们看数字，看你的获客成本，客户的留存率。我和Richard，我们两个合伙人风格很一致，都是算数字，你要证明你的数字是符合我们的逻辑和标准，讲什么故事我们不太在乎，因为故事很多时候变化很快。像小红书是最典型的，一开始是香港购物指南PDF，这个故事当时肯定没人会投。A轮的法律文件写完了，我们本来是和另外一个基金合投的，那个基金不签字了，我们全部拿过来了。所以你一开始讲的故事，可能后面都会变的，但是数字，你的用户获客成本和留存率，这些是比较本质的。
+<br><br>
+<strong>投中网：</strong>回过头来看，不投大模型变成了一个更正确的选择，但是去年的时候外界可能包括LP都会有一些质疑，这种时候你会怎么样去回应这些质疑？
+<br><br>
+<strong>朱啸虎：</strong>去年确实，肯定有很多质疑，LP也不一定直接说，但今年2月份的时候我在新加坡见了很多美元LP，他们说谢谢你们，没有在基础模型上浪费一分钱，所以大家对你的信任程度反而是提高的。在第一天就能有很清晰的判断，这是早期投资人最可贵的特质。
+<br><br>
+<strong>投中网：</strong>一直是这种算账式的投资，你会觉得乏味吗？
+<br><br>
+<strong>朱啸虎：</strong>能把账算清楚也很有意思的，我最睡不着觉的是账算不清楚，这时候你真的睡不着觉，不知道这个东西到底可不可行。能把账算清楚了我很放心的，我天天晚上睡得很香。
+<br><br>
+<strong>投中网：</strong>有一种说法是，投资有一部分是技术，有一部分是玄学，你是对技术的部分更感兴趣？
+<br><br>
+<strong>朱啸虎：</strong>都很重要，把账算清楚了也是需要玄学的。不是说你账算清楚了，这条路就肯定能成功，创业真的是九九八十一难，里面太多坑了，账算清楚至少你过那个坑的难度可能会小很多。所以只能是降低了玄学的要求，但是这两个并不互斥，两个都要，这两个确实都要。
+<br><br>
+<strong>投中网：</strong>过去三个月，你想清楚的最重要的一件事情是什么？这如何影响到金沙江的投资决策？
+<br><br>
+<strong>朱啸虎：</strong>我最近画了张图，有两个维度，一个是共识，一个是商业化，说实话在PC互联网和移动互联网时代，共识和商业化往往可以同时符合，不管是短期还是长期的商业化，总归能看到商业化路径。当年像优酷、土豆这种长视频网站，大家一开始也觉得很难商业化，后来证明中国消费者也是愿意为长视频付钱的，只是时间的问题。
+<br>
+今天确实有很多赛道看不清楚，但是共识又非常集中，所以我们现在就考虑两个维度，一个是共识的高低，另一个是商业化的可能性。去年我们就聚焦在没有共识，同时商业化又很清晰的赛道上，这是性价比最高的，比如说消费和AI应用。消费并不说是没有共识，可能很多基金投不了消费，所以造成消费公司的性价比特别高。AI应用去年基本上没有共识，大部分的钱都聚焦在基础模型上面去了。今年这两个方向又都有一些变化，AI应用和消费的共识开始逐步起来了，但我觉得现在还是一个投消费和投AI应用的好的时机点。
+<br><br>
+<strong>投中网：</strong>DeepSeek算是一个反面案例吗？
+<br><br>
+<strong>朱啸虎：</strong>开源本身不是说没有商业模式，像安卓就是非常典型的开源，它的商业模式也非常清晰。但是DeepSeek确实不太一样。现在为什么像腾讯都开始全力拥抱DeepSeek，因为它不仅不考虑商业化，而且不考虑用户，甚至几个亿的用户都可以让给生态伙伴，谁都可以接满血版的DeepSeek。这几乎是一种彻底开源的打法，是完全不一样的。
+<br><br>
+<strong>投中网：</strong>高度共识，但又没有商业化路径，去年是大模型，今年的典型是什么？
+<br><br>
+<strong>朱啸虎：</strong>今年我个人感觉是具身智能。具身智能现在特别火，同时我觉得商业路径还是不清，尤其是人形机器人。我经常开玩笑说，现在是个人形机器人就会翻跟头，但商业化在哪里？以前最主要的市场需求是做研究，要么是高校，要么是你的竞争对手，今天又多了一个新客户——央企买回去做前台展示。但这种客户都不是我们喜欢的客户，我们喜欢的是可持续的，能够给客户创造价值的商业化，今天我觉得在这里面还看不太到。因为现在共识高度集中，估值上涨得非常快，这种变成了我们早期VC想回避的赛道。
+<br><br>
+<strong>投中网：</strong>宇树这种没有现金流压力的公司也没达到你的满意度吗？
+<br><br>
+<strong>朱啸虎：</strong>核心还是你有没有为客户创造持续的价值，客户会持续来买单。只是买回去做研究的，或者买回去做展示的，这种都不是我们意义上的商业化。当然考虑到现在这个环境，宇树还是有可能会上科创板，可能表现非常好，但是我们把这种叫投动能的投资，我们还是喜欢投基本面。
+<br><br>
+<strong>投中网：</strong>所以如果说当时投了宇树，回头看这也是属于不符合你价值观的那种投资是吗？
+<br><br>
+<strong>朱啸虎：</strong>一般来说，如果看不到商业化路径，共识又高度聚焦，我们一般就是在退出的时候了。确实我们天使基金在过去几年投过一些早期的具身智能项目，最近几个月我们都在退出这些项目。现在共识高度集中，是有退出机会的，但是商业化确实不清晰。我问这几个CEO，你们商业化可能的客户在哪里？我感觉他们说的都是自己想象出来的客户，谁会花十几万买一个机器人去干这些活？
+<br>
+<mark>“在AI应用企业上，我们看到了团购早期的增长速度”</mark>
+<br><br>
+<strong>投中网：</strong>DeepSeeK和中国科技股十姐妹吸引海外资本重估中国科技资产，你也在朋友圈说“2025年是中国资产全面重估的开始。”具体来说，你觉得中国科技的叙事改变了多少？这会带动一部分美元LP重新把目光投向中国吗？
+<br><br>
+<strong>朱啸虎：</strong>我们2月份在新加坡见了一些美元的LP，他们有些感觉，但是真传导到一级市场还需要时间。一般都是二级市场先有反应，对冲基金来买中国资产，等到他们能赚钱了，一级的人才会有动作。我们和一级市场的投资人开玩笑说，可能得恒生科技再涨半年。所以我们也希望恒生科技能再持续涨半年，到今年11月份，我觉得LP可能反应会比较明显一点。
+<br><br>
+<strong>投中网：</strong>还是要等股市涨到位了？
+<br><br>
+<strong>朱啸虎：</strong>对，时间要到位，至少证明这东西不是昙花一现，是可持续的。因为一级市场的投资一般来说时间会长一点，像早期投资真的是基本上要8到12年才能看到规模化的退出。今天你看不仅是中国，美国也是一样的，美国这两年科技IPO也非常少，基本上8到12年才能看到显著的DPI回来。
+<br><br>
+<strong>投中网：</strong>在今年这些积极因素的带动之下，金沙江整体的策略会变吗？去年我们来聊的时候，你说要苟住，不下牌桌。
+<br><br>
+<strong>朱啸虎：</strong>过去几个月我们确实看到很多乐观的因素，恒生科技只是一方面。更重要的是在一级市场上，我们在中国和美国都看到很多做AI应用的企业，收入涨得很快，这个月比上个月收入涨20%以上，这非常让人兴奋。
+<br>
+这个数字可能你们没有感觉，但当年团购火的时候，就是月环比涨20%，那是我们从来没看到过的增长速度。现在我们在AI应用企业上看到了和团购早期一样的增长速度，而且不仅是美国，中国也是一样。大家一直说中国的企业不太愿意花钱，但在中国AI应用公司上，在to b的AI应用公司上，我们看到了月环比增长20%的增长速度。所以我们今年可能在中国和美国都会加大投资节奏。
+<br><br>
+<strong>投中网：</strong>基本上大家今年都是在投AI，投AI主要是投AI应用，你觉得大家现在的共识和分歧点是什么？
+<br><br>
+<strong>朱啸虎：</strong>共识还是很不清晰的。有些人还是喜欢那种高大上的概念，比如说AI Agent特别火，AI Coding看上去也很高大上，可以把码农全部取代掉。我们看到的是更接地气的项目，关注的是你能不能商业化，谁来付钱？销售周期多长？是不是见面就能签单？商业化是不是可持续？用户是不是有留存、有高留存？还是比较俗一点。
+<br><br>
+<strong>投中网：</strong>今年这个时间点，对AI应用来说，是一个正确的下注时间了吗？还有一些人会觉得模型能力还有待发展。
+<br><br>
+<strong>朱啸虎：</strong>在一线接触的水温让我们觉得是到了正确时间点了。就像刚才讲的，这种增长速度非常少见的，说实话在过去几年当中是没看到过的。另外，我觉得基础模型能力已经足够强了，可能上面还能再提升10% 或20%，但那不重要了，不要也行，已经足够好了。今天的模型能力已经在很多场景下可以满足用户的需求，而且用户愿意付费，这个很重要。
+<br><br>
+<strong>投中网：</strong>你能举几个具体的使用场景吗？
+<br><br>
+<strong>朱啸虎：</strong>现在说实话赚钱的地方大家都想要低调，但我可以分享一个案例，是中国企业。一个很年轻的创业者做了一个AI硬件，像名片一样很薄的一张金属卡片，贴在手机后面，像我们这样访谈，它就自动生成会议纪要。要说技术，肯定不难，里面就接ChatGPT。你知道这个产品去年多少收入吗？7000万美金。一个创业两年多的企业，一个很简单的产品，去年收入7000多万美金。所以真的机会很多。当然因为没有保密，大家都知道了，现在深圳一堆公司都在用集装箱把这样的AI会议纪要产品卖到美国。
+<br><br>
+<strong>投中网：</strong>但是这种会议记录的需求之前不是已经被很多产品解决了吗？    
+<br><br>
+<strong>朱啸虎：</strong>你以为解决了，现在手机也可以录，也可以传到GPT里面去做纪要。这类产品做了很小提升，因为它有硬件，上面4个喇叭，我们谈话比较远的话，它也能很好地收集声音，而且可以区分每个人说的话。就靠这些小的性能优化，它就卖得非常好。所以很多时候你不要以为现有产品已经足够好，也不需要那种非常大的科技进步，你在用户体验上做10%、20%的提升，用户就愿意买单了。很多时候真的不需要很高大上的阳春白雪的东西。
+<br><br>
+<strong>投中网：</strong>现在人们对AI的需求，无非是做个PPT或是生成个文档。你觉得未来AI应用领域会出现那种现在根本想不到的，满足我们全新需求的东西吗？
+<br><br>
+<strong>朱啸虎：</strong>我们一直不希望创业者去教育市场。教育市场太累了，而且需要很多钱投资。我再回到做会议纪要的例子，全世界做会议纪要的，有几十家公司都增长非常快，基本上都是月环比增长20%以上的速度。美国有个公司叫Abridge，做的是医生和病人之间的问诊AI。医生看一个病人，要问他很多问题，AI会自动把这些音频记录下来，转成文字，然后根据美国各个州不同的格式转成病历，填到系统里面去，做到90%以上准确率。这个产品在美国商业化做得非常好。还有做兽医的，甚至还有做上市公司财报会的，上市公司每个季度都要发财报会，都要回答很多分析的问题，它自动拨进去，做会议纪要。我们还投了一家中国公司，在日本做会议纪要也做得非常好。
+<br>
+你看，就这么小的功能点，足够支撑全世界几十家公司收入增长都非常快。不同场景下面都有公司做，证明这个需求点非常强大，而且这东西是大模型最容易做的，根本不需要很深的技术，但是你得把一个具体的细分场景做深了。
+<br><br>
+<strong>投中网：</strong>这样的话你不会担心错失那种颠覆性的新潮流和趋势吗？
+<br><br>
+<strong>朱啸虎：</strong>所以我们要密切关注市场，密切和创业者聊，到底他们现在一线感觉是怎么样的，客户的感觉是怎么样的，收入增长速度是怎么样的。所以为什么虽然月环比增长20%，背后的数字实际上很小，但我们看到这个数字就很幸福了，这和当年我们投团购网一模一样。很快半年就能上去了，这是我们需要提前布局的一个阶段。    
+<br><br>
+<strong>投中网：</strong>当年看移动互联网的那套逻辑框架，现在是可以拿来直接套在AI应用上？    
+<br><br>
+<strong>朱啸虎：</strong>对，移动互联网当年基本都是to c的，to c增长速度快是可以理解的，但今年很多是to b的应用，to b增长速度能够和to c一样，这个是非常不容易的。
+<br><br>
+<strong>投中网：</strong>你怎么评价这个月火爆的Manus，它会让你觉得眼前一亮吗？
+<br><br>
+<strong>朱啸虎：</strong>我觉得很重要的考验就是用户愿不愿意付钱。看上去很炫的东西，客户到底愿不愿意为你交付的结果付钱，这是很重要的。因为它的服务成本很贵，做一个任务可能要至少几美金，要收个10美金，可能才能回本。花10美金去完成一个任务，我觉得这挺难。所以为什么商业化很重要，因为它能够验证你的产品是不是达到用户要求的质量，这个时候花枝绣腿是没用的。
+<br><br>
+<strong>投中网：</strong>你是不看好这个项目，还是不看好所谓的AI Agent的这件事情？
+<br><br>
+<strong>朱啸虎：</strong>我前面讲的都是Agent，比如做医生和病人之间问诊的是一个垂直行业Agent。今天垂直Agent很容易做，而且很容易商业化，服务成本都很低。通用Agent说实话我今天还不看好，我觉得交付的质量还很难达到商业化的程度。还有一点，通用Agent都是大厂的机会。我现在最期待的是微信的Agent。比如说我和你聊天提到下次开会的时间，它自动帮我放到日历里，再帮我订机票酒店，这种都是大厂机会。通用Agent需要入口，在微信里面集成是最容易的。当然今天在中国，这种场景在前端很难商业化，只能在后端商业化，比如说订机票和酒店。那就必须要做得很智能，客户才真的愿意把这个东西交给你。今天我觉得智能程度还没有到那个程度，基础模型没到那个程度，还需要点时间。
+<br><br>
+<strong>投中网：</strong>今年你们投这些AI应用，会不会觉得比去年火，要去抢项目？
+<br><br>
+<strong>朱啸虎：</strong>有这么一点了，尤其美国很明显的，中国现在也开始有一些势头了。
+<br><br>
+<strong>投中网：</strong>到今年底会有那种所谓的超级APP出现吗？
+<br><br>
+<strong>朱啸虎：</strong>我觉得还太早了。抖音是iPhone 4出来3到5年以后才出来，iphone 4出来以后两年，第一款火爆的APP是愤怒的小鸟，是iPhone 4出来两年以后。c端这种超级APP，还需要时间，但b端我们看到已经很明显了。b端，我们现在的检验标准是6到12个月做到1000美金的年化收入，最好是6个月。真的好公司现在基本上6个月能做到1000美金年化收入，这在以前是不能想象的，今天至少看到可能性了。
+<br><br>
+<strong>投中网：</strong>AI应用这一波，中美的差异大吗？
+<br><br>
+<strong>朱啸虎：</strong>没那么大，中国的应用也要全球化。我和中国AI的应用创业团队一直说，你要想清楚，今年你可能确实切入比较早，但是明年可能很多人进来，都会打到白菜价，所以你必须要一只脚在海外。海外是利润来源，在国内是测试产品有没有需求，好不好，因为中国用户对产品的要求远远超过其他国家。
+<br><br>
+<strong>投中网：</strong>人民币基金也在看AI应用吗？思路有什么不同？
+<br><br>
+<strong>朱啸虎：</strong>都在看，大家的共识还不是那么一致。我们更喜欢最好不是100%AI的项目。100%AI的明年可能都是白菜价，因为中国太卷了，100%AI的工具没有任何壁垒。虽然你比别人做得早一点，但最多6到12月别人都会跟上来。相反，有部分是AI做不了的事情，必须要人工做的，反而是壁垒。其他投资人可能觉得这么土的项目，一半人工一半AI，有啥意思，但我们觉得是壁垒。
+<br><br>
+<strong>投中网：</strong>今年你们已经投了多少AI应用？
+<br><br>
+<strong>朱啸虎：</strong>已经给出去几个TS了，在交割当中。
+<br><br>
+你觉得之前的大模型“六小虎”可能会有多少幸存者？如果要幸存下来要满足的条件是什么？
+<br><br>
+<strong>朱啸虎：</strong>我觉得开复想得最清楚，就是拥抱DeepSeek，在上面做应用。做底座模型已经没有啥意义了，你要做底座模型可能也要兼容DeepSeek。千问本来和DeepSeek就兼容，剩下的基础模型，可能最多未来6到12个月，都得看看是不是要兼容DeepSeek。如果全世界50%以上的程序员都在用DeepSeek开发应用的话，兼容是最好的选择。
+<br><br>
+<strong>投中网：</strong>听说月之暗面还是在坚持模型研发，金沙江作为间接股东会推动退出吗？
+<br><br>
+<strong>朱啸虎：</strong>我不知道怎么退出了。但你可以看到美国去年二线大模型基本上都有并购机会，投资人基本上拿本金加利息走人的。今年美国剩下的大模型公司，并购都很难了。中国我觉得更难，中国本来就没有并购的文化。“首先是码农没了，不是文科生没了”
+<br><br>
+<strong>投中网：</strong>问一个稍微哲学一点的问题，如果说将来AI和机器人代替人去工作，它是会让人活得更好，还是说会变成另外一种剥削人的工具，加剧人的异化？
+<br><br>
+<strong>朱啸虎：</strong>这个问题挺难的，说实话我们感觉所有的政府都没想明白。具身智能还稍微有点远，但是AI这一波对就业的影响非常大，我们已经看到很多具体岗位上，今年的需求量可以减少50%，明年可以再减少50%。比如说AI Coding，去年AI Coding只能做到20%到30%的人工替代，现在可能做到50%到60%，到今年年底或者明年这个时候可能是80%到90%，那对程序员的影响是很明显的。至少今天美国大厂给程序员的岗位已经很少了。第一步，不再招聘新的人，把老的继续消化掉。第二步，可能内部就要优化，美国的大厂已经开始优化现在的程序员了，我觉得中国也很快会看到这样的情况。这对就业肯定有很大影响，但也不可避免。
+<br><br>
+<strong>投中网：</strong>在这种情况下，人类最后的堡垒是什么？
+<br><br>
+<strong>朱啸虎：</strong>可能真的是那些偏文科的更人性的东西。比如说对美的理解，现在很多人写的文章AI味太浓了，DeepSeek就是很典型的例子，它写的文字确实很优美、深刻，但是痕迹也很重，不管讲什么东西都很容易牵扯到量子力学、牵扯到哲学上去。所以我现在觉得，以后模型可能就真的像餐厅一样，算法都是公开的，算法的参数权重也是公开的，但是训练的语料没有公开，语料不一样，最后出来文字的味道风格也有差别。智能本身没什么差别，但是语言风格导致最后的结果有差别。
+<br>
+我觉得人在这里面还是需要有些选择，需要审美把控。不可能一天到晚都吃川菜，过一两天换一个口味，吃个粤菜，这是一个可能的空间点。
+<br>
+这是比较反常识的，因为很多人都觉得语言模型取代了文科，但实际上首先是码农没了，不是文科生没了。而且语言模型持续提升，也需要高质量的文字作为语料。大家为什么觉得DeepSeek写文字写得特别好，因为它的文学语料特别强，据说是找北大文科生打的标签。
+<br><br>
+<strong>投中网：</strong>只需要审美和价值观的把关人。
+<br><br>
+<strong>朱啸虎：</strong>对，这才是人类最后的堡垒。
+<br><br>
+<strong>投中网：</strong>像你说的程序员的问题，其实很多程序员做的也不光是一个编程的事，特别是在大厂里面，也涉及到很多复杂需求的理解和对接。
+<br><br>
+<strong>朱啸虎：</strong>你说的那个是产品经理，产品经理还是需要的，这也是偏文科，要理解人的需求，把它用精确的语言描述给AI。这可能短期内还不能取代，反正我们也看到有些公司在做，自动帮你生成各种各样的描述，但人可能得再修改一下。AI确实很厉害，潜力很大，以后可能都是需要很资深的人员，把AI生成的东西把关一下。
+<br><br>
+<strong>投中网：</strong>还是那个问题，剩下那些人去干什么？
+<br><br>
+<strong>朱啸虎：</strong>不知道，确实不知道，所以我们感觉蓝领工作相对来说还是比较有保证的，因为具身智能说实话还差得有点远。我举个例子，我们看过有个机器人可以帮人做按摩，我根本不敢体验，万一他力气没控制好，使大劲了，那我完蛋了。我还是宁愿用人来按摩。这反而是人的机会。
+<br><br>
+<strong>投中网：</strong>包括说我们用所谓的Agent帮我们去做一些事情，但有人会觉得很多事情不想让AI帮我做。
+<br><br>
+<strong>朱啸虎：</strong>对了，比如说购物，这个过程是一种体验，这就是很多理科男不能理解的东西。
+<br><br>
+<strong>投中网：</strong>但是你作为理工男是能理解的？
+<br><br>
+<strong>朱啸虎：</strong>对，所以我们的看法一直是反过来的，我们一直从用户体验、从用户需求角度来入手看需要什么样的技术。很多创业者或者很多其他的投资人想的是，我这个技术很炫，它能用在哪里？通俗来讲，就是拿着榔头找钉子。
+<br>
+<mark>“靠改变惯性获取成功，概率太低了”</mark>
+<br><br>
+<strong>投中网：</strong>最近有投资人反思自己早年为什么没投宇树，其中的一部分原因是觉得王兴兴背景屌丝，表达能力也很一般，不符合精英画像。你有过这种因为坚持某种人才画像而错失的投资案例吗？
+<br><br>
+<strong>朱啸虎：</strong>这倒没有，我们过去所有的成功项目基本都是屌丝，在我们投的时候都是nobody。以前成功的移动互联网创业者几乎都是这样的。20多年前，我刚刚入行的时候，一个VC老前辈和我说，他最不喜欢的就是投成功创业者的第二次创业。当一个人觉得自己很厉害，成功是必然的，在这时候反而会犯很多错误，所以成功创业者的第二次创业反而很难成功。
+<br><br>
+<strong>投中网：</strong>你当时见过王兴兴吗？
+<br><br>
+<strong>朱啸虎：</strong>我们一般都不太看硬件。
+<br><br>
+<strong>投中网：</strong>过去经常谈的错失的案例是张一鸣，错过之后，你会反过来检视自己的偏见吗？
+<br><br>
+<strong>朱啸虎：</strong>很难的，说实话就要和自己和解，不要去改变自己的习惯动作。靠改变惯性获取成功的概率太低了，还是聚焦在自己擅长的安全的赛道上，不要想着赢家通吃。所以我们从来也不愿意追逐市场热点，某些赛道很火，让别人去赚，这钱我们不赚。就聚焦在我们熟悉的赛道上，这个赛道已经很大了，我们已经很满意了。
+<br><br>
+<strong>投中网：</strong>那你是不是从不精神内耗？    
+<br><br>
+<strong>朱啸虎：</strong>你想明白这些就行了，不要对自己要求太高。赚自己熟悉的擅长的赛道上的钱，我们已经忙不过来了。
+<br><br>
+<strong>投中网：</strong>你怎么感知企业家特质和精神的变化？梁文锋和王兴兴们代表的是一种新的企业家精神吗？
+<br><br>
+<strong>朱啸虎：</strong>新一代的创业者确实不一样，因为以前中国确实基础比较落后，创业者自身的条件没有那么好，今天很多创业者不再为基本生活担忧了，就有能力去追求一些更远大的目标。比如梁文锋直接追求AGI，不考虑商业化，不考虑任何世俗的东西。以前这样的创业者在中国不是没有，只是大多数人没有这个条件。
+<br><br>
+<strong>投中网：</strong>那这些企业家的价值观不就和你的投资标准有些差异？
+<br><br>
+<strong>朱啸虎：</strong>所以梁文锋也不要钱，这就非常典型。
+<br><br>
+<strong>投中网：</strong>前段时间金沙江刚宣布达成一笔跟科勒的S交易，是你们主导的，S基金的交易一直很难达成，你能具体讲讲这个交易是怎么达成的吗？比如你是怎么平衡老LP和新LP的需求的？
+<br><br>
+<strong>朱啸虎：</strong>说实话确实S基金很难做，真成交的很少，因为任何一笔交易都有很多维度，同时优化很难做到。所以我们只有一个维度，就是最大化LP的利益，这是底线，剩下的条件都可以谈。最大化LP的利益，这样我跟老LP也很容易交代，他们很容易批准，同时新的LP也会有信心——你对老LP很尊重，最大化他们的利益，以后也会最大化我的利益。
+<br><br>
+<strong>投中网：</strong>新的LP会这么去想吗？要最大化老LP利益，那他们暂时利益是受损的。
+<br><br>
+<strong>朱啸虎：</strong>那也不一定，有很多其他角度可以优化。虽然老的LP利益放大了，但还有其他角度可以优化，有模型和算法，可以再把这个价值找补回来，但你要同时几个角度都要优化，那就很难操作了。
+<br><br>
+<strong>投中网：</strong>这算是你们的一个尝试吗？金沙江今后会推动更多这样的案例吗？
+<br><br>
+<strong>朱啸虎：</strong>人民币可能会多一点，因为人民币的延期比较难一些，美元我们一直在持续往后面延。首先，美元LP内部交易很活跃。第二，他们也很了解，只要公司好，每年往后延，老LP都完全理解，比如小红书已经13年了。人民币的延期会比较难一点，所以S基金交易会多一点。
+<br><br>
+<strong>投中网：</strong>你对今年的退出会比较乐观吗？
+<br><br>
+<strong>朱啸虎：</strong>现在至少证明港股是一个通畅的市场化的退出渠道，所以我们感觉退出的可能性会比以前确定性高很多。
+<br><br>
+<strong>投中网：</strong>问一个关于你的问题。你和张予彤的纷争，外界之前有一种解读视角说这是一种代际冲突，张予彤作为一个相对年轻的主管合伙人，还是想有自己的代表作，但是你已经功成名就，更多的是那种守成的思维，所以会在项目上会有一定的分歧。你怎么看这种评价？
+<br><br>
+<strong>朱啸虎：</strong>说实话分歧还是对商业模式的判断，这完全不是守成或是保守的问题。去年你可以这么说，但今年我觉得没人会这么说，已经被证伪了。去年基础模型多火，大家都要抢份额，今天已经没人敢投了，这说明我们的判断是对的。
+<br>
+有些投资人就喜欢追逐市场热点，每个人分一点额度，我们还是喜欢更看基本面。过去20年，我们所有赚钱的项目都是投的时候没人看好的。小红书前面分享过了，投滴滴的时候也是一样的，我们有个兄弟基金，我说分你一半，对方不要。投饿了么的时候，另外一个公司开董事会，我说我们投了饿了么，做外卖的，对方哄堂大笑。我们投共享单车的时候，一开始大家也都不相信，这东西怎么可能赚钱。投共享充电宝的时候也是被人嘲笑的。但是后来证明，至少从长远来看这些商业模式都成立。共享单车虽然后来出了很多事情，但今天全行业每天五六千万单，像今天这个天气最适合骑共享单车。共享充电宝，虽然美团今天可能占一半市场份额，但剩下三家公司也都很赚钱，都是规模化利润的公司。
+<br>
+就像前面讲的，我们画了两个维度，一个是市场共识，一个是商业化的潜力。我们最怕的就是市场共识极度集中，商业化又不清晰，大模型去年是最典型的案例。我们从来没有在这样的案例上赚过钱。赚钱的都是没有市场共识，但是商业化又很清晰的。过去20年来，我们的判断和逻辑一脉相承。
+<br><br>
+<strong>投中网：</strong>所以它还是一个专业层面的事情。    
+<br><br>
+<strong>朱啸虎：</strong>对，这就完全是一个商业判断，而且一年就能见分晓。
+<br><br>
+<strong>投中网：</strong>到现在为止，你的能力边界就是金沙江机构的能力边界吗？
+<br><br>
+<strong>朱啸虎：</strong>我的另外一个合伙人Richard在美国硅谷，我们的逻辑和风格都是一致的，算数字。为什么今年我很激动，因为看到每月环比增长20%，所以今年我们投资速度会更快一点，比去年要忙很多。这完全是以数字驱动的投资逻辑，而且这种项目一般来说都不用烧钱，这种逻辑是能让我每天睡的着觉，睡得很香的。基本上都是这个月投入多少钱，下个月就能回本的项目，还是很厉害的。
+<br><br>
+<strong>投中网：</strong>那你有过睡不着觉的阶段吗？
+<br><br>
+<strong>朱啸虎：</strong>当年O2O的时候烧钱烧得太猛了，那是我们没想到的。我投滴滴的时候，程维和我说每天2万单能盈利，也能算得出账，我觉得他说的是有些道理的。只是后来没想到补贴仗打得这么厉害，最高峰烧掉一两千万，也会担心它后面还有没有融资，那个时候确实睡不着觉。
+<br>
+但今天AI这波应用比较好的一点是不用烧钱。十几、二十人的团队就能做到年化千万美金的收入。中国和美国都是一样的，千万美金到3000万美金之间是一个平台期，可能靠十几二十个人就能做到年化1000万美金收入。再往上走可能就需要建立销售队伍了，从 PLG迁移到一部分的SLG，怎么建立和管理销售队伍，这需要技能，我们在这里面可以帮CEO赋能。过了平台期，重新再加速增长，那都是很好的企业。
+<br><br>
+<i>网站编辑： 郭靖</i>
+</details>
+<hr class="docutils" />
+<p><em>2025.4.21</em></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\quarterly\business\2025\Q2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 深 Robert
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

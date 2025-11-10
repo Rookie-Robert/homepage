@@ -1,0 +1,657 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>市场结构 Market Structures &#8212; 睿深资产管理 R&amp;R Asset Management</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/trading/1_structures';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="交易原则 Trading Principles" href="2_principles.html" />
+    <link rel="prev" title="交易 Trading" href="trading.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/favicon.ico" class="logo__image only-light" alt="睿深资产管理 R&R Asset Management - Home"/>
+    <script>document.write(`<img src="../../_static/favicon.ico" class="logo__image only-dark" alt="睿深资产管理 R&R Asset Management - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    关于 About
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../insight/insight.html">洞察 Insight</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../insight/field.html">资产选择 Asset Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../insight/ratio.html">比值中的价值 Ratios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../insight/cycle.html">资产价格周期展示（多阶段） Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../insight/ShadowBankingTheMoneyView.html">How the Financial System Works (<em>by Zoltan Pozsar</em>)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data/data.html">数据 Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data/0_macro/_macro.html">宏观 Macro</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data/0_macro/1_global.html">全球 Global</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/0_macro/2_us.html">美国 US</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/0_macro/3_eu%26uk.html">欧元区与英国 Euro Zone &amp; UK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/0_macro/4_jp%26kr%26tw.html">日本、韩国、台湾 Japan &amp; South Korea &amp; Taiwan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/0_macro/5_hk%26cn.html">Hong Kong &amp; Chinese Mainland 香港与中国大陆</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/0_macro/6_em.html">新兴市场 Emerging Market</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data/1_rates/_rates.html">利率 Rates</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data/1_rates/1_benchmark_rate.html">基准利率 Benchmark Interest Rate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/1_rates/2_bonds%26bills.html">长期债券与短期国库券 Government Bonds &amp; Treasury Bills</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/1_rates/3_liquidity_indicators.html">流动性指标 Liquidity Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/1_rates/4_Inflation-linked_bonds.html">通胀挂钩债券 Inflation Linked Bonds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/1_rates/5_interest_rate_swaps.html">利率互换 Interest Rate Swaps</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/2_fx/_fx.html">外汇 Foreign Exchange</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data/3_equities/_equities.html">权益资产 Equities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data/3_equities/1_us.html">美国 US</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/3_equities/2_eu%26uk.html">欧元区与英国 Euro Zone &amp; UK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/3_equities/3_jp%26kr%26tw%26sg.html">日本、韩国、台湾、新加坡 Japan &amp; South Korea &amp; Taiwan &amp; Singapore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/3_equities/4_hk%26cn.html">香港与中国大陆 Hong Kong &amp; Chinese Mainland</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data/3_equities/5_em.html">新兴市场 Emerging Market</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/4_credit/_credit.html">信用类资产 Credit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/5_commodities/_commodities.html">大宗商品 Commodities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/6_real_estate/_real_estate.html">不动产 Real Estate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/7_crypto/_crypto.html">Crypto</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">市场结构 Market Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_principles.html">交易原则 Trading Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学 Mathematics</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="4_strategies.html">策略 Strategies</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../journal/journal.html">日志 Journal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../journal/2025/2025.html">2025</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/trading/1_structures.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/trading/1_structures.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>市场结构 Market Structures</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">不断演化的市场</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">非对称风险</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">“反脆弱”的生存方式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4 个要素</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3 个核心</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="market-structures">
+<h1>市场结构 Market Structures<a class="headerlink" href="#market-structures" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>不断演化的市场<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>市场不像物理定律那样稳定不变，它更像是一个生态系统。参与者根据环境变化调整行为，策略的有效性会随时间演化。</p>
+<p>所以教科书式的定理不是市场定理，仅仅是人们一厢情愿的期望，真正的市场参与者不能指望通过掌握定理来驾驭市场。</p>
+<p>因此绞尽脑汁设计出一套完美的静态不变的模型是不现实的，应该尽早地置身其中，让身体和心灵随着市场一起演化，在共同演化中适应市场。</p>
+<p>市场拥有反身性（reflexivity），它并不是被外部的“真实价值”所驱动，而是由参与者对未来的预期、行为，以及这些行为对市场本身的反馈机制，共同构成的一个循环系统。</p>
+<blockquote>
+<div><p>市场不是寻找真理的工具，而是制造错觉的机制。</p>
+</div></blockquote>
+<p>市场的周期性来源于反身性，当再也没有一个人能参与到市场中时，周期到达了顶部；当再也没有一个人能从市场中退出时，周期到达了底部。不要执念周期一定会在某时反转，同样因为反身性，周期也会变形。</p>
+<p>如同跟随自然界演化的生物，其演化的目的并不是为了驾驭自然界，而是在不断演化的自然界中持续生存。因此市场参与者的唯一目的就是持续地在市场中生存。</p>
+</section>
+<section id="id2">
+<h2>非对称风险<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>由于没有完全相同的市场参与者，因此各自承担的风险也是不对称的。为了尽可能提高自己在市场上生存的概率，参与者应该：</p>
+<ul class="simple">
+<li><p>迁移到生存条件更好的细分市场。</p></li>
+<li><p>不参与自己不熟悉的细分市场，弱水三千只取一瓢。</p></li>
+<li><p>不与市场趋势相抗衡。</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>“反脆弱”的生存方式<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>脆弱（Fragile）：在压力和不确定性中受损。</p></li>
+<li><p>强韧（Robust）：能抵御冲击但没有获益。</p></li>
+<li><p>反脆弱（Anti-fragile）：在不确定性中受益，变得更强。</p></li>
+</ul>
+<p>能够跟随自然界一起演化的生物都具有反脆弱性，因此能够长期跟随市场一起演化的参与者也都必须具备反脆弱性。</p>
+<p>反脆弱性会堆砌冗余，以备不时之需。市场参与者需要时刻持有在未知风险来临时，能够有非线性“爆发式”对冲风险敞口的保险。这里只需要回答 2 个问题：谁是谁的非线性“爆发式”对冲保险？风险敞口和对冲保险的比例是否合适？</p>
+<p>此时，并不需要也不可能对市场进行精准地预测，仅仅需要准备好应对市场各种可能的变化即可，这样也能避免被大量市场噪声干扰。</p>
+<p>除此之外，反脆弱性还体现在以下几点：</p>
+<ul class="simple">
+<li><p>多次尝试，允许犯小错，抓住一次确定性极高的大机会，让一次机会的获益弥补此前所有的错误后仍然有大幅增益。</p></li>
+<li><p>不迷恋平庸的机会，将休整状态作为常态。</p></li>
+<li><p>兵贵神速，将及时撤退作为本能，三十六计走为上。</p></li>
+<li><p>见好就收，不能过分贪婪。</p></li>
+</ul>
+<blockquote>
+<div><p>Be faster, be smarter, or cheat.</p>
+</div></blockquote>
+</section>
+<section id="id4">
+<h2>4 个要素<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>市场交易的 4 个要素分别是：</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>概念</p></th>
+<th class="head text-center"><p>定义</p></th>
+<th class="head text-center"><p>作用</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>交易双方（Agents）</p></td>
+<td class="text-center"><p>具有资产配置意愿与能力的市场参与者</p></td>
+<td class="text-center"><p>决定市场行为和博弈结构</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>交易中介（Intermediaries）</p></td>
+<td class="text-center"><p>连接、撮合或促进交易的结构和机制</p></td>
+<td class="text-center"><p>降低摩擦、提升效率、维持秩序</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>资产类别（Assets）</p></td>
+<td class="text-center"><p>市场中被交易、定价的对象</p></td>
+<td class="text-center"><p>市场价值流动的载体</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>流动性（Liquidity）</p></td>
+<td class="text-center"><p>资产变现速度与成本的衡量标准</p></td>
+<td class="text-center"><p>衡量市场健康和运行效率</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id5">
+<h2>3 个核心<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>市场参与者的仓位。</p></li>
+<li><p>市场参与者的交易方向和交易规模。</p></li>
+<li><p>市场参与者的交易动机。</p></li>
+</ul>
+<p>一切和交易相关的数据都围绕以上 3 点展开，由于市场交易是“非完全信息博弈”，因此任何衍生数据和指标都是用来逼近真实的仓位、交易动机、交易方向和交易规模。</p>
+<p>分析任何市场交易的数据和指标都必须最终落实在以上 3 点。</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\trading"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="trading.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">交易 Trading</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="2_principles.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">交易原则 Trading Principles</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">不断演化的市场</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">非对称风险</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">“反脆弱”的生存方式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4 个要素</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3 个核心</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 深 Robert
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
