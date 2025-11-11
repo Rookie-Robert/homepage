@@ -8,6 +8,9 @@
 
 - <a href="https://www.cmegroup.com/solutions/clearing/operations-and-deliveries/nymex-delivery-notices.html" target="_blank"><h4>NYMEX, COMEX Delivery Notices & Stocks</h4></a>
 - <a href="https://sc.macromicro.me/series/17518/gold-comex-warehouse-stock" target="_blank"><h4>COMEX-黄金库存量</h4></a>
+- <a href="https://sc.macromicro.me/series/17517/silver-comex-warehouse-stock" target="_blank"><h4>COMEX-白银库存量</h4></a>
+
+
 
 > Frequency: <mark>Daily</mark>
 
