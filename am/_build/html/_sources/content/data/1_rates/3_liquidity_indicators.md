@@ -12,6 +12,18 @@
 
 ---
 
+- <a href="https://www.newyorkfed.org/markets/desk-operations/repo" target="_blank"><h4>Repo Operations</h4></a>
+
+> Frequency: <mark>Daily</mark>
+
+> Delay: <mark>1 W</mark>
+
+> Correlation: <span style="color: red;">Very Strong</span>
+
+<mark>NY Fed 每天进行的回购和逆回购操作，当短期成交量放大时，通常表示市场的现金流动性紧张，必须从 Fed 借入现金。</mark>
+
+---
+
 - <a href="https://fred.stlouisfed.org/series/RRPONTSYD/" target="_blank"><h4>ON RRP</h4></a>
 
 > Frequency: <mark>Daily</mark>
