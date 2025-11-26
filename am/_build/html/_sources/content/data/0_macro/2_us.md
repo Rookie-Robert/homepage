@@ -148,3 +148,13 @@ Optimus Prime Index 为美国超过 6.35 公吨的卡车销售量（折成年化
 <mark>由于美国经济由个人消费主导，因此美国中长期通胀率与个人消费支出年增率呈正相关。</mark>
 
 ---
+
+- <a href="https://fred.stlouisfed.org/graph/?g=5XXc" target="_blank"><h4>Federal Outlays: Interest/Federal Receipts</h4></a>
+
+> Frequency: <mark>Yearly</mark>
+
+> Delay: <mark>-</mark>
+
+> Correlation: <span style="color: green;">Medium</span>
+
+---

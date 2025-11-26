@@ -241,7 +241,7 @@
 | Pension 20% | UBT 20% | TMF 0% |  |  |
 | Pension 20% | QQQ 0% | QLD 12% |  |  |
 | HF 30% | UGL 30% | GDX 0% | SHNY 0% | GDXU 0% |
-| HF 60% | QQQ 0% | QLD 16% | TQQQ 25% | FNGU 0% |
+| HF 60% | QQQ 18% | QLD 16% | TQQQ 10% | FNGU 0% |
 | HF 10% | USD 10% |  |  |  |
 
 ![](./img/251116/gc1!.png)
