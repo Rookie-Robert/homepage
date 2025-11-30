@@ -28,6 +28,7 @@
 - <a href="https://sc.macromicro.me/collections/3351/commodity-silver/26722/gold-silver-copper-ratio" target="_blank"><h4>Gold Silver ratio</h4></a>
 - <a href="https://www.tradingster.com/cot/futures/disagg/088691" target="_blank"><h4>GOLD Positions - COMEX</h4></a>
 - <a href="https://www.tradingster.com/cot/futures/disagg/084691" target="_blank"><h4>SILVER Positions - COMEX</h4></a>
+- <a href="https://www.gold.org/goldhub/data/aisc-gold" target="_blank"><h4>ASIC Gold</h4></a>
 
 ## 工业金属 Industrial Metals 
 
