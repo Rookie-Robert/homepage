@@ -189,6 +189,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../insight/ShadowBankingTheMoneyView.html">How the Financial System Works (<em>by Zoltan Pozsar</em>)</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_structures.html">市场结构 Market Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_principles.html">交易原则 Trading Principles</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">数学 Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_strategies.html">策略 Strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_process.html">投研流程 Process</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../data/data.html">数据 Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../data/0_macro/_macro.html">宏观 Macro</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../data/0_macro/1_global.html">全球 Global</a></li>
@@ -229,13 +237,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../data/code/deviation.html">Deviation Percentile from MA</a></li>
 </ul>
 </details></li>
-</ul>
-</details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1_structures.html">市场结构 Market Structures</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_principles.html">交易原则 Trading Principles</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">数学 Mathematics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_strategies.html">策略 Strategies</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../journal/journal.html">日志 Journal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -437,7 +438,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">总结抽象</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">微分与积分</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">正交分析</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">概况分布</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">总结抽象</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -455,30 +461,16 @@ document.write(`
 <li><p>知识迁移，跨学科套利。</p></li>
 <li><p>寻找闭环的状态转移方程和多变量恒等式。</p></li>
 </ul>
-<hr class="docutils" />
-<p>数学</p>
-<blockquote>
-<div><p>公理——定理——猜想——定理——猜想——…</p>
-</div></blockquote>
-<p>金融</p>
-<blockquote>
-<div><p>公理1——定理——猜想——定理——猜想——…</p>
-<p>公理1 × 公理2 √</p>
-<p>公理2——定理——猜想——定理——猜想——…</p>
-<p>公理2 × 公理3 √</p>
-<p>…</p>
-</div></blockquote>
-<p>数学</p>
-<blockquote>
-<div><p>余项，如果是高阶无穷小可忽略</p>
-</div></blockquote>
-<p>金融</p>
-<blockquote>
-<div><p>小周期 or 小资金，中短期无法与大周期 or 大资金抗衡，否则逆势</p>
-<p>次要风险，无法证明是否会演变成为主要风险，依然需要对冲</p>
-</div></blockquote>
-<hr class="docutils" />
-<p>首先统计当前市场的概况分布结构</p>
+<section id="id1">
+<h2>微分与积分<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>对于函数 f，其导函数 f’ 的波动率通常更高，其原函数 F 的波动率通常更低。因此最佳方式是观察 f’ 和 f 的变化，从中提取领先信号，用于交易噪声更低的 F。</p>
+</section>
+<section id="id2">
+<h2>正交分析<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>为了理解一组向量 v 中的真实成分构成，需要对其进行正交分析，提取出 v 中所有的正交分量。</p>
+</section>
+<section id="id3">
+<h2>概况分布<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <details>
 <summary>常见概率分布参数与形状刻画表</summary>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -554,8 +546,8 @@ document.write(`
 </table>
 </div>
 <hr class="docutils" />
-<section id="id1">
-<h2>总结抽象<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>总结抽象<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>正态分布</strong>：由 <span class="math notranslate nohighlight">\(\mu, \sigma\)</span> 就能完全决定形状（对称）。</p></li>
 <li><p><strong>偏态分布</strong>：除了位置 <span class="math notranslate nohighlight">\(\mu\)</span> 和尺度 <span class="math notranslate nohighlight">\(\sigma\)</span>，还需要 <strong>形状参数</strong>（如偏度、峰度，或 <span class="math notranslate nohighlight">\(\alpha,\beta,k\)</span> 等）来刻画尾部和对称性。</p></li>
@@ -681,7 +673,6 @@ document.write(`
 </pre></div>
 </div>
 </details>
-<hr class="docutils" />
 <details>
 <summary>Anscombe's quartet</summary>
 <p>Anscombe’s quartet 是四组基本的统计特性一致的数据，但由它们绘制出的图表则截然不同。每一组数据都包括了 11 个 (x,y) 点。这四组数据由统计学家 Francis Anscombe 于 1973 年构造，他的目的是用来说明在分析数据前先绘制图表的重要性，以及离群值对统计的影响之大。</p>
@@ -719,6 +710,7 @@ document.write(`
 <p>Edward Tufte 在他所著的《图表设计的现代主义革命》（The Visual Display of Quantitative Information）一书的第一页中，就使用 Anscombe’s quartet 来说明绘制数据图表的重要性。</p>
 </details>
 <hr class="docutils" />
+</section>
 </section>
 </section>
 
@@ -786,7 +778,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">总结抽象</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">微分与积分</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">正交分析</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">概况分布</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">总结抽象</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

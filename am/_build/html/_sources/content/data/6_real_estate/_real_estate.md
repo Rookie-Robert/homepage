@@ -17,9 +17,7 @@
 |<a href="https://tradingeconomics.com/united-states/existing-home-sales" target="_blank">Existing Home Sales</a>|**成交阶段**，反映房市流动性和整体市场热度，但受签约到成交的滞后影响。|
 |<a href="https://fred.stlouisfed.org/series/TTLCONS" target="_blank">Total Construction Spending: Total Construction in the United States</a>|**总体支出回顾**，包含住宅和非住宅建筑支出，常用于 GDP 构成分析。|
 
----
-
-- <h4>CBOE:ITB/AMEX:XLRE</h4>
+> Correlation: <span style="color: red;">Very Strong</span>
 
 ---
 

@@ -28,6 +28,12 @@ PitchBook 风险投资交易指标利用交易层面的数据来量化融资环�
 
 ## IPO 首次公开募股 
 
-- <a href="https://www.renaissancecapital.com/IPO-Center" target="_blank"><h4>Renaissance Capital IPO Center</h4></a>
+- <a href="https://www.renaissancecapital.com/IPO-Center/Stats" target="_blank"><h4>U.S. IPO Market Stats</h4></a>
+
+> Correlation: <span style="color: red;">Very Strong</span>
+
+- <a href="https://www.renaissancecapital.com/IPO-Center/Pricings" target="_blank"><h4>Recently Priced IPOs</h4></a>
+
+> Correlation: <span style="color: red;">Very Strong</span>
 
 ---

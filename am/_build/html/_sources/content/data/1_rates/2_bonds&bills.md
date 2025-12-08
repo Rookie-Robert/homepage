@@ -32,14 +32,6 @@ Fed 和美国财政部可以通过政策调控美国国债收益率曲线的结�
 
 ---
 
-- <h4>CN10Y - CN02Y</h4>
-
-> Correlation: <span style="color: blue;">Strong</span>
-
-由于美国是世界上最大的消费需求国，中国是世界上最大的生产供给国，因此两国的经济是高度互补。<mark>在此前提下，CN10Y - CN02Y 与 VIX 指数在中长期呈正相关。</mark>
-
----
-
 - <a href="https://sc.macromicro.me/charts/35584/us-treasury-move-index" target="_blank"><h4>Merrill Lynch Option Volatility Estimate (MOVE)</h4></a>
 
 > Frequency: <mark>Daily</mark>
@@ -70,7 +62,7 @@ MOVE Index 作为美国国债期货的波动率指标，<mark>与美债国债价
 
 > Delay: <mark>1 M</mark>
 
-> Correlation: <span style="color: red;">Very Strong</span>
+> Correlation: <span style="color: blue;">Strong</span>
 
 金融脉冲增速指数是衡量关键指标变化对金融环境的累积效果，并将此效果量化为对未来一年 GDP 增速的影响，目前根据回顾窗口（金融指标变化在指数计算中包含的期间长度，例如 1 年期代表衡量过去一年的变化）的不同分为 1 年期与 3 年期版本。正值代表 GDP 增速将面临阻力（headwinds），负值代表将受到提振（tailwinds），举例来说，指数为 1 代表金融条件将对未来一年 GDP 增速产生 1% 的拖累。
 

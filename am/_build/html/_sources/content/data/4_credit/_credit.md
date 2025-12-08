@@ -44,7 +44,7 @@
 
 > Delay: <mark>-</mark>
 
-> Correlation: <span style="color: red;">Very Strong</span>
+> Correlation: <span style="color: green;">Medium</span>
 
 Fed 为了更准确了解银行对于企业放贷的供需变化，针对约 80 家国内银行与约 20 间位于美国的外国银行分支机构进行调查，发布资深核贷人员意见调查报告（Senior Loan Officer Opinion Survey, SLOOS），内容包括放贷标准与条款变动、放贷供给和需求变动，调查结果整体以 0 为临界点。<mark>该指标与权益市场和信贷市场的资金流动性呈负相关。</mark>
 

@@ -2,6 +2,12 @@
 
 > 权益资产实际回报率 ≈ 股息收益率 + EPS 变化率 + 估值变化率
 
+## 季节性变化
+
+- <h4><a href="https://equityclock.com/seasonality/" target="_blank">Seasonality</a></h4>
+
+> Correlation: <span style="color: red;">Very Strong</span>
+
 ## 全球不同地区权益市场估值的常年差异
 
 | 地区 | 估值 | 原因 |

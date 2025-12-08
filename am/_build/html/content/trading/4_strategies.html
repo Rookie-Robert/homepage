@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/trading/4_strategies';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="日志 Journal" href="../journal/journal.html" />
+    <link rel="next" title="投研流程 Process" href="5_process.html" />
     <link rel="prev" title="数学 Mathematics" href="3_math.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -187,6 +187,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../insight/ShadowBankingTheMoneyView.html">How the Financial System Works (<em>by Zoltan Pozsar</em>)</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_structures.html">市场结构 Market Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_principles.html">交易原则 Trading Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学 Mathematics</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">策略 Strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_process.html">投研流程 Process</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../data/data.html">数据 Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../data/0_macro/_macro.html">宏观 Macro</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../data/0_macro/1_global.html">全球 Global</a></li>
@@ -227,13 +235,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../data/code/deviation.html">Deviation Percentile from MA</a></li>
 </ul>
 </details></li>
-</ul>
-</details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1_structures.html">市场结构 Market Structures</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_principles.html">交易原则 Trading Principles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学 Mathematics</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">策略 Strategies</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../journal/journal.html">日志 Journal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -481,7 +482,8 @@ document.write(`
 </section>
 <section id="id5">
 <h2>周期策略（风险溢价收益）<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<p>围绕周期趋势，采用动量（momentum）+ 反转（reverse）组合的方式，动量交易占主导，反转交易进行试错。</p>
+<p><mark>围绕周期趋势，采用动量（momentum）+ 反转（reverse）组合的方式，动量交易占主导，反转交易进行试错。</mark></p>
+<p><mark>捕捉市场动量与反转共识，主要依靠分析盈利和估值双因素在市场价格驱动力中的贡献比例，通过大类资产价格联动的相关性分析和因果逻辑分析，定位市场当前状态所处的周期位置区间。</mark></p>
 <p>选择收益率分布属于 left skew 且收益率期望是高正值的市场结构进行交易，此时趋势动量仓位的 beta 风险可以接受，超额收益来源于趋势反转仓位超预期。</p>
 <p>使用对冲工具时无需过度，必须牢记并非使用对冲工具作为收益率的来源。具体对冲比例，分 2 层考虑，一是市场 beta 风险的周期波动，在 beta 风险降低时减少对冲比例，升高时增加对冲比例；二是持有不同行业仓位时，由于使用 beta 对冲工具，需要计算不同行业的 beta 风险占比。</p>
 <p>细分标的风险难以使用 beta 工具对冲，因此仓位必须多元化。</p>
@@ -671,11 +673,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../journal/journal.html"
+       href="5_process.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">日志 Journal</p>
+        <p class="prev-next-title">投研流程 Process</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -23,12 +23,33 @@
 | ↑ | ↑ | 政策或机制改变，逻辑重构 | 上涨📈 | 价格上涨结构已经改变 |
 | ↓ | ↓ | 流动性收紧，逻辑重构 | 下跌📉 | 价格下跌结构已经改变 |
 
+- <a href="https://www.tradingster.com/cot/futures/disagg/088691" target="_blank"><h4>GOLD Positions - COMEX</h4></a>
+
+> Frequency: <mark>Weekly</mark>
+
+> Delay: <mark>1 W</mark>
+
+> Correlation: <span style="color: blue;">Strong</span>
+
+- <a href="https://www.tradingster.com/cot/futures/disagg/084691" target="_blank"><h4>SILVER Positions - COMEX</h4></a>
+
+> Frequency: <mark>Weekly</mark>
+
+> Delay: <mark>1 W</mark>
+
+> Correlation: <span style="color: blue;">Strong</span>
+
+- <a href="https://www.gold.org/goldhub/data/aisc-gold" target="_blank"><h4>ASIC Gold</h4></a>
+
+> Frequency: <mark>Quarterly</mark>
+
+> Delay: <mark>2 Q</mark>
+
+> Correlation: <span style="color: blue;">Strong</span>
+
 - <a href="https://www.gurufocus.com/economic_indicators/4534/inflation-adjusted-gold-price-adjusted-to-todays-dollar" target="_blank"><h4>Inflation Adjusted Gold Price</h4></a>
 - <a href="https://fred.stlouisfed.org/series/GVZCLS" target="_blank"><h4>CBOE Gold ETF Volatility Index</h4></a>
 - <a href="https://sc.macromicro.me/collections/3351/commodity-silver/26722/gold-silver-copper-ratio" target="_blank"><h4>Gold Silver ratio</h4></a>
-- <a href="https://www.tradingster.com/cot/futures/disagg/088691" target="_blank"><h4>GOLD Positions - COMEX</h4></a>
-- <a href="https://www.tradingster.com/cot/futures/disagg/084691" target="_blank"><h4>SILVER Positions - COMEX</h4></a>
-- <a href="https://www.gold.org/goldhub/data/aisc-gold" target="_blank"><h4>ASIC Gold</h4></a>
 
 ## 工业金属 Industrial Metals 
 
@@ -36,9 +57,16 @@
 
 ## Energy 能源
 
+- <a href="https://tradingeconomics.com/united-states/crude-oil-rigs" target="_blank"><h4>Baker Hughes Crude Oil Rigs</h4></a>
+
+> Frequency: <mark>Weekly</mark>
+
+> Delay: <mark>1 W</mark>
+
+> Correlation: <span style="color: blue;">Strong</span>
+
 - <a href="https://fred.stlouisfed.org/series/OVXCLS" target="_blank"><h4>CBOE Crude Oil ETF Volatility Index</h4></a>
 - <a href="https://www.tradingster.com/cot/futures/disagg/067651" target="_blank"><h4>WTI-PHYSICAL Positions - NYMEX</h4></a>
-- <a href="https://tradingeconomics.com/united-states/crude-oil-rigs" target="_blank"><h4>Baker Hughes Crude Oil Rigs</h4></a>
 
 ## 农产品 Agricultural Products 
 

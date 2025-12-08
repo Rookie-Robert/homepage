@@ -4,49 +4,75 @@
 
 ![](./img/PresidentialCycles.png)
 
+> Correlation: <span style="color: red;">Very Strong</span>
+
+美国政治周期与权益市场的相关性。
+
+---
+
 - <h4>做空 S&P 500 股指与做多波动率指数 VIX 的比值</h4>
 
 观察到 3 倍做空 S&P 500 股指的 ETF 标的 SPXU 与 1.5 倍做多波动率指数 VIX 期货的 ETF 标的 UVXY 之间的比值存在某种关系。当有突发事件导致股市动荡时，UVXY 通常涨幅会远超 SPXU，反映市场正处于极度恐慌的时期，该比值的 VIX Fix 指数将会显著高于均值，此时做多 S&P 500 指数或相关衍生品博取反弹或反转收益的极高性价比位置将会出现；当该比值的 VIX Fix 指数一直在低位（目前观察到的高置信度区间是小于 5）徘徊，做多仓位较为集中或拥挤，反映市场可能过于乐观或如果有突发事件扰动会造成集中仓位的大幅震荡，此时做多 VIX 指数的相关衍生品对冲多头敞口或博取可能的大幅波动带来的收益。
 
 通常股市指数方向与波动率指数方向是负相关的，为什么会造成做空股指不与做多波动率指数正相关？做空股指的收益率通常与股指下跌呈现日内线性负相关，而做多波动率指数通常与股指下跌呈现非线性负相关，因此会导致在市场情绪极度恐慌时，市场参与者大量买入 VIX 相关衍生品进行快速对冲。
 
-- <h4>VIX6M 与 VIX9D 的差值</h4>
+- <h4>VIX6M - VIX9D 的差值</h4>
 
 VIX6M 反映的是市场对于 S&P 500 股指在未来 6 个月的波动性预期，VIX9D 反映的是市场对于 S&P 500 股指在未来 9 个交易日的波动性预期。当发生短期风险时，VIX9D 的变化相对 VIX6M 将会更加剧烈，因此 VIX6M - VIX9D 的差值会变小，预期风险越大则数值越小。
 
-- <h4>VX2! 与 VX1! 的差值</h4>
+- <h4>VX2! - VX1! 的差值</h4>
 
 由于 VIX 指数下期价格 VX2! 与 VIX 指数当期价格 VX1! 提供了在美股市场开盘前和收盘后市场对股指的定价，因此在全球不同时区发生的风险事件都能够及时反映。其原理与上述 VIX6M 与 VIX9D 的差值相同。
 
+> Correlation: <span style="color: red;">Very Strong</span>
+
 ---
 
-- <h4>S&P 500 指数与投资级债券指数的比值</h4>
+- <h4>S&P 500 指数 / 投资级债券指数 的比值</h4>
 
 上市公司股票价格与上市公司信用债券价格的比值可以显著反映市场的风险偏好。以 SPX/BAMLCC0A0CMTRIV 为例：当比值上升时，反映市场风险偏好上升（risk-on）；当比值下降时，反映市场风险偏好下降（risk-off）。
 
+> Correlation: <span style="color: red;">Very Strong</span>
+
 ---
 
-- <h4>Nasdaq 100 指数与 CRB 指数的比值</h4>
+- <h4>Nasdaq 100 / CRB 指数 的比值</h4>
 
 当比值上升时，通常反映以美国为首的地区进入技术革命的生产力周期；当比值下降时，通常反映技术生产力循环出现问题，也预示着以大宗商品为代表的实物周期的开启。
 
+> Correlation: <span style="color: red;">Very Strong</span>
+
 ---
 
-- <h4>做多非必需消费股与做多必需消费股的比值</h4>
+- <h4>非必需消费股 / 必需消费股 的比值</h4>
 
 该比值的下降反映了市场消费者的消费意愿更加保守，风险偏好降低；该比值的上升反映了市场消费者的消费意愿更加乐观，风险偏好上升。
 
+> Correlation: <span style="color: red;">Very Strong</span>
+
 ---
 
-- <h4>做多金矿股与做多黄金现货的比值</h4>
+- <h4>金矿股 / 黄金现货 的比值</h4>
 
 观察到金矿股 GDX 价格与黄金现货 XAU 价格之间的比值存在某种关系。当市场预期远期金价将会持续上涨时，GDX 的涨幅会高于金价的涨幅；当市场因为各种避险情绪而非看涨预期推高金价时，金矿股由于其属于权益通常会出现下跌。二者比值的波动可以反映市场对于黄金现货的态度是看涨预期还是避险预期。
 
+> Correlation: <span style="color: red;">Very Strong</span>
+
 ---
 
-- <h4>Nasdaq 100 指数与经汇率调整后 Nikkei 225 指数的比值</h4>
+- <h4>Nasdaq 100 指数 / 经汇率调整后 Nikkei 225 指数 的比值</h4>
 
 由于全球供应链的分工不同，Nasdaq 100 指数的成分公司通常拥有产业链更强的定价权，Nikkei 225 指数的成分公司通常提供配套产品和服务。因此在这种二元结构下， Nasdaq 100 指数可以作为市场的 α，Nikkei 225 指数可以作为市场的 β，前者和后者的比值与市场给科技公司的估值呈正相关。
+
+> Correlation: <span style="color: red;">Very Strong</span>
+
+---
+
+- <h4>S&P 500 指数 / Russell 2000 指数 的比值</h4>
+
+权益市场通常由 2 个主导因素共同作用，一个是盈利预期，另一个是估值水平。在美国权益市场中，S&P 500 指数通常由各行业盈利能力最强的大型上市公司构成，Russell 2000 指数通常是由各种小型上市公司构成，前者与后者的比值上升反映了市场更青睐盈利能力，反之则更青睐远期成长即“讲故事”与“画大饼”的能力。该比值与估值水平和风险偏好呈正相关。
+
+> Correlation: <span style="color: red;">Very Strong</span>
 
 ---
 
@@ -79,7 +105,7 @@ VIX6M 反映的是市场对于 S&P 500 股指在未来 6 个月的波动性预�
 
 > Delay: <mark>1 D</mark>
 
-> Correlation: <span style="color: green;">Medium</span>
+> Correlation: <span style="color: red;">Very Strong</span>
 
 price to earnings ratio 是用来描述权益标的的价格和盈利的比值，在相同逻辑的定价系统下，同行业标的的 P/E ratio 应该收敛在一个近似的区间，该比值越高反映价格偏高，比值越低反映价格偏低。
 
@@ -93,11 +119,7 @@ price to earnings ratio 是用来描述权益标的的价格和盈利的比值�
 
 - <a href="https://www.gurufocus.com/economic_indicators/4359/insider-buysell-ratio-usa-overall-market" target="_blank"><h4>Insider Buy/Sell Ratio</h4></a>
 
-> Frequency: <mark>Monthly</mark>
-
-> Delay: <mark>-</mark>
-
-> Correlation: <span style="color: blue;">Strong</span>
+> Correlation: <span style="color: red;">Very Strong</span>
 
 上市公司内部高管人员买入与卖出的比值，当权益市场估值较高时，公司内部高管人员更倾向于卖出股本，该指标下降；当权益市场估值较低时，公司内部高管人员更倾向于买入股本，该指标上升。<mark>该指标与市场估值呈负相关。</mark>
 
@@ -127,6 +149,26 @@ Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，�
 
 ---
 
+- <a href="https://www.gurufocus.com/economic_indicators/8046/finra-investor-margin-debt-relative-to-m2" target="_blank"><h4>FINRA Investor Margin Debt Relative to M2</h4></a>
+
+> Frequency: <mark>Monthly</mark>
+
+> Delay: <mark>2 M</mark>
+
+> Correlation: <span style="color: red;">very strong</span>
+
+---
+
+- <a href="https://www.gurufocus.com/economic_indicators/4265/finra-investor-margin-debt-relative-to-total-market-cap" target="_blank"><h4>FINRA Investor Margin Debt Relative to Total Market Cap</h4></a>
+
+> Frequency: <mark>Monthly</mark>
+
+> Delay: <mark>2 M</mark>
+
+> Correlation: <span style="color: green;">Medium</span>
+
+---
+
 - <a href="https://www.tradingster.com/cot/futures/fin/13874A" target="_blank"><h4>E-MINI S&P 500 Positions - CME</h4></a>
 
 > Frequency: <mark>Weekly</mark>
@@ -153,7 +195,7 @@ Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，�
 
 > Delay: <mark>1 W</mark>
 
-> Correlation: <span style="color: green;">Medium</span>
+> Correlation: <span style="color: blue;">Strong</span>
 
 ---
 
@@ -177,16 +219,6 @@ Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，�
 
 ---
 
-- <a href="https://www.gurufocus.com/economic_indicators/4265/finra-investor-margin-debt-relative-to-total-market-cap" target="_blank"><h4>FINRA Investor Margin Debt Relative to Total Market Cap</h4></a>
-
-> Frequency: <mark>Monthly</mark>
-
-> Delay: <mark>2 M</mark>
-
-> Correlation: <span style="color: green;">Medium</span>
-
----
-
 - <a href="https://fred.stlouisfed.org/series/BOGZ1FL010000296Q" target="_blank"><h4>Financial Soundness Indicator, Nonfinancial Corporations; Return on Equity (Percent), Level</h4></a>
 
 > Frequency: <mark>Quarterly</mark>
@@ -202,12 +234,6 @@ Cboe 偏度指数估算了 S&P 500 指数在 30 天期末的收益率偏度，�
 - <h4>美国 - 发达地区 - 新兴市场 股指的比值</h4>
 
 跨国资本在全球的流动会导致不同地区股指的涨跌不一，通过计算各地区经汇率调整后的股指比值的变化可以观察这种现象。
-
----
-
-- <h4>S&P 500 指数与 Russell 2000 指数的比值</h4>
-
-权益市场通常由 2 个主导因素共同作用，一个是盈利预期，另一个是估值水平。在美国权益市场中，S&P 500 指数通常由各行业盈利能力最强的大型上市公司构成，Russell 2000 指数通常是由各种小型上市公司构成，前者与后者的比值上升反映了市场更青睐盈利能力，反之则更青睐远期成长即“讲故事”与“画大饼”的能力。该比值与估值水平和风险偏好呈正相关。
 
 ---
 

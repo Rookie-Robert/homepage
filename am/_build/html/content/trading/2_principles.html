@@ -187,6 +187,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../insight/ShadowBankingTheMoneyView.html">How the Financial System Works (<em>by Zoltan Pozsar</em>)</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_structures.html">市场结构 Market Structures</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">交易原则 Trading Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学 Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_strategies.html">策略 Strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_process.html">投研流程 Process</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../data/data.html">数据 Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../data/0_macro/_macro.html">宏观 Macro</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../data/0_macro/1_global.html">全球 Global</a></li>
@@ -227,13 +235,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../data/code/deviation.html">Deviation Percentile from MA</a></li>
 </ul>
 </details></li>
-</ul>
-</details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="trading.html">交易 Trading</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1_structures.html">市场结构 Market Structures</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">交易原则 Trading Principles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_math.html">数学 Mathematics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_strategies.html">策略 Strategies</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../journal/journal.html">日志 Journal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -439,7 +440,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">风险控制</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">交易选择</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">仓位控制</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">频率</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">节奏</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">频率</a></li>
 </ul>
             </nav>
         </div>
@@ -457,9 +459,10 @@ document.write(`
 <h2>构建交易系统<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>随着市场的演进完善交易系统，不偏离系统进行决策（特别是在交易员出现情绪波动时）。</p></li>
-<li><p>维持中性原则，使用客观中立的角度观察所有市场交易。</p></li>
+<li><p>使用客观中立的角度观察全球所有市场交易。</p></li>
 <li><p>聚焦概率和风险敞口的结构，忽略净值波动与生活消费的关系（将交易仅作为数字游戏，有助于情绪控制）。</p></li>
 <li><p>因果推理模型和概率统计模型，需要交叉验证，不能偏信一端。因果模型辅助概率模型避免过拟合，概率模型辅助因果模型降低噪声。</p></li>
+<li><p>以因果推理模型作为主要依据，从概率统计模型中寻找交易优势，不能反向从相关性推导因果性。</p></li>
 <li><p>除因果模型和概率模型外，还需要考虑波动模型，波动主要来源于噪声。即使因果推理和概率统计都具有显著优势，依然有可能在噪声产生的波动影响下出现不可控的意外。</p></li>
 </ul>
 <blockquote>
@@ -511,7 +514,18 @@ document.write(`
 <p>时刻保持仓位中有部分比例的几乎无风险且高流动性资产，用以随时应对市场中的极端风险。</p>
 </section>
 <section id="id5">
-<h2>频率<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<h2>节奏<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>按照既定的仓位分配进行交易时，注重节奏的控制，定义以下 4 种状态：</p>
+<ul class="simple">
+<li><p>看多做多</p></li>
+<li><p>看空做空</p></li>
+<li><p>看多不做多</p></li>
+<li><p>看空不做空</p></li>
+</ul>
+<p>前两种属于主动策略，可以保持适度兴奋与较快的交易节奏；后两种属于被动策略，应平复心情并放缓交易节奏，以等待与观察为主。</p>
+</section>
+<section id="id6">
+<h2>频率<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <p>交易类型主要分为高频、中频和低频。</p>
 <ul class="simple">
 <li><p>高频交易主要依靠交易设备的速度，包括硬件平台和软件模型。通过短期市场的波动进行套利，但是其技术壁垒高、基础设施价格昂贵，大型机构的优势显著高于个人交易者。</p></li>
@@ -594,7 +608,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">风险控制</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">交易选择</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">仓位控制</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">频率</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">节奏</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">频率</a></li>
 </ul>
   </nav></div>
 

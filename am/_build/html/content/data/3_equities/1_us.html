@@ -187,6 +187,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../../insight/ShadowBankingTheMoneyView.html">How the Financial System Works (<em>by Zoltan Pozsar</em>)</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../trading/trading.html">交易 Trading</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../trading/1_structures.html">市场结构 Market Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../trading/2_principles.html">交易原则 Trading Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../trading/3_math.html">数学 Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../trading/4_strategies.html">策略 Strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../trading/5_process.html">投研流程 Process</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../data.html">数据 Data</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../0_macro/_macro.html">宏观 Macro</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../0_macro/1_global.html">全球 Global</a></li>
@@ -227,13 +235,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../code/deviation.html">Deviation Percentile from MA</a></li>
 </ul>
 </details></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../trading/trading.html">交易 Trading</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../trading/1_structures.html">市场结构 Market Structures</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../trading/2_principles.html">交易原则 Trading Principles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../trading/3_math.html">数学 Mathematics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../trading/4_strategies.html">策略 Strategies</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../journal/journal.html">日志 Journal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -444,6 +445,11 @@ document.write(`
 </li>
 </ul>
 <p><img alt="" src="../../../_images/PresidentialCycles.png" /></p>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
+<p>美国政治周期与权益市场的相关性。</p>
+<hr class="docutils" />
 <ul>
 <li><h4>做空 S&P 500 股指与做多波动率指数 VIX 的比值</h4>
 </li>
@@ -451,45 +457,72 @@ document.write(`
 <p>观察到 3 倍做空 S&amp;P 500 股指的 ETF 标的 SPXU 与 1.5 倍做多波动率指数 VIX 期货的 ETF 标的 UVXY 之间的比值存在某种关系。当有突发事件导致股市动荡时，UVXY 通常涨幅会远超 SPXU，反映市场正处于极度恐慌的时期，该比值的 VIX Fix 指数将会显著高于均值，此时做多 S&amp;P 500 指数或相关衍生品博取反弹或反转收益的极高性价比位置将会出现；当该比值的 VIX Fix 指数一直在低位（目前观察到的高置信度区间是小于 5）徘徊，做多仓位较为集中或拥挤，反映市场可能过于乐观或如果有突发事件扰动会造成集中仓位的大幅震荡，此时做多 VIX 指数的相关衍生品对冲多头敞口或博取可能的大幅波动带来的收益。</p>
 <p>通常股市指数方向与波动率指数方向是负相关的，为什么会造成做空股指不与做多波动率指数正相关？做空股指的收益率通常与股指下跌呈现日内线性负相关，而做多波动率指数通常与股指下跌呈现非线性负相关，因此会导致在市场情绪极度恐慌时，市场参与者大量买入 VIX 相关衍生品进行快速对冲。</p>
 <ul>
-<li><h4>VIX6M 与 VIX9D 的差值</h4>
+<li><h4>VIX6M - VIX9D 的差值</h4>
 </li>
 </ul>
 <p>VIX6M 反映的是市场对于 S&amp;P 500 股指在未来 6 个月的波动性预期，VIX9D 反映的是市场对于 S&amp;P 500 股指在未来 9 个交易日的波动性预期。当发生短期风险时，VIX9D 的变化相对 VIX6M 将会更加剧烈，因此 VIX6M - VIX9D 的差值会变小，预期风险越大则数值越小。</p>
 <ul>
-<li><h4>VX2! 与 VX1! 的差值</h4>
+<li><h4>VX2! - VX1! 的差值</h4>
 </li>
 </ul>
 <p>由于 VIX 指数下期价格 VX2! 与 VIX 指数当期价格 VX1! 提供了在美股市场开盘前和收盘后市场对股指的定价，因此在全球不同时区发生的风险事件都能够及时反映。其原理与上述 VIX6M 与 VIX9D 的差值相同。</p>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
 <hr class="docutils" />
 <ul>
-<li><h4>S&P 500 指数与投资级债券指数的比值</h4>
+<li><h4>S&P 500 指数 / 投资级债券指数 的比值</h4>
 </li>
 </ul>
 <p>上市公司股票价格与上市公司信用债券价格的比值可以显著反映市场的风险偏好。以 SPX/BAMLCC0A0CMTRIV 为例：当比值上升时，反映市场风险偏好上升（risk-on）；当比值下降时，反映市场风险偏好下降（risk-off）。</p>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
 <hr class="docutils" />
 <ul>
-<li><h4>Nasdaq 100 指数与 CRB 指数的比值</h4>
+<li><h4>Nasdaq 100 / CRB 指数 的比值</h4>
 </li>
 </ul>
 <p>当比值上升时，通常反映以美国为首的地区进入技术革命的生产力周期；当比值下降时，通常反映技术生产力循环出现问题，也预示着以大宗商品为代表的实物周期的开启。</p>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
 <hr class="docutils" />
 <ul>
-<li><h4>做多非必需消费股与做多必需消费股的比值</h4>
+<li><h4>非必需消费股 / 必需消费股 的比值</h4>
 </li>
 </ul>
 <p>该比值的下降反映了市场消费者的消费意愿更加保守，风险偏好降低；该比值的上升反映了市场消费者的消费意愿更加乐观，风险偏好上升。</p>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
 <hr class="docutils" />
 <ul>
-<li><h4>做多金矿股与做多黄金现货的比值</h4>
+<li><h4>金矿股 / 黄金现货 的比值</h4>
 </li>
 </ul>
 <p>观察到金矿股 GDX 价格与黄金现货 XAU 价格之间的比值存在某种关系。当市场预期远期金价将会持续上涨时，GDX 的涨幅会高于金价的涨幅；当市场因为各种避险情绪而非看涨预期推高金价时，金矿股由于其属于权益通常会出现下跌。二者比值的波动可以反映市场对于黄金现货的态度是看涨预期还是避险预期。</p>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
 <hr class="docutils" />
 <ul>
-<li><h4>Nasdaq 100 指数与经汇率调整后 Nikkei 225 指数的比值</h4>
+<li><h4>Nasdaq 100 指数 / 经汇率调整后 Nikkei 225 指数 的比值</h4>
 </li>
 </ul>
 <p>由于全球供应链的分工不同，Nasdaq 100 指数的成分公司通常拥有产业链更强的定价权，Nikkei 225 指数的成分公司通常提供配套产品和服务。因此在这种二元结构下， Nasdaq 100 指数可以作为市场的 α，Nikkei 225 指数可以作为市场的 β，前者和后者的比值与市场给科技公司的估值呈正相关。</p>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
+<hr class="docutils" />
+<ul>
+<li><h4>S&P 500 指数 / Russell 2000 指数 的比值</h4>
+</li>
+</ul>
+<p>权益市场通常由 2 个主导因素共同作用，一个是盈利预期，另一个是估值水平。在美国权益市场中，S&amp;P 500 指数通常由各行业盈利能力最强的大型上市公司构成，Russell 2000 指数通常是由各种小型上市公司构成，前者与后者的比值上升反映了市场更青睐盈利能力，反之则更青睐远期成长即“讲故事”与“画大饼”的能力。该比值与估值水平和风险偏好呈正相关。</p>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
+</div></blockquote>
 <hr class="docutils" />
 <ul class="simple">
 <li><p><a href="https://edition.cnn.com/markets/fear-and-greed" target="_blank"><h4>CNN Fear &amp; Greed Index</h4></a></p></li>
@@ -522,7 +555,7 @@ document.write(`
 <div><p>Delay: <mark>1 D</mark></p>
 </div></blockquote>
 <blockquote>
-<div><p>Correlation: <span style="color: green;">Medium</span></p>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
 </div></blockquote>
 <p>price to earnings ratio 是用来描述权益标的的价格和盈利的比值，在相同逻辑的定价系统下，同行业标的的 P/E ratio 应该收敛在一个近似的区间，该比值越高反映价格偏高，比值越低反映价格偏低。</p>
 <p>该指标的适用条件限制有：1）时间非常滞后，由于权益市场基本上是按季度发布财报显示真实盈利，而价格是随时变动，因此计算得到的历史 P/E ratio 几乎没有未来预测性，只有同行业横向对比性；2）forward P/E ratio 仅仅是市场从业人员的预测，误差非常大，而且没有考虑尾部风险事件；3）在当前的权益市场定价体系中，该指标不适用于仍未盈利的权益标的，这类标的一般通过 price to sales 来进行评价。</p>
@@ -533,13 +566,7 @@ document.write(`
 <li><p><a href="https://www.gurufocus.com/economic_indicators/4359/insider-buysell-ratio-usa-overall-market" target="_blank"><h4>Insider Buy/Sell Ratio</h4></a></p></li>
 </ul>
 <blockquote>
-<div><p>Frequency: <mark>Monthly</mark></p>
-</div></blockquote>
-<blockquote>
-<div><p>Delay: <mark>-</mark></p>
-</div></blockquote>
-<blockquote>
-<div><p>Correlation: <span style="color: blue;">Strong</span></p>
+<div><p>Correlation: <span style="color: red;">Very Strong</span></p>
 </div></blockquote>
 <p>上市公司内部高管人员买入与卖出的比值，当权益市场估值较高时，公司内部高管人员更倾向于卖出股本，该指标下降；当权益市场估值较低时，公司内部高管人员更倾向于买入股本，该指标上升。<mark>该指标与市场估值呈负相关。</mark></p>
 <hr class="docutils" />
@@ -570,6 +597,32 @@ document.write(`
 <div><p>Correlation: <span style="color: red;">Very Strong</span></p>
 </div></blockquote>
 <p>Cboe 偏度指数估算了 S&amp;P 500 指数在 30 天期末的收益率偏度，与 VIX 指数类似，S&amp;P 500 指数尾部风险的价格是根据其价外期权的价格计算得出的。<mark>该指标通常与 S&amp;P 500 指数呈负相关。</mark></p>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><a href="https://www.gurufocus.com/economic_indicators/8046/finra-investor-margin-debt-relative-to-m2" target="_blank"><h4>FINRA Investor Margin Debt Relative to M2</h4></a></p></li>
+</ul>
+<blockquote>
+<div><p>Frequency: <mark>Monthly</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Delay: <mark>2 M</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Correlation: <span style="color: red;">very strong</span></p>
+</div></blockquote>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><a href="https://www.gurufocus.com/economic_indicators/4265/finra-investor-margin-debt-relative-to-total-market-cap" target="_blank"><h4>FINRA Investor Margin Debt Relative to Total Market Cap</h4></a></p></li>
+</ul>
+<blockquote>
+<div><p>Frequency: <mark>Monthly</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Delay: <mark>2 M</mark></p>
+</div></blockquote>
+<blockquote>
+<div><p>Correlation: <span style="color: green;">Medium</span></p>
+</div></blockquote>
 <hr class="docutils" />
 <ul class="simple">
 <li><p><a href="https://www.tradingster.com/cot/futures/fin/13874A" target="_blank"><h4>E-MINI S&amp;P 500 Positions - CME</h4></a></p></li>
@@ -607,7 +660,7 @@ document.write(`
 <div><p>Delay: <mark>1 W</mark></p>
 </div></blockquote>
 <blockquote>
-<div><p>Correlation: <span style="color: green;">Medium</span></p>
+<div><p>Correlation: <span style="color: blue;">Strong</span></p>
 </div></blockquote>
 <hr class="docutils" />
 <ul class="simple">
@@ -637,19 +690,6 @@ document.write(`
 </div></blockquote>
 <hr class="docutils" />
 <ul class="simple">
-<li><p><a href="https://www.gurufocus.com/economic_indicators/4265/finra-investor-margin-debt-relative-to-total-market-cap" target="_blank"><h4>FINRA Investor Margin Debt Relative to Total Market Cap</h4></a></p></li>
-</ul>
-<blockquote>
-<div><p>Frequency: <mark>Monthly</mark></p>
-</div></blockquote>
-<blockquote>
-<div><p>Delay: <mark>2 M</mark></p>
-</div></blockquote>
-<blockquote>
-<div><p>Correlation: <span style="color: green;">Medium</span></p>
-</div></blockquote>
-<hr class="docutils" />
-<ul class="simple">
 <li><p><a href="https://fred.stlouisfed.org/series/BOGZ1FL010000296Q" target="_blank"><h4>Financial Soundness Indicator, Nonfinancial Corporations; Return on Equity (Percent), Level</h4></a></p></li>
 </ul>
 <blockquote>
@@ -668,12 +708,6 @@ document.write(`
 </li>
 </ul>
 <p>跨国资本在全球的流动会导致不同地区股指的涨跌不一，通过计算各地区经汇率调整后的股指比值的变化可以观察这种现象。</p>
-<hr class="docutils" />
-<ul>
-<li><h4>S&P 500 指数与 Russell 2000 指数的比值</h4>
-</li>
-</ul>
-<p>权益市场通常由 2 个主导因素共同作用，一个是盈利预期，另一个是估值水平。在美国权益市场中，S&amp;P 500 指数通常由各行业盈利能力最强的大型上市公司构成，Russell 2000 指数通常是由各种小型上市公司构成，前者与后者的比值上升反映了市场更青睐盈利能力，反之则更青睐远期成长即“讲故事”与“画大饼”的能力。该比值与估值水平和风险偏好呈正相关。</p>
 <hr class="docutils" />
 <ul>
 <li><h4>动量因素 ETF 中相关标的权重与 S&P 500 指数中对应权重的比值</h4>

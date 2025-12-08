@@ -49,3 +49,19 @@ Overnight Reverse Repurchase Agreements，隔夜逆回购是 New York Fed 在授
 银行为结算银行同业的收支及银行与金管局之间的收支，而在金管局开设的结算户口结余总额，根据货币发行局制度的运作机制，唯一会令总结余出现变动的情况，就是金管局因资金流入或流出港元作出相应行动。<mark>该指标与港币和港股的流动性呈正相关。</mark>
 
 ---
+
+
+- <h4><a href="https://zh.tradingeconomics.com/china/reverse-repo-rate" target="_blank">China 7-Day Reverse Repo Rate</a> ≤ <a href="https://www.chinamoney.com.cn/chinese/tycdfxxx/" target="_blank">AAA tycdfxxx</a> ≤ <a href="https://zh.tradingeconomics.com/china/1-year-mlf-rate" target="_blank">1Y MLF</a></h4>
+
+> Frequency: <mark>Monthly</mark>
+
+> Delay: <mark>1 M</mark>
+
+> Correlation: <span style="color: blue;">Strong</span>
+
+7 天逆回购利率是中国人民银行（PBOC）在公开市场操作最常用的短期政策利率，通常被视为短端政策利率的下限；1 年期中期借贷便利（MLF）利率是 PBOC 对商业银行投放中期流动性的关键利率工具，被视为中端政策利率锚定点，也是 LPR 报价的基础（LPR = MLF + 加点）。1 年期商业银行同业存单利率（特别是 AAA 评级银行发行的），属于银行之间的市场化融资利率，会受市场供需、政策预期、信用风险溢价等多因素影响，在利率市场化环境中，它反映银行体系对中期资金成本的预期。
+
+<mark>通常情况下，1 年期 AAA 评级商业银行同业存单利率在 7 天逆回购利率和 1 年期中期借贷便利间浮动；在市场流动性非常宽松时，会低于区间下限；在流动性非常紧张时，会高于区间上限。通过观察其与区间上下限的关系，可以判断市场流动性状况。</mark>
+
+---
+
