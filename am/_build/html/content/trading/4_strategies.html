@@ -241,6 +241,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../journal/2025/2025.html">2025</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../edu/edu.html">金融素质教育 Financial Literacy Education</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../edu/1_planning.html">规划 Planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../edu/2_risk.html">风险 Risk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../edu/3_communication.html">沟通 Communication</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -446,6 +452,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">量化市场极端情绪（市场无效性收益）</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#williams-vix-fix">更加通用的全市场 Williams VIX Fix 指数</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moving-average">价格相对 Moving Average 偏移量所占百分比出现的频率</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">价格变化的强弱信号分析</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">有效交易时间的资金流动分析</a></li>
 </ul>
             </nav>
         </div>
@@ -513,6 +521,15 @@ document.write(`
 <section id="moving-average">
 <h2>价格相对 Moving Average 偏移量所占百分比出现的频率<a class="headerlink" href="#moving-average" title="Link to this heading">#</a></h2>
 <p>逻辑模型（短期、中期或长期）没有改变且具有周期性规律的资产（以上为必要的前提条件），其价格相对于 MA 的偏移量所占百分比不可能一直向着上升或下降的某一个方向变动，当处于频率较低的位置时，价格回归均线的概率就会显著增加，在高概率位置介入进行交易可以提高成功率。</p>
+</section>
+<section id="id7">
+<h2>价格变化的强弱信号分析<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>由同一因子驱动的价格变化在不同标的上会存在分化，此时是区分该因子的市场共识与不同标的中因子占比的关键。如果是动量因子，关键是选择因子占比相对高的标的；如果是反转因子，关键需要区分该因子是否形成市场主力资金的共识。</p>
+</section>
+<section id="id8">
+<h2>有效交易时间的资金流动分析<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>全球金融市场已经处于无间断运转状态，但是交易量与流动性的时间分布有显著的“峰谷”特征，主要分为 <code class="docutils literal notranslate"><span class="pre">Asia</span></code> <code class="docutils literal notranslate"><span class="pre">Europe</span></code> <code class="docutils literal notranslate"><span class="pre">America</span></code> 三个时间段。由于金融市场的定价合理性与交易量与流动性呈显著的正相关，因此只有交易峰值时间段的撮合价格才具有参考意义（其余交易时间段的价格通常可以视为噪声干扰）。由于不同交易峰值时间段的主力资金来源通常是固定的，因此通过不同时间段的价格变化可以分析不同主力资金的动机区别。</p>
+<p><img alt="" src="../../_images/Trading-Volume-by-Session.png" /></p>
 <details>
 <summary>市场极端情绪事例</summary>
 <hr class="docutils" />
@@ -707,6 +724,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">量化市场极端情绪（市场无效性收益）</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#williams-vix-fix">更加通用的全市场 Williams VIX Fix 指数</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moving-average">价格相对 Moving Average 偏移量所占百分比出现的频率</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">价格变化的强弱信号分析</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">有效交易时间的资金流动分析</a></li>
 </ul>
   </nav></div>
 

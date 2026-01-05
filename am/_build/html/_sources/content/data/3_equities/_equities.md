@@ -2,6 +2,12 @@
 
 > 权益资产实际回报率 ≈ 股息收益率 + EPS 变化率 + 估值变化率
 
+## 市场洞察
+
+- <h4><a href="https://www.hedgefundtips.com/page/1/?s=Fund+Manager+Survey" target="_blank">BofA FMS</a></h4>
+
+> Correlation: <span style="color: red;">Very Strong</span>
+
 ## 季节性变化
 
 - <h4><a href="https://equityclock.com/seasonality/" target="_blank">Seasonality</a></h4>
@@ -35,4 +41,3 @@
 ![Exhibit_6](./img/Exhibit_6.png)
 
 *以上图片引用自 Invesco*
-
