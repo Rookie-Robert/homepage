@@ -1,144 +1,222 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Restaurant menu with follow along highlighter</title>
+  <title>日常食谱</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><link rel="stylesheet" href="./style.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
 <div class="wrapper">
 
-  <h2>Our Menu</h2>
+  <h2>食谱</h2>
 
   <div class="buttons-container">
-    <a href="#" class="button button--is-active" data-target="pizzaMenu">Pizzas</a>
-    <a href="#" class="button" data-target="coffeeMenu">Coffee</a>
-    <a href="#" class="button" data-target="noodlesMenu">Noodles</a>
+    <a href="#" class="button button--is-active" data-target="stapleMenu">
+      <span class="highlight"></span>
+      主食
+    </a>
+    <a href="#" class="button" data-target="meatMenu">
+      <span class="highlight"></span>
+      肉食
+    </a>
+    <a href="#" class="button" data-target="vegetarianMenu">
+      <span class="highlight"></span>
+      素食
+    </a>
+    <a href="#" class="button" data-target="soupMenu">
+      <span class="highlight"></span>
+      汤羹
+    </a>
   </div>
 
-  <!-- Start Pizza Menu -->
-  <div class="menu menu--is-visible" id="pizzaMenu">
+  <!-- 主食 -->
+  <div class="menu menu--is-visible" id="stapleMenu">
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Greek Pizza</h3>
+        <h3 class="item__title">清汤面条</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$22</span>
+        <span class="item__time">30min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">
+        面条 千张 腐竹 番茄 胡萝卜 白菜 豆腐 香菇 金针菇 生抽 香油
+      </p>
     </div>
 
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Cheese Pizza</h3>
+        <h3 class="item__title">蛋炒饭</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$20</span>
+        <span class="item__time">30min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">米饭 鸡蛋 胡萝卜 生抽</p>
     </div>
 
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Neapolitan Pizza</h3>
+        <h3 class="item__title">蒸包子</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$18</span>
+        <span class="item__time">90min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">面粉 鸡蛋 香菇 胡萝卜 白菜 韭菜 生抽 香油</p>
     </div>
 
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Pepperoni Pizza</h3>
+        <h3 class="item__title">馄饨</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$15</span>
+        <span class="item__time">90min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">面粉 鸡蛋 香菇 胡萝卜 白菜 豆腐 海带 紫菜 木耳 冬瓜 生抽 香油</p>
     </div>
-  </div> <!-- End Pizza Menu -->
+  </div>
 
-  <!-- Start Coffee Menu -->
-  <div class="menu" id="coffeeMenu">
+  <!-- 肉食 -->
+  <div class="menu" id="meatMenu">
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Cappuccino</h3>
+        <h3 class="item__title">炒鸡丁</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$4</span>
+        <span class="item__time">30min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
-
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Iced Coffee</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$5</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">
+        鸡胸肉 香菇 胡萝卜 青椒 生抽
+      </p>
     </div>
 
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Café Latte</h3>
+        <h3 class="item__title">孜然羊肉</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$3</span>
+        <span class="item__time">30min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">羊肉片 香菜 生抽 胡椒粉</p>
     </div>
 
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Espresso</h3>
+        <h3 class="item__title">清蒸虾</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$4</span>
+        <span class="item__time">30min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
-  </div> <!-- End Coffee Menu -->
-
-  <!-- Start Noodles Menu -->
-  <div class="menu" id="noodlesMenu">
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Chicken Noodles</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$16</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">虾 生抽 食醋</p>
     </div>
 
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Egg Noodles</h3>
+        <h3 class="item__title">清蒸鱼</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$12</span>
+        <span class="item__time">30min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">独刺鱼 葱花 香菜 生抽</p>
+    </div>
+  </div>
+
+  <!-- 素食 -->
+  <div class="menu" id="vegetarianMenu">
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">番茄炒鸡蛋</h3>
+        <span class="item__dots"></span>
+        <span class="item__time">20min</span>
+      </div>
+      <p class="item__description">
+        鸡蛋 番茄 葱花 生抽
+      </p>
     </div>
 
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Veg Noodles</h3>
+        <h3 class="item__title">炒青菜</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$10</span>
+        <span class="item__time">20min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">香菇 青菜 胡萝卜 蒜 生抽</p>
     </div>
 
     <div class="item">
       <div class="item__header">
-        <h3 class="item__title">Chuck Norris Noodles</h3>
+        <h3 class="item__title">炒西兰花</h3>
         <span class="item__dots"></span>
-        <span class="item__price">$20</span>
+        <span class="item__time">20min</span>
       </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
+      <p class="item__description">香菇 西兰花 胡萝卜 蒜 生抽</p>
     </div>
-  </div> <!-- End Noodles Menu -->
 
-</div> <!-- End Wrapper -->
-<!-- partial -->
-  <script  src="./script.js"></script>
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">炒土豆丝</h3>
+        <span class="item__dots"></span>
+        <span class="item__time">30min</span>
+      </div>
+      <p class="item__description">土豆 胡萝卜 葱花 蒜 生抽</p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">凉拌蔬菜</h3>
+        <span class="item__dots"></span>
+        <span class="item__time">20min</span>
+      </div>
+      <p class="item__description">金针菇 紫甘蓝 黄瓜 木耳 香菜 食醋</p>
+    </div>
+  </div>
+
+  <!-- 汤羹 -->
+  <div class="menu" id="soupMenu">
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">番茄鸡蛋汤</h3>
+        <span class="item__dots"></span>
+        <span class="item__time">20min</span>
+      </div>
+      <p class="item__description">
+        鸡蛋 番茄 木耳 香菜 淀粉 生抽 香油
+      </p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">紫菜蛋花汤</h3>
+        <span class="item__dots"></span>
+        <span class="item__time">20min</span>
+      </div>
+      <p class="item__description">鸡蛋 金针菇 青菜 紫菜 淀粉 生抽 香油</p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">冬瓜海带汤</h3>
+        <span class="item__dots"></span>
+        <span class="item__time">30min</span>
+      </div>
+      <p class="item__description">豆腐 千张 冬瓜 海带 玉米 木耳 生抽 香油</p>
+    </div>
+  </div>
+    
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.button');
+  const menus = document.querySelectorAll('.menu');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', e => {
+      e.preventDefault();
+
+      buttons.forEach(b => b.classList.remove('button--is-active'));
+      menus.forEach(m => m.classList.remove('menu--is-visible'));
+
+      button.classList.add('button--is-active');
+      document
+        .getElementById(button.dataset.target)
+        .classList.add('menu--is-visible');
+    });
+  });
+</script>
 
 </body>
 </html>
