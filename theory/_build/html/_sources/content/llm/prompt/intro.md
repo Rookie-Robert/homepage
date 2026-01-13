@@ -14,7 +14,15 @@
 
 [source](https://mp.weixin.qq.com/s/CesMZqM9tprwmIx9gN3lMA)
 
-在上下文工程中，优化提示词工程的成本相对最低，这也是本节聚焦。
+从 LLM memory 的底层向顶层向抽象，其优先级顺序如下：
+
+1. System Prompt（系统提示词）：由基础 LLM 的开发者制定，硬性约束其他一切提示词和信息文本，想要修改必须深入 LLM 内部。
+2. Developer / Model Set Context（半持久化约束上下文）：用户明确声明的可长期复用的结构性偏好，用户可以通过将提示词作为此部分内容来约束 LLM 的输出风格，但不能与 System Prompt 相违背。
+3. Informational Context（信息性上下文）：用户通过外部信息输入使 LLM 获得预训练数据集以外的信息。
+4. Short-term Memory / Conversation Window（短期记忆 / 当前对话窗口）：用户和 LLM 的交互内存。
+5. State / Scratchpad（内部推理状态）：LLM 输出时的临时内存。
+
+优化 Developer / Model Set Context（半持久化约束上下文）的成本相对低且效果相对好，这也是本节聚焦。
 
 ![](./img/3.png)
 

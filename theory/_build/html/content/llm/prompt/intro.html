@@ -186,6 +186,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../info/info_acquisition/2_high_signal_info.html">如何获取有效信息</a></li>
 </ul>
 </details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../info/info_falsification_verification.html">信息伪造与识别 Information Falsification &amp; Verification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../info/info_dissemination.html">信息传播 Information Dissemination</a></li>
 </ul>
 </details></li>
@@ -436,7 +437,15 @@ document.write(`
 <p>包括提示词、检索增强生成、多模态工具等内容的上下文工程将作为存储部分，优化存储部分对于用户或轻度开发者成本相对较低。</p>
 <p><img alt="" src="../../../_images/2.png" /></p>
 <p><a class="reference external" href="https://mp.weixin.qq.com/s/CesMZqM9tprwmIx9gN3lMA">source</a></p>
-<p>在上下文工程中，优化提示词工程的成本相对最低，这也是本节聚焦。</p>
+<p>从 LLM memory 的底层向顶层向抽象，其优先级顺序如下：</p>
+<ol class="arabic simple">
+<li><p>System Prompt（系统提示词）：由基础 LLM 的开发者制定，硬性约束其他一切提示词和信息文本，想要修改必须深入 LLM 内部。</p></li>
+<li><p>Developer / Model Set Context（半持久化约束上下文）：用户明确声明的可长期复用的结构性偏好，用户可以通过将提示词作为此部分内容来约束 LLM 的输出风格，但不能与 System Prompt 相违背。</p></li>
+<li><p>Informational Context（信息性上下文）：用户通过外部信息输入使 LLM 获得预训练数据集以外的信息。</p></li>
+<li><p>Short-term Memory / Conversation Window（短期记忆 / 当前对话窗口）：用户和 LLM 的交互内存。</p></li>
+<li><p>State / Scratchpad（内部推理状态）：LLM 输出时的临时内存。</p></li>
+</ol>
+<p>优化 Developer / Model Set Context（半持久化约束上下文）的成本相对低且效果相对好，这也是本节聚焦。</p>
 <p><img alt="" src="../../../_images/3.png" /></p>
 <p><a class="reference external" href="https://mp.weixin.qq.com/s/CesMZqM9tprwmIx9gN3lMA">source</a></p>
 <div class="toctree-wrapper compound">
@@ -517,7 +526,7 @@ By 深 Robert
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>
